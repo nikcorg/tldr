@@ -4,6 +4,13 @@
 
 Random subjects, but mostly tech.
 
+### 2018-04-17
+
+- [ ] Stop replacing London’s phone boxes with corporate surveillance  
+  https://www.wired.co.uk/article/linkuk-bt-google-free-wifi-and-calls-london  
+  Source https://twitter.com/adrianshort/status/985438547904815104  
+  See also https://twitter.com/adrianshort/status/978939568157351937
+
 ### 2018-04-16
 
 - [x] Everything you always wanted to know about implementing scrolling but were afraid to ask  
