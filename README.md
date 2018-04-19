@@ -4,6 +4,20 @@
 
 Random subjects, but mostly tech.
 
+### 2018-04-19
+
+- [x] The wrong Brexit: what happened to 'Global Britain'?  
+  https://www.spectator.co.uk/2018/04/the-wrong-brexit-what-happened-to-global-britain/
+- [ ] Facebook moves 1.5bn users out of reach of new European privacy law  
+  https://www.theguardian.com/technology/2018/apr/19/facebook-moves-15bn-users-out-of-reach-of-new-european-privacy-law
+- [x] The Seven Noses of Soho  
+  https://lookup.london/the-seven-noses-of-soho/  
+  https://www.atlasobscura.com/places/seven-noses-of-soho
+- [x] Faster PostgreSQL Counting  
+  https://www.citusdata.com/blog/2016/10/12/count-performance/
+- [ ] To type or not to type: quantifying detectable bugs in JavaScript  
+  https://blog.acolyer.org/2017/09/19/to-type-or-not-to-type-quantifying-detectable-bugs-in-javascript/
+
 ### 2018-04-17
 
 - [ ] Stop replacing London’s phone boxes with corporate surveillance  
