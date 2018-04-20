@@ -2,7 +2,20 @@
 
 ## Interesting stuff I come across
 
+Because all those open browser tabs that I'll "read later" have to go somewhere.
+
 Random subjects, but mostly tech.
+
+### 2018-04-20
+
+- [x] lookaheads (and lookbehinds) in JavaScript regular expressions  
+  https://www.stefanjudis.com/today-i-learned/the-complicated-syntax-of-lookaheads-in-javascript-regular-expressions/
+- [x] Why drivers should want cycle lanes  
+  https://www.youtube.com/watch?v=_DNNIB_PdaA
+- [x] 50 years of British photography: from Twiggy to whaling – in pictures  
+  https://www.theguardian.com/artanddesign/gallery/2018/apr/19/50-years-british-photography-twiggy-whaling-in-pictures
+- [x] Lapland's changing seasons by drone - in pictures  
+  https://www.theguardian.com/artanddesign/gallery/2018/apr/14/laplands-changing-seasons-by-drone-in-pictures
 
 ### 2018-04-19
 
