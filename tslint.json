@@ -1,0 +1,27 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint:recommended",
+    "tslint-immutable"
+  ],
+  "jsRules": {},
+  "rules": {
+    "arrow-parens": [
+      true,
+      "ban-single-arg-parens"
+    ],
+    "interface-name": [
+      false
+    ],
+    "max-line-length": [
+      false
+    ],
+    "no-class": true,
+    "no-expression-statement": [true, {"ignore-prefix": "console."}],
+    "no-let": true,
+    "no-object-mutation": true,
+    "no-this": true,
+    "no-var-keyword": true
+  },
+  "rulesDirectory": []
+}
