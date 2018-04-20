@@ -1,16 +1,18 @@
 ---
-- title: lookaheads (and lookbehinds) in JavaScript regular expressions
-  unread: false
-  url: https://www.stefanjudis.com/today-i-learned/the-complicated-syntax-of-lookaheads-in-javascript-regular-expressions/
-- title: Unfinished London: Why drivers should want cycle lanes
-  unread: false
-  url: https://www.youtube.com/watch?v=_DNNIB_PdaA
-  related:
-    - title: Unfinished London: Why Isn't Cycling Normal in London?
-      url: https://www.youtube.com/watch?v=gohSeOYheXg
-- title: 50 years of British photography: from Twiggy to whaling – in pictures
-  unread: false
-  url: https://www.theguardian.com/artanddesign/gallery/2018/apr/19/50-years-british-photography-twiggy-whaling-in-pictures
-- title: Lapland's changing seasons by drone - in pictures
-  unread: false
-  url: https://www.theguardian.com/artanddesign/gallery/2018/apr/14/laplands-changing-seasons-by-drone-in-pictures
+title: "2018-04-20"
+entries:
+  - title: lookaheads (and lookbehinds) in JavaScript regular expressions
+    unread: false
+    url: https://www.stefanjudis.com/today-i-learned/the-complicated-syntax-of-lookaheads-in-javascript-regular-expressions/
+  - title: "Unfinished London: Why drivers should want cycle lanes"
+    unread: false
+    url: https://www.youtube.com/watch?v=_DNNIB_PdaA
+    related:
+      - title: "Unfinished London: Why Isn't Cycling Normal in London?"
+        url: https://www.youtube.com/watch?v=gohSeOYheXg
+  - title: "50 years of British photography: from Twiggy to whaling – in pictures"
+    unread: false
+    url: https://www.theguardian.com/artanddesign/gallery/2018/apr/19/50-years-british-photography-twiggy-whaling-in-pictures
+  - title: Lapland's changing seasons by drone - in pictures
+    unread: false
+    url: https://www.theguardian.com/artanddesign/gallery/2018/apr/14/laplands-changing-seasons-by-drone-in-pictures

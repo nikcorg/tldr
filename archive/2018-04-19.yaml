@@ -1,18 +1,20 @@
 ---
-- title: The wrong Brexit: what happened to 'Global Britain'?
-  unread: false
-  url: https://www.spectator.co.uk/2018/04/the-wrong-brexit-what-happened-to-global-britain/
-- title: Facebook moves 1.5bn users out of reach of new European privacy law
-  unread: true
-  url: https://www.theguardian.com/technology/2018/apr/19/facebook-moves-15bn-users-out-of-reach-of-new-european-privacy-law
-- title: The Seven Noses of Soho
-  unread: false
-  url: https://lookup.london/the-seven-noses-of-soho/
-  related:
-    - https://www.atlasobscura.com/places/seven-noses-of-soho
-- title: Faster PostgreSQL Counting
-  unread: false
-  url: https://www.citusdata.com/blog/2016/10/12/count-performance/
-- title: To type or not to type: quantifying detectable bugs in JavaScript
-  unread: true
-  url: https://blog.acolyer.org/2017/09/19/to-type-or-not-to-type-quantifying-detectable-bugs-in-javascript/
+title: "2018-04-19"
+entries:
+  - title: "The wrong Brexit: what happened to 'Global Britain'?"
+    unread: false
+    url: https://www.spectator.co.uk/2018/04/the-wrong-brexit-what-happened-to-global-britain/
+  - title: Facebook moves 1.5bn users out of reach of new European privacy law
+    unread: true
+    url: https://www.theguardian.com/technology/2018/apr/19/facebook-moves-15bn-users-out-of-reach-of-new-european-privacy-law
+  - title: The Seven Noses of Soho
+    unread: false
+    url: https://lookup.london/the-seven-noses-of-soho/
+    related:
+      - https://www.atlasobscura.com/places/seven-noses-of-soho
+  - title: Faster PostgreSQL Counting
+    unread: false
+    url: https://www.citusdata.com/blog/2016/10/12/count-performance/
+  - title: "To type or not to type: quantifying detectable bugs in JavaScript"
+    unread: true
+    url: https://blog.acolyer.org/2017/09/19/to-type-or-not-to-type-quantifying-detectable-bugs-in-javascript/

@@ -1,4 +1,6 @@
 ---
-- title: Everything you always wanted to know about implementing scrolling but were afraid to ask
-  url: https://evilmartians.com/chronicles/scroll-to-the-future-modern-javascript-css-scrolling-implementations
-  unread: false
+title: "2018-04-16"
+entries:
+  - title: Everything you always wanted to know about implementing scrolling but were afraid to ask
+    url: https://evilmartians.com/chronicles/scroll-to-the-future-modern-javascript-css-scrolling-implementations
+    unread: false
