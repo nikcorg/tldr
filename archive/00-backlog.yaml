@@ -1,0 +1,77 @@
+---
+- title: Cancelling Requests with Abortable Fetch
+  unread: false
+  url: https://www.loxodrome.io/post/cancelling-requests/
+- title: Managing States via Prototypal Inheritance
+  unread: false
+  url: https://www.webreflection.co.uk/blog/2016/12/23/javascript-proto-state
+  related:
+    - https://github.com/WebReflection/protostate
+- title: Introducing the Accessibility Inspector in the Firefox Developer Tools
+  unread: true
+  url: https://www.marcozehe.de/2018/04/11/introducing-the-accessibility-inspector-in-the-firefox-developer-tools/
+- title: Introducting the Payment Request API for Apple Pay
+  unread: true
+  url: https://webkit.org/blog/8182/introducing-the-payment-request-api-for-apple-pay/
+- title: Float Positioning Algorithm
+  unread: false
+  url: https://float-layout.glitch.me/
+  source: https://twitter.com/notwaldorf/status/984049057801830402
+- title: Why authors should avoid aria-relevant
+  unread: false
+  url: https://medium.com/dev-channel/why-authors-should-avoid-aria-relevant-5d3164fab1e3
+- title: Strongly Typed Event Emitters with Conditional Types
+  unread: false
+  url: https://medium.com/@bterlson/strongly-typed-event-emitters-2c2345801de8
+  source: https://twitter.com/bterlson/status/975765781148553217?s=12
+- title: Escaping Hell with Monads
+  unread: true
+  url: https://philipnilsson.github.io/Badness10k/escaping-hell-with-monads/
+- title: How Javascript works: the mechanics of Web Push Notifications
+  unread: true
+  url: https://blog.sessionstack.com/how-javascript-works-the-mechanics-of-web-push-notifications-290176c5c55d
+- title: The Comprehensive Guide to JavaScript Design Patterns
+  unread: true
+  url: https://www.toptal.com/javascript/comprehensive-guide-javascript-design-patterns
+- title: How Dark Patterns Trick You Online
+  unread: true
+  url: https://www.youtube.com/watch?v=kxkrdLI6e6M
+  source: https://twitter.com/pomle/status/979300130905120769
+- title: Reducing The Friction of Online Payments
+  unread: true
+  url: https://medium.com/samsung-internet-dev/reducing-the-friction-of-online-payments-b400d65d583e
+  source: https://twitter.com/poshaughnessy/status/978928937559642113
+- title: What comes after Senior Developer
+  unread: true
+  url: https://medium.com/@codepo8/what-comes-after-senior-developer-78b9956a9c66
+- title: Finding Pwned Passwords with 1Password
+  unread: true
+  url: https://blog.agilebits.com/2018/02/22/finding-pwned-passwords-with-1password/
+- title: Up in the Air: Meet the Man Who Flies Around the World for Free
+  unread: true
+  url: https://www.rollingstone.com/culture/features/ben-schlappig-airlines-fly-free-20150720
+- title: What the heck is JWT anyway?
+  unread: true
+  url: https://dev.to/siwalik/what-the-heck-is-jwt-anyway--47hg
+- title: Service Workers: Going beyond the page
+  unread: true
+  url: https://blogs.windows.com/msedgedev/2017/12/19/service-workers-going-beyond-page/
+- title: Manual Typing is No Fun: Introducing TypeWiz!
+  unread: true
+  url: https://medium.com/@urish/manual-typing-is-no-fun-introducing-typewiz-58e3e8813f4c
+- title: Beyond React 16 by Dan Abramov
+  unread: true
+  url: https://www.youtube.com/watch?v=v6iR3Zk4oDY
+- title: Inside the two years that shook Facebook - and the world
+  unread: true
+  url: https://www.wired.com/story/inside-facebook-mark-zuckerberg-2-years-of-hell/
+- title: How Trump conquered Facebook - without Russian ads
+  unread: true
+  url: https://www.wired.com/story/how-trump-conquered-facebookwithout-russian-ads/
+- title: The Role of Luck in Life Success Is Far Greater Than We Realized
+  unread: true
+  url: https://blogs.scientificamerican.com/beautiful-minds/the-role-of-luck-in-life-success-is-far-greater-than-we-realized/
+- title: Is urban cycling worth the risk?
+  unread: false
+  url: https://ig.ft.com/sites/urban-cycling/
+
