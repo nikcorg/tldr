@@ -6,6 +6,12 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-04-23
+
+- [x] Introduction to optics: lenses and prisms  
+  https://medium.com/@gcanti/introduction-to-optics-lenses-and-prisms-3230e73bfcfe  
+  See also https://github.com/gcanti/monocle-ts
+
 ### 2018-04-20
 
 - [x] lookaheads (and lookbehinds) in JavaScript regular expressions  
