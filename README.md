@@ -8,6 +8,13 @@ Random subjects, but mostly tech.
 
 ### 2018-04-23
 
++ [ ] The Super Tiny Compiler  
+  https://github.com/jamiebuilds/the-super-tiny-compiler
+- [ ] Cycling UK's Cycling Statistics  
+  https://www.cyclinguk.org/resources/cycling-uk-cycling-statistics
+
+### 2018-04-23
+
 - [x] Introduction to optics: lenses and prisms  
   https://medium.com/@gcanti/introduction-to-optics-lenses-and-prisms-3230e73bfcfe  
   See also https://github.com/gcanti/monocle-ts
