@@ -6,7 +6,22 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
-### 2018-04-23
+### 2018-04-25
+
+- [x] Hot vs Cold observables  
+  https://medium.com/@benlesh/hot-vs-cold-observables-f8094ed53339
+- [x] io-ts tip: use `keyof` instead of `union` when defining a union of string literals:  
+  https://twitter.com/GiulioCanti/status/989106871419187200  
+  See also:  
+    - https://github.com/gcanti/io-ts-types/issues/37#issuecomment-384013960
+- [x] zxcvbn: realistic password strength estimation  
+  https://blogs.dropbox.com/tech/2012/04/zxcvbn-realistic-password-strength-estimation/  
+  Source: https://twitter.com/AaronToponce/status/988761412464857088  
+  See also  
+    - https://github.com/dropbox/zxcvbn  
+    - https://www.schneier.com/blog/archives/2014/03/choosing_secure_1.html
+
+### 2018-04-24
 
 + [ ] The Super Tiny Compiler  
   https://github.com/jamiebuilds/the-super-tiny-compiler
