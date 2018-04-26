@@ -6,6 +6,15 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-04-26
+
+- [ ] Easy Checks - A First Review of Web Accessibility  
+  https://www.w3.org/WAI/beta/test-evaluate/preliminary/
+- [x] 'We're doomed': Mayer Hillman on the climate reality no one else will dare mention  
+  https://www.theguardian.com/environment/2018/apr/26/were-doomed-mayer-hillman-on-the-climate-reality-no-one-else-will-dare-mention
+- [x] `catch` binding optional in Chrome 66 and Node 10  
+  https://twitter.com/mathias/status/989452353903497216
+
 ### 2018-04-25
 
 - [x] Hot vs Cold observables  
