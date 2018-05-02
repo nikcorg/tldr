@@ -6,6 +6,11 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-05-02
+
+- [x] Transfer your VSCode settings between computers with Settings Sync  
+  https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync
+
 ### 2018-04-26
 
 - [ ] Easy Checks - A First Review of Web Accessibility  
