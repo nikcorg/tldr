@@ -6,6 +6,11 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-05-03
+
+- [ ] SERIALIZABLE in PostgreSQL 11... and beyond  
+  https://write-skew.blogspot.co.uk/2018/05/serializable-in-postgresql-11-and-beyond.html
+
 ### 2018-05-02
 
 - [x] Transfer your VSCode settings between computers with Settings Sync  
