@@ -6,6 +6,13 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-05-16
+
+- [x] The headers we don't want  
+  https://www.fastly.com/blog/headers-we-dont-want
+- [x] JavaScript is Good, Actually  
+  https://ashfurrow.com/blog/javascript-is-good-actually/
+
 ### 2018-05-10
 
 - [x] I usually work as a freelance software engineer. Today, I’m a bike messenger. (Twitter thread)  
