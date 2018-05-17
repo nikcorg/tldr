@@ -6,6 +6,11 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-05-17
+
+- [ ] Inference engines: 5 examples with TypeScript, Flow and Reason  
+  https://codeburst.io/inference-engines-5-examples-with-typescript-flow-and-reason-edef2f4cf2d3
+
 ### 2018-05-16
 
 - [x] The headers we don't want  
