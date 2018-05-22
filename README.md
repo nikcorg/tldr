@@ -6,6 +6,13 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-05-22
+
+- [ ] immersive linear algebra  
+  http://immersivemath.com/ila/index.html
+- [x] 30 Seconds of CSS: A curated collection of useful CSS snippets you can understand in 30 seconds or less  
+  https://atomiks.github.io/30-seconds-of-css/
+
 ### 2018-05-17
 
 - [ ] Inference engines: 5 examples with TypeScript, Flow and Reason  
