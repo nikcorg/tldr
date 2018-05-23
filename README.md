@@ -6,6 +6,13 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-05-23
+
+- [ ] Algorithms and Data Structures in JavaScript  
+  https://itnext.io/algorithms-and-data-structures-in-javascript-a71548f902cb  
+  See also:
+    - https://github.com/trekhleb/javascript-algorithms
+
 ### 2018-05-22
 
 - [ ] immersive linear algebra  
