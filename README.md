@@ -6,6 +6,13 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-05-10
+
+- [x] I usually work as a freelance software engineer. Today, I’m a bike messenger. (Twitter thread)  
+  https://twitter.com/mbgerring/status/993916520408363009
+- [x] Madrid: A Paradise of Tapas  
+  https://blog.ricksteves.com/cameron/2018/05/madrid-tapas/
+
 ### 2018-05-03
 
 - [ ] SERIALIZABLE in PostgreSQL 11... and beyond  
