@@ -6,6 +6,16 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-05-29
+
+- [x] Farewell CSS  
+  https://moox.io/blog/farewell-css/  
+  Source: https://twitter.com/MoOx/status/1001375756776243200  
+  See also
+    - https://moox.io/blog/deprecating-cssnext/
+- [x] Higher kinded types in TypeScript, static and fantasy land  
+  https://medium.com/@gcanti/higher-kinded-types-in-typescript-static-and-fantasy-land-d41c361d0dbe
+
 ### 2018-05-23
 
 - [ ] Algorithms and Data Structures in JavaScript  
