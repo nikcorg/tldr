@@ -6,6 +6,21 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-05-30
+
+- [ ] Responsive Images: Responsive images are hard. Like, actually hard. But don’t be scared.  
+  https://internetingishard.com/html-and-css/responsive-images/
+- [ ] Elements of artificial intelligence  
+  https://www.elementsofai.com/  
+  Source: https://twitter.com/codepo8/status/1001479948811538432
+- [x] React Suspense  
+  https://www.youtube.com/watch?v=z-6JC0_cOns  
+  Source: https://twitter.com/dan_abramov/status/1001103320495329280  
+  See also:
+    - https://www.youtube.com/watch?v=nLF0n9SACd4
+- [ ] Mathematics of animation  
+  https://www.youtube.com/watch?v=i9tesCx2d9Q
+
 ### 2018-05-29
 
 - [x] Farewell CSS  
