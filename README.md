@@ -6,6 +6,20 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-05-31
+
+- [ ] Alternatives to HTTP!
+  https://medium.com/yld-engineering-blog/alternatives-to-http-a8d7122a290a  
+  Source: https://twitter.com/stedzn/status/1001576938929053698
+- [x] Extending Native DOM Elements with Web Components  
+  https://blog.revillweb.com/extending-native-dom-elements-with-web-components-233350c8e86a  
+  Source: https://twitter.com/WebReflection/status/1002157261156962305
+- [x] mailcheck/mailcheck  
+  https://github.com/mailcheck/mailcheck  
+  Source: https://news.ycombinator.com/item?id=5764009  
+  See also:
+    - https://davidcel.is/posts/stop-validating-email-addresses-with-regex/
+
 ### 2018-05-30
 
 - [ ] Responsive Images: Responsive images are hard. Like, actually hard. But don’t be scared.  
