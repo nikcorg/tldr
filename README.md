@@ -6,6 +6,17 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-06-01
+
+- [x] Recaptcha bypass via http parameter pollution  
+  https://andresriancho.com/recaptcha-bypass-via-http-parameter-pollution/  
+  Source: https://twitter.com/w3af/status/1001125443838373891
+- [x] A new dark pattern: tricking browsers into making repeated notification requests  
+  https://intoli.com/blog/spamming-notification-requests/
+- [ ] Announcing TypeScript 2.9  
+  https://blogs.msdn.microsoft.com/typescript/2018/05/31/announcing-typescript-2-9/  
+  Source: https://twitter.com/typescriptlang/status/1002230349521338368
+
 ### 2018-05-31
 
 - [ ] Alternatives to HTTP!
