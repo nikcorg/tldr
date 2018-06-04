@@ -6,6 +6,28 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-06-04
+
+- [ ] An Outsider's Guide to Statically Typed Functional Programming  
+  https://leanpub.com/outsidefp  
+  Source: https://twitter.com/marick/status/972608987056214016
+- [x] PX, EM or REM Media Queries?  
+  https://zellwk.com/blog/media-query-units/
+- [x] REM vs EM – The Great Debate  
+  https://zellwk.com/blog/rem-vs-em/
+- [x] Hot vs Cold Observables  
+  https://medium.com/@benlesh/hot-vs-cold-observables-f8094ed53339
+- [x] Clean git history according to Linus  
+  https://www.mail-archive.com/dri-devel@lists.sourceforge.net/msg39091.html
+- [x] Fantas, Eel, and Specification 1: Daggy  
+  http://www.tomharding.me/2017/03/03/fantas-eel-and-specification/
+- [x] Functions as Functors  
+  http://www.tomharding.me/2017/04/15/functions-as-functors/
+- [ ] Move a running process to screen  
+  https://www.linkedin.com/pulse/move-running-process-screen-bruce-werdschinski/
+- [ ] Credit Card Stealer Investigation Uncovers Malware Ring  
+  https://blog.sucuri.net/2017/10/credit-card-stealer-investigation-uncovers-malware-ring.html
+
 ### 2018-06-01
 
 - [x] Recaptcha bypass via http parameter pollution  
