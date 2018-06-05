@@ -6,6 +6,24 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-06-05
+
+- [ ] Microsoft’s GitHub deal is its latest shift from windows  
+  https://www.wired.com/story/microsofts-github-deal-is-its-latest-shift-from-windows/  
+  Source: https://twitter.com/klintron/status/1003763887445905408
+- [ ] YES! I Compiled 1,000,000 TypeScript files in Under 40 Seconds. This is How.  
+  https://medium.com/@urish/yes-i-compiled-1-000-000-typescript-files-in-under-40-seconds-this-is-how-6429a665999c
+- [x] A tiny (disastrous) ECMAScript change  
+  https://itnext.io/a-tiny-disastrous-ecmascript-change-fadc05c83e69  
+  See also:
+    - https://www.reddit.com/r/javascript/comments/8oostg/a_tiny_disastrous_ecmascript_change/
+- [ ] Using nullability in GraphQL  
+  https://dev-blog.apollodata.com/using-nullability-in-graphql-2254f84c4ed7
+- [ ] How to make GIFs with FFMPEG  
+  https://engineering.giphy.com/how-to-make-gifs-with-ffmpeg/
+- [x] The git pickaxe  
+  http://www.philandstuff.com/2014/02/09/git-pickaxe.html
+
 ### 2018-06-04
 
 - [ ] An Outsider's Guide to Statically Typed Functional Programming  
