@@ -6,6 +6,18 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-06-06
+
+- [ ] Let's make the grimy architecture of the web visible again  
+  http://www.wired.co.uk/article/the-weird-psyschogeography-of-urls
+- [ ] The Present Future of User Interface Development  
+  https://hackernoon.com/the-present-future-of-user-interface-development-ebd371255175
+- [ ] Debugging JavaScript Projects with VS Code & Chrome Debugger  
+  https://www.sitepoint.com/debugging-javascript-projects-vs-code-chrome-debugger/
+- [ ] 10 Things I Regret About Node.js - Ryan Dahl - JSConf EU 2018  
+  https://www.youtube.com/watch?v=M3BM9TB-8yA  
+  Source: https://twitter.com/jsconfeu/status/1004330587665129472
+
 ### 2018-06-05
 
 - [ ] Microsoft’s GitHub deal is its latest shift from windows  
