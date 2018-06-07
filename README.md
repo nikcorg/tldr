@@ -6,6 +6,17 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-06-07
+
+- [x] `git push --force-with-lease` prevents accidental overwrites  
+  https://twitter.com/widdnz/status/1004588706051706882
+- [x] Aggressive Web Apps - Phil Nash - JSConf EU 2018  
+  https://youtu.be/uo-UOvq3-0Y
+- [x]  What Web Can Do Today  
+  https://whatwebcando.today/
+- [x] Inclusive Components    
+  https://inclusive-components.design/
+
 ### 2018-06-06
 
 - [ ] Let's make the grimy architecture of the web visible again  
