@@ -6,6 +6,11 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-06-08
+
+- [ ] The Slow Death of Internet Explorer and the Future of Progressive Enhancement  
+  http://alistapart.com/article/the-slow-death-of-internet-explorer-and-future-of-progressive-enhancement
+
 ### 2018-06-07
 
 - [x] `git push --force-with-lease` prevents accidental overwrites  
