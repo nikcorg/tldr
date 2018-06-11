@@ -6,6 +6,11 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-06-11
+
+- [x] Function identity in JavaScript, or how to remove event listeners properly  
+  https://dev.to/emnltnnrt/function-identity-in-javascript-or-how-to-remove-event-listeners-properly-1ll3
+
 ### 2018-06-08
 
 - [ ] The Slow Death of Internet Explorer and the Future of Progressive Enhancement  
