@@ -6,6 +6,11 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-06-12
+
+- [ ] Repl.it ❤️  React  
+  https://repl.it/site/blog/react
+
 ### 2018-06-11
 
 - [x] Function identity in JavaScript, or how to remove event listeners properly  
