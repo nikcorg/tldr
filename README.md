@@ -6,6 +6,19 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-06-13
+
+- [ ] Learn Vimscript the Hard Way  
+  http://learnvimscriptthehardway.stevelosh.com/
+- [ ] Payment Request API for Online Purchases in PWAs  
+  https://www.nearform.com/blog/payment-request-api-for-online-purchases-in-pwas/
+- [x] Self Signed Certificate with Custom Root CA  
+  https://gist.github.com/fntlnz/cf14feb5a46b2eda428e000157447309
+- [x] Semver: Tilde and Caret  
+  https://nodesource.com/blog/semver-tilde-and-caret  
+  See also:
+    - https://devhints.io/semver
+
 ### 2018-06-12
 
 - [ ] Repl.it ❤️  React  
