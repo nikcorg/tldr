@@ -6,6 +6,14 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-06-14
+
+- [x] Use specific SSH key for a specific origin
+  https://stackoverflow.com/a/7927828/109302
+- [x] VS Code keyboard shortcuts cheat sheet  
+  https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf  
+  Source: https://twitter.com/WebReflection/status/1006137052935671809
+
 ### 2018-06-13
 
 - [ ] Learn Vimscript the Hard Way  
