@@ -6,6 +6,11 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-06-15
+
+- [ ] JavaScript engine fundamentals: Shapes and Inline Caches  
+  https://mathiasbynens.be/notes/shapes-ics
+
 ### 2018-06-14
 
 - [x] Use specific SSH key for a specific origin
