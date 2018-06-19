@@ -6,6 +6,15 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-06-19
+
+- [ ] How I use Wireshark  
+  https://jvns.ca/blog/2018/06/19/what-i-use-wireshark-for/  
+  Source:  https://twitter.com/b0rk/status/1008943151631958016
+- [ ] Layered APIs  
+  https://developers.google.com/web/fundamentals/primers/modules#layered-apis  
+  Source: https://twitter.com/mathias/status/1009088415504240640
+
 ### 2018-06-15
 
 - [ ] JavaScript engine fundamentals: Shapes and Inline Caches  
