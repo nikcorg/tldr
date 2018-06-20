@@ -6,6 +6,12 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-06-20
+
+- [x] I discovered a browser bug: Wavethrough  
+  https://jakearchibald.com/2018/i-discovered-a-browser-bug/  
+  Source: https://twitter.com/jaffathecake/status/1009456789782515713
+
 ### 2018-06-19
 
 - [ ] How I use Wireshark  
