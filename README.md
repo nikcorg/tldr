@@ -6,6 +6,11 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-06-26
+
+- [x] We're Baking Have I Been Pwned into Firefox and 1Password  
+  https://www.troyhunt.com/were-baking-have-i-been-pwned-into-firefox-and-1password/
+
 ### 2018-06-20
 
 - [x] I discovered a browser bug: Wavethrough  
