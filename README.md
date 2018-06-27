@@ -6,6 +6,11 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-06-27
+
+- [x] The Surface Book 2 is everything the MacBook Pro should be  
+  https://char.gd/blog/2018/the-surface-book-2-is-everything-the-macbook-pro-should-be-and-then-some
+
 ### 2018-06-26
 
 - [x] We're Baking Have I Been Pwned into Firefox and 1Password  
