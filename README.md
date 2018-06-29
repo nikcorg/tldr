@@ -6,6 +6,11 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-06-29
+
+- [ ] REST vs. GraphQL: A Critical Review  
+  https://blog.goodapi.co/rest-vs-graphql-a-critical-review-5f77392658e7
+
 ### 2018-06-27
 
 - [x] The Surface Book 2 is everything the MacBook Pro should be  
