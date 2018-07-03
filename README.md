@@ -6,6 +6,15 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-07-03
+
+- [ ] The hidden costs of serverless  
+  https://medium.com/@amiram_26122/the-hidden-costs-of-serverless-6ced7844780b
+- [ ] Use a .dev domain? Not anymore.  
+  https://medium.engineering/use-a-dev-domain-not-anymore-95219778e6fd
+- [ ] CFSSL - CloudFlare's PKI/TLS toolkit  
+  https://github.com/cloudflare/cfssl
+
 ### 2018-06-29
 
 - [ ] REST vs. GraphQL: A Critical Review  
