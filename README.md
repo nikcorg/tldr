@@ -6,6 +6,12 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-07-04
+
+- [x] A Bloatless Web  
+  https://medium.com/@WebReflection/a-bloatless-web-d4f811c7991b  
+  Source: https://twitter.com/WebReflection/status/1014420676298633218
+
 ### 2018-07-03
 
 - [ ] The hidden costs of serverless  
