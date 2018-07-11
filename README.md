@@ -6,6 +6,15 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-07-11
+
+- [ ] Should we use React Native?  
+  https://blog.expo.io/should-we-use-react-native-1465d8b607ac
+- [ ] Using web notifications to increase engagement in PWAs  
+  https://www.nearform.com/blog/using-web-notifications-to-increase-engagement-in-pwas/
+- [ ] Window Management on OS X  
+  http://hde-advent-2017.hatenadiary.jp/entry/2017/12/24/000000
+
 ### 2018-07-04
 
 - [x] A Bloatless Web  
