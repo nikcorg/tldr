@@ -6,6 +6,11 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-07-12
+
+- [x] Rough.js - a graphics library that draws in a sketchy, hand-drawn-like, style.  
+  http://roughjs.com/
+
 ### 2018-07-11
 
 - [ ] Should we use React Native?  
