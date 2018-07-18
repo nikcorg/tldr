@@ -6,6 +6,13 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-07-18
+
+- [x] Cycling and survival on the streets of London  
+  https://www.huckmag.com/huck-tv/cycling-survival-streets-london/
+- [ ] 'This waterfront needs a highway': the huge mistakes cities keep making  
+  https://www.theguardian.com/cities/2018/jul/12/this-waterfront-needs-a-highway-the-huge-mistakes-cities-keep-making
+
 ### 2018-07-12
 
 - [x] Rough.js - a graphics library that draws in a sketchy, hand-drawn-like, style.  
