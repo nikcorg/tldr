@@ -6,6 +6,12 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-07-19
+
+- [x] The Benefits of programming with IO explained  
+  https://www.reddit.com/r/scala/comments/8ygjcq/can_someone_explain_to_me_the_benefits_of_io/e2jfp9b/  
+  Source: https://twitter.com/hmemcpy/status/1019485362891214848?s=12
+
 ### 2018-07-18
 
 - [x] Cycling and survival on the streets of London  
