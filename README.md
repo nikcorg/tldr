@@ -6,6 +6,11 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-07-24
+
+- [x] Prefetching, preloading, prebrowsing  
+  https://css-tricks.com/prefetching-preloading-prebrowsing/
+
 ### 2018-07-19
 
 - [x] The Benefits of programming with IO explained  
