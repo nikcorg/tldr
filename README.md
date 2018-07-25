@@ -6,6 +6,13 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-07-25
+
+- [ ] BigInt: arbitrary-precision integers in JavaScript  
+  https://developers.google.com/web/updates/2018/05/bigint
+- [ ] Stop using JWT for sessions  
+  http://cryto.net/~joepie91/blog/2016/06/13/stop-using-jwt-for-sessions/
+
 ### 2018-07-24
 
 - [x] Prefetching, preloading, prebrowsing  
