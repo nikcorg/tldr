@@ -6,6 +6,11 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-07-26
+
+- [ ] The sudden death of the website  
+  https://techcrunch.com/2018/02/13/the-sudden-death-of-the-website/
+
 ### 2018-07-25
 
 - [ ] BigInt: arbitrary-precision integers in JavaScript  
