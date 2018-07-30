@@ -6,6 +6,12 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-07-30
+
+- [ ] Page Lifecycle API  
+  https://developers.google.com/web/updates/2018/07/page-lifecycle-api  
+  Source: https://twitter.com/igrigorik/status/1023755558686347264?s=09
+
 ### 2018-07-26
 
 - [ ] The sudden death of the website  
