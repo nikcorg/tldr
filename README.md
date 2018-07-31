@@ -6,6 +6,18 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-07-31
+
+- [ ] Haskell: If monads are the solution, what is the problem?  
+  http://danghica.blogspot.com/2018/07/haskell-if-monads-are-solution-what-is.html  
+  See also:  
+    - https://news.ycombinator.com/item?id=17645277
+- [ ] Church Encoding  
+  http://blog.ploeh.dk/2018/05/22/church-encoding/
+- [ ] Art of debugging with Chrome DevTools  
+  https://medium.com/frontmen/art-of-debugging-with-chrome-devtools-ab7b5fd8e0b4  
+  Source: https://twitter.com/codepo8/status/1024259934815494144
+
 ### 2018-07-30
 
 - [ ] Page Lifecycle API  
