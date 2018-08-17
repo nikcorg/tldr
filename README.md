@@ -6,6 +6,13 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-08-16
+
+- [ ] Explainer: Tightening HTTP State Management  
+  https://github.com/mikewest/http-state-tokens
+- [ ] Keeping Node.js Fast: Tools, Techniques, And Tips For Making High-Performance Node.js Servers  
+  https://medium.com/@smashingmag/keeping-node-js-fast-tools-techniques-and-tips-for-making-high-performance-node-js-servers-8cfcb55e3d7
+
 ### 2018-07-31
 
 - [ ] Haskell: If monads are the solution, what is the problem?  
