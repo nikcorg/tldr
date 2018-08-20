@@ -6,6 +6,13 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-08-20
+
+- [ ] React Native at Airbnb  
+  https://medium.com/airbnb-engineering/react-native-at-airbnb-f95aa460be1c
+- [ ] Chain React 2018: The State of React Native by Ram N  
+  https://www.youtube.com/watch?v=83ffAY-CmL4
+
 ### 2018-08-16
 
 - [ ] Explainer: Tightening HTTP State Management  
