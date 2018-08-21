@@ -6,6 +6,15 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-08-21
+
+- [ ] Patterns for authentication at the edge  
+  https://www.fastly.com/blog/patterns-for-authentication-at-the-edge  
+  Source: https://twitter.com/triblondon/status/1031897440494874625
+- [ ] What algorithmic art can teach us about artificial intelligence  
+  https://www.theverge.com/2018/8/21/17761424/ai-algorithm-art-machine-vision-perception-tom-white-treachery-imagenet  
+  Source: https://mobile.twitter.com/jjvincent/status/1031903995919392770
+
 ### 2018-08-20
 
 - [ ] React Native at Airbnb  
