@@ -6,6 +6,19 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-08-23
+
+- [ ] Algebraic Effects, Fibers, Coroutines . . . Oh My! - Brandon Dail  
+  https://www.youtube.com/watch?v=cWY1QzyFhfk  
+  Source: https://twitter.com/arjunattam/status/1031519761006555136
+- [ ] The Great Chinese Art Heist  
+  https://www.gq.com/story/the-great-chinese-art-heist
+- [x] Date manipulation libraries roundup  
+  - https://date-fns.org/
+  - https://momentjs.com/
+  - https://moment.github.io/luxon/
+  - https://github.com/iamkun/dayjs
+
 ### 2018-08-21
 
 - [ ] Patterns for authentication at the edge  
