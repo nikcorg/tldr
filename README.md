@@ -6,6 +6,11 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-08-31
+
+- [x] Michael Chan Hot Garbage Clean Code is Dead  
+  https://www.youtube.com/watch?v=-NP_upexPFg
+
 ### 2018-08-23
 
 - [ ] Algebraic Effects, Fibers, Coroutines . . . Oh My! - Brandon Dail  
