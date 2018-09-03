@@ -6,6 +6,16 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-09-03
+
+- [x] TypeScript at Google  
+  http://neugierig.org/software/blog/2018/09/typescript-at-google.html
+- [x] Three Input element properties that I discovered while reading MDN  
+  https://dev.to/stefanjudis/three-input-element-properties-that-i-discovered-while-reading-mdn-30fg  
+  Source: https://twitter.com/ThePracticalDev/status/1036382007918583809
+- [ ] 'It's digital colonialism': how Facebook's free internet service has failed its users  
+  https://www.theguardian.com/technology/2017/jul/27/facebook-free-basics-developing-markets
+
 ### 2018-08-31
 
 - [x] Michael Chan Hot Garbage Clean Code is Dead  
