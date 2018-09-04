@@ -6,6 +6,18 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-09-04
+
+- [ ] A tour of JavaScript timers on the web  
+  https://nolanlawson.com/2018/09/01/a-tour-of-javascript-timers-on-the-web/
+- [x] What I Talk About When I Talk About Sorting: Untangling Array#sort  
+  https://alistapart.com/article/what-i-talk-about-when-i-talk-about-sorting  
+  Source: https://twitter.com/koste4/status/1036662274352705537
+- [x] Kent C Dodds Simply React  
+  https://www.youtube.com/watch?v=AiJ8tRRH0f8
+- [x] No helmets, no problem: how the Dutch created a casual biking culture  
+  https://www.vox.com/science-and-health/2018/8/28/17789510/bike-cycling-netherlands-dutch-infrastructure
+
 ### 2018-09-03
 
 - [x] TypeScript at Google  
