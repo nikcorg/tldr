@@ -6,6 +6,11 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-09-05
+
+- [ ] The ‘Capable Web’: A 10 Year Retrospective  
+  https://blog.chromium.org/2018/09/the-capable-web-10-year-retrospective.html
+
 ### 2018-09-04
 
 - [ ] A tour of JavaScript timers on the web  
