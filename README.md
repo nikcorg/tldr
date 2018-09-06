@@ -6,6 +6,14 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-09-06
+
+- [ ] Inside look at modern web browser (part 1)  
+  https://developers.google.com/web/updates/2018/09/inside-browser-part1  
+  Source: https://twitter.com/ChromiumDev/status/1037385106783133696
+- [ ] New in Chrome 69: Web Locks API  
+  https://developers.google.com/web/updates/2018/09/nic69#web-locks
+
 ### 2018-09-05
 
 - [ ] The ‘Capable Web’: A 10 Year Retrospective  
