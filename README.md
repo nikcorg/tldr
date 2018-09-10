@@ -6,6 +6,12 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-09-10
+
+- [ ] Nested Links Without Nesting Links  
+  https://www.sarasoueidan.com/blog/nested-links/  
+  Source: https://twitter.com/SaraSoueidan/status/1038041863733882880
+
 ### 2018-09-06
 
 - [ ] Inside look at modern web browser (part 1)  
