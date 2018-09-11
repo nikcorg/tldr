@@ -6,6 +6,13 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-09-11
+
+- [ ] Let's Encrypt at Scale  
+  https://engineering.autotrader.co.uk/2018/09/04/letsencrypt-at-scale.html
+- [ ] Going Fast and Cheap: How We Made Anna Autoscale  
+  https://rise.cs.berkeley.edu/blog/going-fast-and-cheap-how-we-made-anna-autoscale/
+
 ### 2018-09-10
 
 - [ ] Nested Links Without Nesting Links  
