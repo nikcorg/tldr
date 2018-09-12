@@ -6,6 +6,15 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-09-12
+
+- [x] Inside the Magecart Breach of British Airways: How 22 Lines of Code Claimed 380,000 Victims  
+  https://www.riskiq.com/blog/labs/magecart-british-airways-breach/  
+  Source: https://twitter.com/mikko/status/1039442774179889152
+- [ ] The “Developer Experience” Bait-and-Switch  
+  https://infrequently.org/2018/09/the-developer-experience-bait-and-switch/  
+  Source: https://twitter.com/sonniesedge/status/1039813117935542272
+
 ### 2018-09-11
 
 - [ ] Let's Encrypt at Scale  
