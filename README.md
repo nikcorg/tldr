@@ -6,6 +6,15 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-09-17
+
+- [x] You don't need Moment.js  
+  https://github.com/you-dont-need/You-Dont-Need-Momentjs
+- [x] The Hurricane Web  
+  https://mxb.at/blog/hurricane-web/
+- [x] Connection-Aware Components  
+  https://mxb.at/blog/connection-aware-components/
+
 ### 2018-09-12
 
 - [x] Inside the Magecart Breach of British Airways: How 22 Lines of Code Claimed 380,000 Victims  
