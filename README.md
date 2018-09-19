@@ -6,6 +6,13 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-09-19
+
+- [x] Software disenchantment  
+  http://tonsky.me/blog/disenchantment/  
+  See also:
+    - https://en.wikipedia.org/wiki/Wirth%27s_law
+
 ### 2018-09-17
 
 - [x] You don't need Moment.js  
