@@ -6,6 +6,17 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-09-20
+
+- [x] Git, done Sublime  
+  https://www.sublimemerge.com/  
+  Source: https://twitter.com/sublimehq/status/1042680704478326786
+- [ ] The git pickaxe  
+  http://www.philandstuff.com/2014/02/09/git-pickaxe.html
+- [ ] Idle Until Urgent  
+  https://philipwalton.com/articles/idle-until-urgent/  
+  Source: https://twitter.com/philwalton/status/1042684111691771904
+
 ### 2018-09-19
 
 - [x] Software disenchantment  
