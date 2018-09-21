@@ -6,6 +6,15 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-09-21
+
+- [ ] No, I Will Not Debate You  
+  https://longreads.com/2018/09/18/no-i-will-not-debate-you/
+- [ ] WWWBasic is an implementation of BASIC (Beginner's All-purpose Symbolic Instruction Code) designed to be easy to run on the Web  
+  https://github.com/google/wwwbasic
+- [ ] Writing middleware in #golang and how Go makes it so much fun  
+  https://medium.com/@matryer/writing-middleware-in-golang-and-how-go-makes-it-so-much-fun-4375c1246e81
+
 ### 2018-09-20
 
 - [x] Git, done Sublime  
