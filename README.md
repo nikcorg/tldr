@@ -6,6 +6,11 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-09-23
+
+- [x] Display Locking  
+  https://github.com/chrishtr/display-locking
+
 ### 2018-09-21
 
 - [ ] No, I Will Not Debate You  
