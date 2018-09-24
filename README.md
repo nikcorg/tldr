@@ -6,6 +6,22 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-09-24
+
+- [x] Tags in Golang  
+  https://medium.com/golangspec/tags-in-golang-3e5db0b8ef3e
+- [ ] Functional options for friendly APIs  
+  https://dave.cheney.net/2014/10/17/functional-options-for-friendly-apis
+- [ ] Who needs generics? Use ... instead!  
+  https://appliedgo.net/generics/  
+  see also:
+    - https://github.com/cheekybits/genny
+    - https://github.com/taylorchu/generic
+    - https://github.com/joeshaw/gengen
+    - https://github.com/clipperhouse/gen
+- [x] Ultimate Visual Guide to Go Enums  
+  https://blog.learngoprogramming.com/golang-const-type-enums-iota-bc4befd096d3
+
 ### 2018-09-23
 
 - [x] Display Locking  
