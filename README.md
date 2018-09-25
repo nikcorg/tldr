@@ -6,6 +6,25 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-09-25
+
+- [x] Monads for Go Programmers  
+  https://awalterschulze.github.io/blog/post/monads-for-goprogrammers/
+- [x] How I structure production grade REST API’s in Golang  
+  https://itnext.io/structuring-a-production-grade-rest-api-in-golang-c0229b3feedc  
+  See also:
+    - https://github.com/go-chi/chi
+- [ ] Am I logged in or not? GDPR case study on the example of Chrome browser change  
+  https://blog.lukaszolejnik.com/am-i-logged-in-or-not-gdpr-case-study-on-the-example-of-chrome-browser-change/  
+  Source: https://twitter.com/ctavan/status/1044524097659699200
+- [ ] Writing HTTP Middleware in Go  
+  https://justinas.org/writing-http-middleware-in-go
+- [ ] Making the Switch from Node.js to Golang  
+  http://blog.digg.com/post/141552444676/making-the-switch-from-nodejs-to-golang
+- [ ] Your easy guide to Monads, Applicatives, & Functors  
+  https://medium.com/@lettier/your-easy-guide-to-monads-applicatives-functors-862048d61610  
+  Source: https://twitter.com/lettier/status/1042648707831947266
+
 ### 2018-09-24
 
 - [x] Tags in Golang  
