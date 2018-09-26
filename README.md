@@ -6,6 +6,19 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-09-26
+
+- [x] Go Concurrency Patterns: Context  
+  https://blog.golang.org/context
+- [x] Context (Golang)  
+  https://peter.bourgon.org/blog/2016/07/11/context.html
+- [x] Context keys in Go  
+  https://medium.com/@matryer/context-keys-in-go-5312346a868d
+- [ ] Finally some context: Request scoped state in Go 1.7  
+  https://medium.com/@matryer/context-has-arrived-per-request-state-in-go-1-7-4d095be83bd8
+- [ ] The Origins and Future of GraphQL  
+  https://nordicapis.com/interview-with-graphql-co-creator-lee-byron/
+
 ### 2018-09-25
 
 - [x] Monads for Go Programmers  
