@@ -6,6 +6,12 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-09-30
+
+- [x] Proximity Feedback Ideas  
+  https://tympanus.net/Development/ProximityFeedback/index.html  
+  Source: https://twitter.com/smashingmag/status/1045955531628847104
+
 ### 2018-09-26
 
 - [x] Go Concurrency Patterns: Context  
