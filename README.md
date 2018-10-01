@@ -6,6 +6,17 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-10-01
+
+- [ ] How to Write Go Code  
+  https://golang.org/doc/code.html
+- [ ] Standard Go Project Layout  
+  https://github.com/golang-standards/project-layout
+- [ ] Five suggestions for setting up a Go project  
+  https://dave.cheney.net/2014/12/01/five-suggestions-for-setting-up-a-go-project
+- [ ] Go Project Layout  
+  https://medium.com/golang-learn/go-project-layout-e5213cdcfaa2
+
 ### 2018-09-30
 
 - [x] Proximity Feedback Ideas  
