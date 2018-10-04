@@ -8,6 +8,11 @@ Random subjects, but mostly tech.
 
 ### 2018-10-01
 
+- [x] The Big Hack: How China Used a Tiny Chip to Infiltrate U.S. Companies  
+  https://www.bloomberg.com/news/features/2018-10-04/the-big-hack-how-china-used-a-tiny-chip-to-infiltrate-america-s-top-companies
+
+### 2018-10-01
+
 - [ ] How to Write Go Code  
   https://golang.org/doc/code.html
 - [ ] Standard Go Project Layout  
