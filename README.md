@@ -6,6 +6,11 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-10-08
+
+- [x] Kat Zien - How Do You Structure Your Go Apps?  
+  https://www.youtube.com/watch?v=B5oQnECDJ8g
+
 ### 2018-10-01
 
 - [x] The Big Hack: How China Used a Tiny Chip to Infiltrate U.S. Companies  
