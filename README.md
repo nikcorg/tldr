@@ -6,6 +6,16 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-10-09
+
+- [x] Calls between JavaScript and WebAssembly are finally fast  
+  https://hacks.mozilla.org/2018/10/calls-between-javascript-and-webassembly-are-finally-fast-%F0%9F%8E%89/
+- [ ] Mastering Modular JavaScript  
+  https://github.com/mjavascript/mastering-modular-javascript/tree/master  
+  Source: https://twitter.com/codepo8/status/1049627066839261184
+- [ ] ElixirConf 2018 - Keynote - Chris McCord  
+  https://www.youtube.com/watch?v=Z2DU0qLfPIY
+
 ### 2018-10-08
 
 - [x] Kat Zien - How Do You Structure Your Go Apps?  
