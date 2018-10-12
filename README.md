@@ -6,6 +6,14 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-10-12
+
+- [x] UN Says Climate Genocide Is Coming. It’s Actually Worse Than That  
+  http://nymag.com/intelligencer/2018/10/un-says-climate-genocide-coming-but-its-worse-than-that.html
+- [ ] React Context and Re-Renders: React Take the Wheel  
+  https://medium.com/@ryanflorence/react-context-and-re-renders-react-take-the-wheel-cd1d20663647  
+  Source: https://twitter.com/ryanflorence/status/1050531531154960384
+
 ### 2018-10-09
 
 - [x] Calls between JavaScript and WebAssembly are finally fast  
