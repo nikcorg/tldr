@@ -6,6 +6,15 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-10-15
+
+- [x] How I hacked hundreds of companies through their helpdesk  
+  https://medium.com/intigriti/how-i-hacked-hundreds-of-companies-through-their-helpdesk-b7680ddc2d4c
+- [ ] The Rise of Immer in React  
+  https://www.netlify.com/blog/2018/09/12/the-rise-of-immer-in-react/
+- [ ] Introducing IdleComp. Composing even when urgent  
+  https://munizart.github.io/2018/10/11/introducing-idle-comp/
+
 ### 2018-10-12
 
 - [x] UN Says Climate Genocide Is Coming. It’s Actually Worse Than That  
