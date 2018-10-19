@@ -6,6 +6,11 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-10-19
+
+- [ ] VPN protocols – Beginners’ guide  
+  https://www.ibvpn.com/2018/10/vpn-protocols/
+
 ### 2018-10-15
 
 - [x] How I hacked hundreds of companies through their helpdesk  
