@@ -6,6 +6,20 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-10-23
+
+- [ ] Extending Built-in Elements  
+  https://medium.com/@WebReflection/extending-built-in-elements-9dce404b75b4  
+  Source: https://twitter.com/WebReflection/status/1054655727548223488
+- [ ] Your Easy Guide to Functional Reactive Programming (FRP)  
+  https://medium.com/@lettier/functional-reactive-programming-a0c7b08f6b67  
+  Source: https://twitter.com/lettier/status/1054623293209280512
+- [ ] Building a fully-accessible help tooltip  
+  https://www.sarasoueidan.com/blog/accessible-tooltips/
+- [ ] GDPR: Good for privacy, even better for Google's dominance  
+  https://boingboing.net/2018/10/18/briar-patches-r-us.html  
+  Source: https://twitter.com/MitchWagner/status/1054809933814923265
+
 ### 2018-10-19
 
 - [ ] VPN protocols – Beginners’ guide  
