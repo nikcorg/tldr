@@ -6,6 +6,15 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-10-24
+
+- [ ] Service workers: beware Safari’s range request  
+  https://medium.com/@philnash/service-workers-beware-safaris-range-request-ab5b3b8303e2  
+  Source: https://twitter.com/WebReflection/status/1055003550848303107
+- [ ] Firefox 63 – Tricks and Treats! (Firefox ships Web Components)  
+  https://hacks.mozilla.org/2018/10/firefox-63-tricks-and-treats/  
+  Source: https://mobile.twitter.com/rob_dodson/status/1054769558253256704
+
 ### 2018-10-23
 
 - [ ] Extending Built-in Elements  
