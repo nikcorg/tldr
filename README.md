@@ -6,6 +6,17 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-10-25
+
+- [ ] Golang Templates - What I missed!  
+  https://www.kylehq.com/2017/05/golang-templates---what-i-missed/  
+  Source: https://www.reddit.com/r/golang/comments/9r30bx/can_someone_explain_this_simple_htmltemplate_load/e8e5sf4  
+  See also:
+    - https://github.com/aarondl/tpl
+- [ ] You might not need Rollup for Bundling Libraries  
+  https://www.danielberndt.net/blog/2018/you-might-not-need-rollup-for-libraries  
+  Source: https://www.reddit.com/r/javascript/comments/9ralzx/you_might_not_need_rollup_for_bundling_libraries/
+
 ### 2018-10-24
 
 - [ ] Service workers: beware Safari’s range request  
