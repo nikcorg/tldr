@@ -6,6 +6,11 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-10-26
+
+- [ ] Building markov chains in golang  
+  https://mb-14.github.io/tech/2018/10/24/gomarkov.html
+
 ### 2018-10-25
 
 - [ ] Golang Templates - What I missed!  
