@@ -6,6 +6,11 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-10-28
+
+- [ ] Please Stop Using Local Storage [for Sensitive Data]  
+  https://dev.to/rdegges/please-stop-using-local-storage-1i04
+
 ### 2018-10-26
 
 - [ ] Building markov chains in golang  
