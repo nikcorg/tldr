@@ -6,6 +6,15 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-10-31
+
+- [ ] How to find Node.js Performance Optimization Killers  
+  https://community.risingstack.com/how-to-find-node-js-performance-optimization-killers/
+- [ ] Tracing de-optimizations in NodeJS  
+  https://blog.ghaiklor.com/tracing-de-optimizations-in-nodejs-2ba16900fc6f
+- [ ] Easy profiling for Node.js Applications  
+  https://nodejs.org/en/docs/guides/simple-profiling/
+
 ### 2018-10-28
 
 - [ ] Please Stop Using Local Storage [for Sensitive Data]  
