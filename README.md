@@ -6,6 +6,22 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-11-01
+
+- [x] A Proposal for an Alternative Design for Hooks  
+  https://paulgray.net/an-alternative-design-for-hooks/  
+  Source: https://twitter.com/rauchg/status/1057662611641196544
+- [ ] Accept Interfaces Return Struct in Go  
+  https://mycodesmells.com/post/accept-interfaces-return-struct-in-go
+- [ ] Effective Go  
+  https://golang.org/doc/effective_go.html
+- [ ] PostgreSQL- Setting up Full Text Search  
+  https://hevodata.com/blog/postgresql-full-text-search-setup/
+- [x] Postgres full-text search is Good Enough!  
+  http://rachbelaid.com/postgres-full-text-search-is-good-enough/  
+  See also:  
+    - https://robots.thoughtbot.com/implementing-multi-table-full-text-search-with-postgres
+
 ### 2018-10-31
 
 - [ ] How to find Node.js Performance Optimization Killers  
