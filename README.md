@@ -6,6 +6,17 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-11-02
+
+- [ ] Golang isn't good enough  
+  https://github.com/ksimka/go-is-not-good
+- [x] On V8 Optimizing Destructuring  
+  https://medium.com/@WebReflection/on-v8-optimizing-destructuring-2c0f157328f  
+  Source: https://twitter.com/WebReflection/status/1058094843673632768
+- [ ] Enforcing accessibility best practices with component proptypes  
+  http://bradfrost.com/blog/post/enforcing-accessibility-best-practices-with-component-proptypes/  
+  Source: https://mobile.twitter.com/codepo8/status/1058401940898373632
+
 ### 2018-11-01
 
 - [x] A Proposal for an Alternative Design for Hooks  
