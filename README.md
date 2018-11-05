@@ -6,6 +6,14 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-11-05
+
+- [ ] Less Snake Oil, More Context (understanding performance problems)  
+  https://dassur.ma/things/less-snakeoil/  
+  Source: https://mobile.twitter.com/DasSurma/status/1059451330182504448
+- [ ] NodeConf EU 2018  
+  https://www.youtube.com/playlist?list=PL0CdgOSSGlBY7DBgOp1xsRvV31AAUZrX2
+
 ### 2018-11-02
 
 - [ ] Golang isn't good enough  
