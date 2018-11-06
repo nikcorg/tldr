@@ -6,6 +6,15 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-11-06
+
+- [ ] Everything you need to know about skeleton screens  
+  https://uxdesign.cc/what-you-should-know-about-skeleton-screens-a820c45a571a  
+  Source: https://mobile.twitter.com/smashingmag/status/1059833787381514241
+- [ ] TechnicalDebtQuadrant  
+  https://martinfowler.com/bliki/TechnicalDebtQuadrant.html  
+  Source: https://mobile.twitter.com/JessPWhite/status/1059872666931339265
+
 ### 2018-11-05
 
 - [ ] Less Snake Oil, More Context (understanding performance problems)  
