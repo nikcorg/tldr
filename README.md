@@ -6,6 +6,14 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-11-07
+
+- [x] The Law of Leaky Abstractions  
+  https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions/  
+  Source: https://mobile.twitter.com/medikoo/status/1060093096044740608
+- [ ] The Road to GraphQL [Book]  
+  https://www.robinwieruch.de/the-road-to-graphql-book/
+
 ### 2018-11-06
 
 - [ ] Everything you need to know about skeleton screens  
