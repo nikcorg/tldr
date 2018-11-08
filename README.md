@@ -6,6 +6,23 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-11-08
+
+- [ ] Greatest Hits Vol. 1 (A 10 tracks playlist of awesome coding resources)  
+  https://netslum.it/greatest-hits-vol-1/  
+  Source: https://www.reddit.com/r/javascript/comments/9v52y2/coding_resources_vol_1/
+- [x] Initiative Q: an elementary pyramid scheme with grandiose ideas  
+  https://ftalphaville.ft.com/2018/10/26/1540526405000/Initiative-Q--an-elementary-pyramid-scheme-with-grandiose-ideas/
+- [ ] Web Components v2 Wish List  
+  https://tbranyen.com/post/web-components-v2-wish-list  
+  Source: https://mobile.twitter.com/tbranyen/status/1060306793081929728
+- [ ] Making the web fast: Reaching 60FPS  
+  https://medium.com/@cvaneenige/making-the-web-fast-reaching-60fps-59c23054a1dc  
+  Source: https://mobile.twitter.com/cvaneenige/status/1060281438510202880
+- [ ] A web of anxiety: accessibility for people with anxiety and panic disorders [Part 2]  
+  https://developer.paciellogroup.com/blog/2018/11/a-web-of-anxiety-accessibility-for-people-with-anxiety-and-panic-disorders-part-2/  
+  Source: https://mobile.twitter.com/codepo8/status/1060459652192919553
+
 ### 2018-11-07
 
 - [x] The Law of Leaky Abstractions  
