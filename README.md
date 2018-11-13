@@ -6,6 +6,17 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-11-13
+
+- [x] Every service is an island (coupled distributed architecture)  
+  https://deliveroo.engineering/2017/03/27/every-service-is-an-island.html
+- [ ] Deploying ES2015+ Code in Production Today  
+  https://philipwalton.com/articles/deploying-es2015-code-in-production-today/  
+  Source: https://youtu.be/o7dkP_7wNs0?t=10080
+- [x] The web isn’t what it used to be  
+  https://humaan.com/blog/the-web-isnt-what-it-used-to-be/  
+  Source: https://mobile.twitter.com/codepo8/status/1062308561043288065
+
 ### 2018-11-08
 
 - [ ] Greatest Hits Vol. 1 (A 10 tracks playlist of awesome coding resources)  
