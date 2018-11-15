@@ -6,6 +6,13 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-11-15
+
+- [ ] The Road to QUIC  
+  https://blog.cloudflare.com/the-road-to-quic/
+- [x] HTTP/3  
+  https://daniel.haxx.se/blog/2018/11/11/http-3/
+
 ### 2018-11-13
 
 - [x] Every service is an island (coupled distributed architecture)  
