@@ -6,6 +6,19 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-11-20
+
+- [x] What's Up With That: Building Bigger Roads Actually Makes Traffic Worse  
+  https://www.wired.com/2014/06/wuwt-traffic-induced-demand/
+- [ ] Super Fuzzy Searching on PostgreSQL  
+  https://web.archive.org/web/20120225200457/http://bartlettpublishing.com/site/bartpub/blog/3/entry/350
+- [ ] Private by Design: How we built Firefox Sync  
+  https://hacks.mozilla.org/2018/11/firefox-sync-privacy/
+- [ ] Mastering PostgreSQL Tools: Full-Text Search and Phrase Search  
+  https://www.compose.com/articles/mastering-postgresql-tools-full-text-search-and-phrase-search/
+- [ ] Web workers vs Service workers vs Worklets  
+  https://bitsofco.de/web-workers-vs-service-workers-vs-worklets/
+
 ### 2018-11-15
 
 - [ ] The Road to QUIC  
