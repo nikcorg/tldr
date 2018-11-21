@@ -6,6 +6,11 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-11-21
+
+- [ ] Context propagation over HTTP in Go  
+  https://medium.com/@rakyll/context-propagation-over-http-in-go-d4540996e9b0
+
 ### 2018-11-20
 
 - [x] What's Up With That: Building Bigger Roads Actually Makes Traffic Worse  
