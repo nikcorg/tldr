@@ -6,6 +6,17 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-11-26
+
+- [ ] Conditional types in TypeScript  
+  http://artsy.github.io/blog/2018/11/21/conditional-types-in-typescript/  
+  Source: https://mobile.twitter.com/djsheldrick/status/1065307771988520964
+- [ ] From WordPress to Gatsby  
+  https://www.pyppe.fi/blog/2018/06/from-wordpress-to-gatsby/
+- [ ] The Ken Thompson Hack  
+  http://wiki.c2.com/?TheKenThompsonHack  
+  Source: https://github.com/dominictarr/event-stream/issues/116#issuecomment-441749752
+
 ### 2018-11-21
 
 - [ ] Context propagation over HTTP in Go  
