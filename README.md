@@ -6,6 +6,17 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-11-28
+
+- [x] Ungap - Modern Web Development One Jump At The Time  
+  https://ungap.github.io/  
+  Source: https://mobile.twitter.com/WebReflection/status/1067533473496346624
+- [x] JS Roundabout #16 @ Trint - GraphQL: A Production Retrospective  
+  https://www.youtube.com/watch?v=NRiCwJYsXRE
+- [x] "The Hard Parts of Open Source" by Evan Czaplicki  
+  https://youtu.be/o_4EX4dPppA  
+  Source: https://twitter.com/rtfeldman/status/1050239571160649728
+
 ### 2018-11-26
 
 - [ ] Conditional types in TypeScript  
