@@ -6,6 +6,12 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-11-30
+
+- [x] Callback Heaven - Andre Staltz  
+  https://youtu.be/HssczgaY9BM  
+  Source: https://mobile.twitter.com/Katy_Wings/status/1068397868367663104
+
 ### 2018-11-28
 
 - [x] Ungap - Modern Web Development One Jump At The Time  
