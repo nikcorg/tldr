@@ -6,6 +6,12 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-12-03
+
+- [x] Preventing cross-site scripting attacks when using innerHTML in vanilla JavaScript  
+  https://gomakethings.com/preventing-cross-site-scripting-attacks-when-using-innerhtml-in-vanilla-javascript/  
+  Source: https://overreacted.io/why-do-react-elements-have-typeof-property/
+
 ### 2018-11-30
 
 - [x] Callback Heaven - Andre Staltz  
