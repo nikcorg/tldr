@@ -6,6 +6,12 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-12-06
+
+- [ ] The State of Web Browsers  
+  https://ferdychristant.com/the-state-of-web-browsers-f5a83a41c1cb  
+  Source: https://mobile.twitter.com/timolaak/status/1070641117228646401
+
 ### 2018-12-03
 
 - [x] Preventing cross-site scripting attacks when using innerHTML in vanilla JavaScript  
