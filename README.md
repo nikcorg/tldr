@@ -6,6 +6,13 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-12-10
+
+- [x] The Biggest Misconception About Git  
+  https://medium.com/@gohberg/the-biggest-misconception-about-git-b2f87d97ed52
+- [ ] Your Apps Know Where You Were Last Night, and They’re Not Keeping It Secret  
+  https://www.nytimes.com/interactive/2018/12/10/business/location-data-privacy-apps.html
+
 ### 2018-12-06
 
 - [ ] The State of Web Browsers  
