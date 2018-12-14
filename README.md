@@ -6,6 +6,11 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-12-14
+
+- [x] What happens when packages go bad?  
+  https://jakearchibald.com/2018/when-packages-go-bad/
+
 ### 2018-12-10
 
 - [x] The Biggest Misconception About Git  
