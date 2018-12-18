@@ -6,6 +6,21 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2018-12-18
+
+- [ ] Google will take action against website history manipulation  
+  https://www.ghacks.net/2018/12/18/google-will-take-action-against-website-history-manipulation/  
+  Source: https://mobile.twitter.com/codepo8/status/1075038314577756162
+- [ ] JavaScript Getter-Setter Pyramid  
+  https://staltz.com/javascript-getter-setter-pyramid.html  
+  Source: https://mobile.twitter.com/andrestaltz/status/1075037852231176192
+- [x] How many days until...  
+  https://remysharp.com/2018/12/18/how-many-days-until  
+  Source: https://mobile.twitter.com/rem/status/1075045487743516674
+- [ ] How to improve UX of web forms  
+  http://maxsnitser.com/blog/how-to-improve-ux-of-web-forms  
+  Source: https://mobile.twitter.com/css/status/1075070690921975809
+
 ### 2018-12-17
 
 - [ ] Should I Use JavaScript to Load My Web Fonts?  
