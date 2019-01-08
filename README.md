@@ -6,6 +6,11 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-01-08
+
+- [x] Microservices and Availability  
+  http://kevinmahoney.co.uk/articles/microservices-and-availability/
+
 ### 2018-12-18
 
 - [ ] Google will take action against website history manipulation  
