@@ -6,6 +6,11 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-01-11
+
+- [ ] TypeScript 2.8: Conditional Types  
+  https://blog.mariusschulz.com/2019/01/09/typescript-2-8-conditional-types
+
 ### 2019-01-08
 
 - [x] Microservices and Availability  
