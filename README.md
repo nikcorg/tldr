@@ -6,6 +6,13 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-01-15
+
+- [x] React Lifecycle Methods diagram  
+  http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+- [x] Porting 30K lines of code from Flow to TypeScript  
+  https://davidgom.es/porting-30k-lines-of-code-from-flow-to-typescript/
+
 ### 2019-01-11
 
 - [ ] TypeScript 2.8: Conditional Types  
