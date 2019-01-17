@@ -6,6 +6,11 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-01-17
+
+- [x] Maintaining overridden type definitions for a dependency with TypeScript  
+  https://davidgom.es/maintaining-overridden-typescript-definitions-for-dependencies/
+
 ### 2019-01-15
 
 - [x] React Lifecycle Methods diagram  
