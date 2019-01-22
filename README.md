@@ -6,6 +6,11 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-01-22
+
+- [ ] Front-End Performance Checklist 2019  
+  https://www.smashingmagazine.com/2019/01/front-end-performance-checklist-2019-pdf-pages/
+
 ### 2019-01-17
 
 - [x] Maintaining overridden type definitions for a dependency with TypeScript  
