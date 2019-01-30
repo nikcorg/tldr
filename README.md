@@ -6,6 +6,23 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-01-30
+
+- [x] Page Lifecycle API  
+  https://developers.google.com/web/updates/2018/07/page-lifecycle-api
+- [ ] GraphQL - Security Overview and Testing Tips  
+  https://blog.doyensec.com/2018/05/17/graphql-security-overview.html
+- [ ] Monorepos: Please don't!  
+  https://medium.com/@mattklein123/monorepos-please-dont-e9a279be011b
+- [x] List comprehensions with Applicative Functors  
+  https://egghead.io/lessons/javascript-list-comprehensions-with-applicative-functors  
+  Source: https://mobile.twitter.com/jamiedixon/status/1090175514101329920
+- [x] fp-ts-codegen  
+  https://github.com/gcanti/fp-ts-codegen  
+  Source: https://mobile.twitter.com/GiulioCanti/status/1089563979511484418  
+  See also: 
+    - https://gcanti.github.io/fp-ts-codegen/
+
 ### 2019-01-22
 
 - [ ] Front-End Performance Checklist 2019  
