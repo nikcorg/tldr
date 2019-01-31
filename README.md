@@ -6,6 +6,11 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-01-31
+
+- [ ] WebAuthn  
+  https://webauthn.guide/
+
 ### 2019-01-30
 
 - [x] Page Lifecycle API  
