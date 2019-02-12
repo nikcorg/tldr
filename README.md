@@ -6,6 +6,14 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-02-12
+
+- [x] What’s next for SemVer  
+  https://words.steveklabnik.com/what-s-next-for-semver  
+  Source: https://mobile.twitter.com/steveklabnik/status/1095005982571331585  
+  See also: 
+    - https://haacked.com/archive/2019/02/11/semver-collective/
+
 ### 2019-01-31
 
 - [ ] WebAuthn  
