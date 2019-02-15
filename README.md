@@ -6,6 +6,14 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-02-15
+
+- [ ] Replacing a hot path in your app's JavaScript with WebAssembly  
+  https://developers.google.com/web/updates/2019/02/hotpath-with-wasm  
+  Source: https://mobile.twitter.com/jaffathecake/status/1096453020563443718  
+  See also:
+    - https://news.ycombinator.com/item?id=19166233
+
 ### 2019-02-12
 
 - [x] What’s next for SemVer  
