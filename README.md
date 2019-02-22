@@ -6,6 +6,19 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-02-22
+
+- [x] Contempt Culture  
+  https://blog.aurynn.com/2015/12/16-contempt-culture
+- [ ] Progressive React  
+  https://houssein.me/progressive-react
+- [ ] React as a UI Runtime  
+  https://overreacted.io/react-as-a-ui-runtime/
+- [x] A Note About Git Commit Messages  
+  https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
+- [ ] Demystifying ENTRYPOINT and CMD in Docker  
+  https://aws.amazon.com/blogs/opensource/demystifying-entrypoint-cmd-docker/
+
 ### 2019-02-15
 
 - [ ] Replacing a hot path in your app's JavaScript with WebAssembly  
