@@ -6,6 +6,16 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-02-26
+
+- [ ] New browser attack lets hackers run bad code even after users leave a web page  
+  https://www.zdnet.com/article/new-browser-attack-lets-hackers-run-bad-code-even-after-users-leave-a-web-page/  
+  Source: https://mobile.twitter.com/codepo8/status/1100153031755251714  
+  See also:
+    - https://mobile.twitter.com/jaffathecake/status/1100326142270234624
+- [ ] The state of open source security report 2019  
+  https://snyk.io/opensourcesecurity-2019/
+
 ### 2019-02-22
 
 - [x] Contempt Culture  
