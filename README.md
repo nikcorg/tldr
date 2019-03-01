@@ -6,6 +6,11 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-03-01
+
+- [ ] Redesigning Github repository page  
+  http://tonsky.me/blog/github-redesign/
+
 ### 2019-02-26
 
 - [ ] New browser attack lets hackers run bad code even after users leave a web page  
