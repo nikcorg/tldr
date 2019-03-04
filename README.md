@@ -6,6 +6,15 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-03-04
+
+- [ ] Cache-Control for Civilians  
+  https://csswizardry.com/2019/03/cache-control-for-civilians/  
+  Source: https://mobile.twitter.com/jaffathecake/status/1102462382025203712
+- [ ] DynamoDB TTL as an ad-hoc scheduling mechanism  
+  https://medium.com/theburningmonk-com/dynamodb-ttl-as-an-ad-hoc-scheduling-mechanism-bda119116887  
+  Source: https://mobile.twitter.com/BashanGal/status/1102467158360113153
+
 ### 2019-03-01
 
 - [ ] Redesigning Github repository page  
