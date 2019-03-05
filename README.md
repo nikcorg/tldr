@@ -6,6 +6,15 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-03-05
+
+- [x] Understanding Memoization In JavaScript  
+  https://mobile.twitter.com/codepo8/status/1102843063020515328  
+  Source: https://mobile.twitter.com/codepo8/status/1102843063020515328
+- [x] Serve Responsive Images  
+  https://web.dev/fast/serve-responsive-images  
+  Source: https://mobile.twitter.com/katiehempenius/status/1100825048896688128
+
 ### 2019-03-04
 
 - [ ] Cache-Control for Civilians  
