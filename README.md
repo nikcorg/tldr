@@ -6,6 +6,11 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-03-06
+
+- [ ] JavaScript Performance Pitfalls in V8  
+  https://ponyfoo.com/articles/javascript-performance-pitfalls-v8
+
 ### 2019-03-05
 
 - [x] Understanding Memoization In JavaScript  
