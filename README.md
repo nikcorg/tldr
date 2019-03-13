@@ -6,6 +6,17 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-03-13
+
+- [ ] Accessibility Insights  
+  https://accessibilityinsights.io/  
+  Source: https://mobile.twitter.com/codepo8/status/1105733707166568448
+- [ ] Getting started with fp-ts: Ord  
+  https://dev.to/gcanti/getting-started-with-fp-ts-ord-5f1e  
+  Source: https://mobile.twitter.com/GiulioCanti/status/1105749463866503168  
+  See also:
+    - https://dev.to/gcanti/getting-started-with-fp-ts-setoid-39f3
+
 ### 2019-03-06
 
 - [ ] JavaScript Performance Pitfalls in V8  
