@@ -6,6 +6,18 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-03-14
+
+- [ ] Building Minimal Docker Containers for Go Applications  
+  https://blog.codeship.com/building-minimal-docker-containers-for-go-applications/  
+  Source: https://www.reddit.com/r/golang/comments/b0ljs7/go_has_betrayed_me/eifjczm
+- [ ] You (probably) don’t need Kubernetes  
+  https://arp242.net/weblog/dont-need-k8s.html  
+  Source: https://www.reddit.com/r/golang/comments/b0ljs7/go_has_betrayed_me/eifcgq3
+- [x] HTTP Graceful Shutdown  
+  https://gist.github.com/peterhellberg/38117e546c217960747aacf689af3dc2  
+  Source: https://www.reddit.com/r/golang/comments/b0ljs7/go_has_betrayed_me/eifm9wt
+
 ### 2019-03-13
 
 - [ ] Accessibility Insights  
