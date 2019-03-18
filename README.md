@@ -6,6 +6,15 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-03-18
+
+- [ ] Writing Resilient Components  
+  https://overreacted.io/writing-resilient-components/  
+  Source: https://mobile.twitter.com/dan_abramov/status/1107362882415706112
+- [x] Functional design: Algebraic Data Types  
+  https://dev.to/gcanti/functional-design-algebraic-data-types-36kf  
+  Source: https://mobile.twitter.com/GiulioCanti/status/1107582865724854278
+
 ### 2019-03-14
 
 - [ ] Building Minimal Docker Containers for Go Applications  
