@@ -6,6 +6,12 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-03-19
+
+- [ ] Who has the fastest website in F1?  
+  https://jakearchibald.com/2019/f1-perf/  
+  Source: https://mobile.twitter.com/jaffathecake/status/1107992780926783490
+
 ### 2019-03-18
 
 - [ ] Writing Resilient Components  
