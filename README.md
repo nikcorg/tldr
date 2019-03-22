@@ -6,6 +6,13 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-03-22
+
+- [x] How and when to use the tabindex attribute  
+  https://bitsofco.de/how-and-when-to-use-the-tabindex-attribute/
+- [x] Paul Jolly - What are Go modules and how do I use them?  
+  https://www.youtube.com/watch?v=6MbIzJmLz6Q
+
 ### 2019-03-19
 
 - [ ] Who has the fastest website in F1?  
