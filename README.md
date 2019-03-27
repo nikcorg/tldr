@@ -6,6 +6,12 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-03-27
+
+- [x] Improved JavaScript error message breaks code relying on the legacy format  
+  https://www.fxsitecompat.com/en-CA/docs/2018/improved-javascript-error-message-breaks-code-relying-on-the-legacy-format/  
+  Source: https://news.ycombinator.com/item?id=19493440
+
 ### 2019-03-22
 
 - [x] How and when to use the tabindex attribute  
