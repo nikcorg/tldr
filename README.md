@@ -6,6 +6,13 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-03-29
+
+- [x] Betteridge's law of headlines  
+  https://en.m.wikipedia.org/wiki/Betteridge%27s_law_of_headlines
+- [x] Chesterton's fence  
+  https://en.wikipedia.org/wiki/Wikipedia:Chesterton%27s_fence
+
 ### 2019-03-27
 
 - [x] Improved JavaScript error message breaks code relying on the legacy format  
