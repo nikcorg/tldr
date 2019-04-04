@@ -6,6 +6,12 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-04-04
+
+- [ ] Getting started with fp-ts: Either vs Validation  
+  https://dev.to/gcanti/getting-started-with-fp-ts-either-vs-validation-5eja  
+  Source: https://mobile.twitter.com/GiulioCanti/status/1113480082218156043
+
 ### 2019-03-29
 
 - [x] Betteridge's law of headlines  
