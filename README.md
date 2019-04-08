@@ -6,6 +6,15 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-04-08
+
+- [x] WAI: Decorative Images  
+  https://www.w3.org/WAI/tutorials/images/decorative/
+- [x] Alternative Text (Conclusion)  
+  https://webaim.org/techniques/alttext/#conclusion
+- [x] Semirings and rings #MonadicMonday  
+  https://mobile.twitter.com/YuriyBogomolov/status/1115202088080953346
+
 ### 2019-04-04
 
 - [ ] Getting started with fp-ts: Either vs Validation  
