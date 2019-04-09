@@ -6,6 +6,14 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-04-09
+
+- [x] 25 Years Later: Interview with Linus Torvalds  
+  https://www.linuxjournal.com/content/25-years-later-interview-linus-torvalds
+- [x] Code caching for JavaScript developers · V8  
+  https://v8.dev/blog/code-caching-for-devs  
+  Source: https://mobile.twitter.com/mathias/status/1115525813670227968
+
 ### 2019-04-08
 
 - [x] WAI: Decorative Images  
