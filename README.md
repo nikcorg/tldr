@@ -6,6 +6,11 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-04-15
+
+- [ ] Geting started with fp-ts: IO  
+  https://dev.to/gcanti/getting-started-with-fp-ts-io-36p6
+
 ### 2019-04-09
 
 - [x] 25 Years Later: Interview with Linus Torvalds  
