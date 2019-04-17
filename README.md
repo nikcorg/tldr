@@ -6,6 +6,15 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-04-17
+
+- [x] A tour of Postgres Index Types  
+  https://www.citusdata.com/blog/2017/10/17/tour-of-postgres-index-types/
+- [x] Principles and Optimization of 5 PostgreSQL Indexes (btree,hash,gin,gist,and brin)  
+  https://www.alibabacloud.com/blog/principles-and-optimization-of-5-postgresql-indexes-btreehashgingistand-brin_351557
+- [x] Greater, Less and BETWEEN (Searching for Ranges)  
+  https://use-the-index-luke.com/sql/where-clause/searching-for-ranges/greater-less-between-tuning-sql-access-filter-predicates
+
 ### 2019-04-15
 
 - [ ] Geting started with fp-ts: IO  
