@@ -6,6 +6,12 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-04-18
+
+- [ ] Fluent 1.0: a localization system for natural-sounding translations  
+  https://hacks.mozilla.org/2019/04/fluent-1-0-a-localization-system-for-natural-sounding-translations/  
+  Source: https://mobile.twitter.com/ManishEarth/status/1118612867983405056
+
 ### 2019-04-17
 
 - [x] A tour of Postgres Index Types  
