@@ -6,6 +6,14 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-04-23
+
+- [x] Svelte 3: Rethinking reactivity  
+  https://svelte.dev/blog/svelte-3-rethinking-reactivity  
+  Source: https://mobile.twitter.com/Rich_Harris/status/1120342713843507201  
+  See also:
+    - https://mobile.twitter.com/dan_abramov/status/1120971795425832961
+
 ### 2019-04-18
 
 - [ ] Fluent 1.0: a localization system for natural-sounding translations  
