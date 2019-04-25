@@ -6,6 +6,23 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-04-25
+
+- [ ] The Dark Side of the Grid (Part 1)  
+  https://www.matuzo.at/blog/the-dark-side-of-the-grid/  
+  Source: https://mobile.twitter.com/mmatuzo/status/1093520320055689216
+- [ ] 12 Tips for More Accessible React Apps  
+  https://www.matuzo.at/blog/12-tips-for-more-accessible-react-apps-slides-react-finland-2019/  
+  Source: https://mobile.twitter.com/mmatuzo/status/1121369650959396864
+- [x] Check "Do Not Track" Client Hint  
+  https://gist.github.com/maxboeck/7130cf69bfe2517e148288724f7877ce  
+  Source: https://mobile.twitter.com/mxbck/status/1120260084322455552
+- [x] Delightful UI animations by understanding the brain  
+  https://youtu.be/gDkUpx0dVc0?t=10989
+- [ ] Animating Layouts with the FLIP Technique  
+  https://css-tricks.com/animating-layouts-with-the-flip-technique/  
+  Source: https://youtu.be/gDkUpx0dVc0?t=12007
+
 ### 2019-04-23
 
 - [x] Svelte 3: Rethinking reactivity  
