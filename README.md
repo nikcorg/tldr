@@ -6,6 +6,19 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-04-30
+
+- [ ] The Real Roots of American Rage  
+  https://www.theatlantic.com/magazine/archive/2019/01/charles-duhigg-american-anger/576424/
+- [ ] Plummeting insect numbers 'threaten collapse of nature'  
+  https://www.theguardian.com/environment/2019/feb/10/plummeting-insect-numbers-threaten-collapse-of-nature
+- [ ] Everything you need to know about the Boeing 737 Max airplane crashes  
+  https://www.theverge.com/2019/3/22/18275736/boeing-737-max-plane-crashes-grounded-problems-info-details-explained-reasons
+- [ ] The age of the Influencer has peaked. It’s time for the slacker to rise again  
+  https://qz.com/quartzy/1588115/instagram-influencers-are-out-slackers-are-in/  
+  Source: https://mobile.twitter.com/QZY/status/1122069136727859200
+
+
 ### 2019-04-25
 
 - [ ] The Dark Side of the Grid (Part 1)  
