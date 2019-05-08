@@ -6,6 +6,12 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-05-08
+
+- [ ] JavaScript engine fundamentals: Shapes and Inline Caches  
+  https://mathiasbynens.be/notes/shapes-ics#shapes  
+  Source: https://mobile.twitter.com/UpgradedAccount/status/1122986755752439808
+
 ### 2019-04-30
 
 - [ ] The Real Roots of American Rage  
@@ -17,7 +23,6 @@ Random subjects, but mostly tech.
 - [ ] The age of the Influencer has peaked. It’s time for the slacker to rise again  
   https://qz.com/quartzy/1588115/instagram-influencers-are-out-slackers-are-in/  
   Source: https://mobile.twitter.com/QZY/status/1122069136727859200
-
 
 ### 2019-04-25
 
