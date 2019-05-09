@@ -6,6 +6,11 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-05-09
+
+- [ ] Getting things sorted in V8  
+  https://v8.dev/blog/array-sort
+
 ### 2019-05-08
 
 - [ ] JavaScript engine fundamentals: Shapes and Inline Caches  
