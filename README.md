@@ -6,6 +6,15 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-05-13
+
+- [ ] Adam Minter: In the flow of things  
+  https://discardstudies.com/2019/05/06/adam-minter-how-things-flow/
+- [ ] How one stray dog changed my life forever  
+  https://www.bbc.co.uk/news/uk-scotland-47821537
+- [ ] Opinion | It’s Time to Break Up Facebook  
+  https://www.nytimes.com/2019/05/09/opinion/sunday/chris-hughes-facebook-zuckerberg.html
+
 ### 2019-05-09
 
 - [ ] Getting things sorted in V8  
