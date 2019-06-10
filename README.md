@@ -6,6 +6,17 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-06-11
+
+- [x] The reduce ({...spread}) anti-pattern  
+  https://www.richsnapp.com/blog/2019/06-09-reduce-spread-anti-pattern
+  Source: https://www.reddit.com/r/javascript/comments/byzfql/the_reduce_spread_antipattern/
+- [x] Accessible Icon Buttons  
+  https://www.sarasoueidan.com/blog/accessible-icon-buttons/  
+  Source: https://mobile.twitter.com/marcthiele/status/1138418358209171456
+- [x] Alt-texts: The Ultimate Guide  
+  https://axesslab.com/alt-texts/
+
 ### 2019-05-23
 
 - [ ] The Spycraft Revolution  
