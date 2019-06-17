@@ -6,6 +6,11 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-06-17
+
+- [x] The Forgotten Operating System That Keeps the NYC Subway System Alive  
+  https://www.vice.com/en_us/article/zmp8gy/the-forgotten-operating-system-that-keeps-the-nyc-subway-system-alive
+
 ### 2019-06-11
 
 - [x] The reduce ({...spread}) anti-pattern  
