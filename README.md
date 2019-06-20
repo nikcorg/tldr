@@ -6,6 +6,12 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-06-20
+
+- [ ] Why I don't use web components  
+  https://dev.to/richharris/why-i-don-t-use-web-components-2cia  
+  Source: https://mobile.twitter.com/jlongster/status/1141702005209161728
+
 ### 2019-06-17
 
 - [x] The Forgotten Operating System That Keeps the NYC Subway System Alive  
