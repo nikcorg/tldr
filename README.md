@@ -6,6 +6,18 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-07-18
+
+- [x] Managing multiple identities with git  
+  https://blog.k-nut.eu/multiple-identities-with-git  
+  Source: https://mobile.twitter.com/ykarikos/status/1151585334909710336
+- [x] HTTP Caching  
+  https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching
+- [x] Why we set a `Cache-Control: Max-Age` of 1 year  
+  https://ashton.codes/set-cache-control-max-age-1-year/
+- [x] Caching: Cache-Control: Revalidation And Reloading  
+  https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#Revalidation_and_reloading
+
 ### 2019-06-20
 
 - [ ] Why I don't use web components  
