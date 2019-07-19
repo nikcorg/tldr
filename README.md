@@ -6,6 +6,12 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-07-19
+
+- [x] Keeping things fresh with stale-while-revalidate  
+  https://web.dev/stale-while-revalidate  
+  Source: https://mobile.twitter.com/cramforce/status/1152139101325467648
+
 ### 2019-07-18
 
 - [x] Managing multiple identities with git  
