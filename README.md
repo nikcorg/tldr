@@ -6,6 +6,17 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-07-23
+
+- [ ] When a rewrite isn’t: rebuilding Slack on the desktop  
+  https://slack.engineering/rebuilding-slack-on-the-desktop-308d6fe94ae4?gi=f466b8fc8a59  
+  Source: https://mobile.twitter.com/trodrigues/status/1153352513262948361
+- [ ] The Secret of Good Electron Apps  
+  https://jlongster.com/secret-of-good-electron-apps  
+  Source: https://mobile.twitter.com/pvh/status/1153413766903545861
+- [ ] Building Spotify’s New Web Player  
+  https://labs.spotify.com/2019/03/25/building-spotifys-new-web-player/
+
 ### 2019-07-19
 
 - [x] Keeping things fresh with stale-while-revalidate  
