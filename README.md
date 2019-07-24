@@ -6,6 +6,12 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-07-24
+
+- [x] Was the Automotive Era a Terrible Mistake?  
+  https://www.newyorker.com/magazine/2019/07/29/was-the-automotive-era-a-terrible-mistake  
+  Source: https://mobile.twitter.com/StockholmCyclo/status/1153771093154586624
+
 ### 2019-07-23
 
 - [ ] When a rewrite isn’t: rebuilding Slack on the desktop  
