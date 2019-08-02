@@ -6,6 +6,11 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-08-02
+
+- [x] Why Generics?  
+  https://blog.golang.org/why-generics
+
 ### 2019-07-24
 
 - [x] Was the Automotive Era a Terrible Mistake?  
