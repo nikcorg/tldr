@@ -6,6 +6,12 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-08-05
+
+- [ ] Should I Use JavaScript to Load My Web Fonts?  
+  https://www.filamentgroup.com/lab/js-web-fonts.html  
+  Source: https://mobile.twitter.com/mmatuzo/status/1158319348064366593
+
 ### 2019-08-02
 
 - [x] Why Generics?  
