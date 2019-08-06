@@ -6,6 +6,12 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-08-06
+
+- [ ] Predictably Random  
+  https://remysharp.com/2019/08/06/predictably-random  
+  Source: https://mobile.twitter.com/rem/status/1158724449115484160
+
 ### 2019-08-05
 
 - [ ] Should I Use JavaScript to Load My Web Fonts?  
