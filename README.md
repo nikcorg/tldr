@@ -6,6 +6,12 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-08-08
+
+- [x] Native lazy-loading for the web  
+  https://web.dev/native-lazy-loading  
+  Source: https://mobile.twitter.com/adambsilver/status/1159351085661904896
+
 ### 2019-08-06
 
 - [ ] Predictably Random  
