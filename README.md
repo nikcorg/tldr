@@ -6,6 +6,25 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-08-13
+
+- [ ] The difference between keyboard and screen reader navigation  
+  https://tink.uk/the-difference-between-keyboard-and-screen-reader-navigation/  
+  Source: https://mobile.twitter.com/codepo8/status/1145764512064319488
+- [ ] Quick Note on ARIA and Windows High Contrast Mode  
+  https://www.scottohara.me/blog/2019/02/12/high-contrast-aria-and-images.html  
+  Source: https://mobile.twitter.com/codepo8/status/1145764328697729025
+- [x] Apollo Schema Federation — James Baxley @ GraphQL Conf 2019  
+  https://www.youtube.com/watch?v=Uw-Z1aUQvgg
+- [ ] #MonadicMonday Compilations  
+  April: https://dev.to/ybogomolov/monadicmonday-compilation-april-pjo  
+  May: https://dev.to/ybogomolov/monadicmonday-compilation-may-5d3c  
+  June: https://dev.to/ybogomolov/monadicmonday-compilation-june-143h  
+  July: https://dormoshe.io/trending-news/monadicmonday-compilation-july-4pal-3244  
+  Source: https://mobile.twitter.com/hashtag/monadicmonday
+- [ ] Comlink makes WebWorkers enjoyable  
+  https://github.com/GoogleChromeLabs/comlink
+
 ### 2019-08-08
 
 - [x] Native lazy-loading for the web  
