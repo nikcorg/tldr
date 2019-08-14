@@ -6,6 +6,12 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-08-14
+
+- [x] Stop Misusing Toggle Switches  
+  https://uxmovement.com/mobile/stop-misusing-toggle-switches/  
+  Source: https://mobile.twitter.com/codepo8/status/1161653884802260993
+
 ### 2019-08-13
 
 - [ ] The difference between keyboard and screen reader navigation  
