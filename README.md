@@ -6,6 +6,12 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-08-15
+
+- [x] It's official: Deploying Facebook's 'Like' button on your website makes you a joint data slurper  
+  https://www.theregister.co.uk/2019/07/29/eu_gdpr_facebook_like_button/  
+  Source: https://mobile.twitter.com/AmeliasBrain/status/1157082352847187968
+
 ### 2019-08-14
 
 - [x] Stop Misusing Toggle Switches  
