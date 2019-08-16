@@ -6,6 +6,14 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-08-16
+
+- [x] @runarorama on software development estimation  
+  https://mobile.twitter.com/runarorama/status/1162178931853803520
+- [x] Is the JavaScript typing system sufficient, do we need typescript and flow?  
+  https://youtu.be/1dHq7iwcWxg  
+  Source: https://mobile.twitter.com/thomasankcorn/status/1162268225117155328
+
 ### 2019-08-15
 
 - [x] It's official: Deploying Facebook's 'Like' button on your website makes you a joint data slurper  
