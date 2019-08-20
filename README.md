@@ -6,6 +6,12 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-08-20
+
+- [ ] Why making content on the internet free was our biggest mistake… and how to fix it  
+  https://whatsnewinpublishing.com/why-making-content-on-the-internet-free-was-our-biggest-mistake-and-how-to-fix-it/  
+  Source: https://mobile.twitter.com/BrendanEich/status/1163858340935536642
+
 ### 2019-08-16
 
 - [x] @runarorama on software development estimation  
