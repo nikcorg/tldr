@@ -6,6 +6,12 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-08-30
+
+- [ ] Automatic profile switching in iTerm2  
+  https://medium.com/@kulak/automatic-profile-switching-in-iterm2-ea0456d41de6  
+  Source: https://www.reddit.com/r/javascript/comments/cxe737/automatic_profile_switching_in_iterm2/
+
 ### 2019-08-20
 
 - [ ] Why making content on the internet free was our biggest mistake… and how to fix it  
