@@ -6,6 +6,11 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-09-23
+
+- [x] Serverless: 15% slower and 8x more expensive  
+  http://einaregilsson.com/serverless-15-percent-slower-and-eight-times-more-expensive/
+
 ### 2019-08-30
 
 - [ ] Automatic profile switching in iTerm2  
