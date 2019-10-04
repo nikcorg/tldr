@@ -6,6 +6,12 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-10-04
+
+- [ ] Idiosyncrasies of the HTML parser  
+  https://htmlparser.info/  
+  Source: https://mobile.twitter.com/jaffathecake/status/1180010051873968128
+
 ### 2019-09-23
 
 - [x] Serverless: 15% slower and 8x more expensive  
