@@ -6,6 +6,12 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-10-07
+
+- [x] Service workers at TPAC  
+  https://jakearchibald.com/2019/service-workers-tpac/  
+  Source: https://mobile.twitter.com/codepo8/status/1181134386659516416
+
 ### 2019-10-04
 
 - [ ] Idiosyncrasies of the HTML parser  
