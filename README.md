@@ -6,6 +6,18 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-10-08
+
+- [ ] The term “Responsive Web Design” has failed  
+  https://fberriman.com/2019/10/07/the-term-responsive-web-design-has-failed/  
+  Source: https://mobile.twitter.com/slightlylate/status/1181281600811585536
+- [ ] Cars All but Banned on One of Manhattan’s Busiest Streets  
+  https://www.nytimes.com/2019/10/03/nyregion/car-ban-14th-street-manhattan.html  
+  Source: https://mobile.twitter.com/samelisivonen/status/1181124399493259265
+- [x] Listing your most used commands  
+  https://remysharp.com/2019/10/08/listing-your-most-used-commands  
+  source: https://mobile.twitter.com/codepo8/status/1181544356903342082
+
 ### 2019-10-07
 
 - [x] Service workers at TPAC  
