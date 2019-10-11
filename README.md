@@ -6,6 +6,15 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+### 2019-10-11
+
+- [ ] Images done right: Web graphics, good to the last byte  
+  https://evilmartians.com/chronicles/images-done-right-web-graphics-good-to-the-last-byte-optimization-techniques  
+  Source: https://mobile.twitter.com/codepo8/status/1182600848507129856
+- [x] Unexpected accessibility tips  
+  https://www.cjcid.com/articles/unexpected-a11y-tips/  
+  Source: https://mobile.twitter.com/codepo8/status/1182334577991458818
+
 ### 2019-10-08
 
 - [ ] The term “Responsive Web Design” has failed  
