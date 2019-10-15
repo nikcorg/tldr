@@ -6,6 +6,9 @@ Because all those open browser tabs that I'll "read later" have to go somewhere.
 
 Random subjects, but mostly tech.
 
+- [ ] I'll read it later (haha)
+- [x] Actually read it
+
 ### 2019-10-11
 
 - [ ] Images done right: Web graphics, good to the last byte  
