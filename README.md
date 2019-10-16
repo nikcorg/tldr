@@ -9,6 +9,12 @@ Random subjects, but mostly tech.
 - [ ] I'll read it later (haha)
 - [x] Actually read it
 
+### 2019-10-16
+
+- [x] Avoid 100vh On Mobile Web  
+  https://chanind.github.io/javascript/2019/09/28/avoid-100vh-on-mobile-web.html  
+  Source: https://mobile.twitter.com/codepo8/status/1184493536584126466
+
 ### 2019-10-11
 
 - [ ] Images done right: Web graphics, good to the last byte  
