@@ -9,6 +9,11 @@ Random subjects, but mostly tech.
 - [ ] I'll read it later (haha)
 - [x] Actually read it
 
+### 2019-10-18
+
+- [ ] Working with Errors in Go 1.13  
+  https://blog.golang.org/go1.13-errors
+
 ### 2019-10-16
 
 - [x] Avoid 100vh On Mobile Web  
