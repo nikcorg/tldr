@@ -9,6 +9,14 @@ Random subjects, but mostly tech.
 - [ ] I'll read it later (haha)
 - [x] Actually read it
 
+### 2019-10-21
+
++ [ ] Noita: a Game Based on Falling Sand Simulation  
+  https://80.lv/articles/noita-a-game-based-on-falling-sand-simulation/
+- [x] Alexa and Google Home abused to eavesdrop and phish passwords  
+  https://arstechnica.com/information-technology/2019/10/alexa-and-google-home-abused-to-eavesdrop-and-phish-passwords/  
+  Source: https://mobile.twitter.com/brucel/status/1186219458530029568
+
 ### 2019-10-18
 
 - [ ] Working with Errors in Go 1.13  
