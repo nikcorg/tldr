@@ -9,6 +9,12 @@ Random subjects, but mostly tech.
 - [ ] I'll read it later (haha)
 - [x] Actually read it
 
+### 2019-10-29
+
+- [x] How to master advanced TypeScript patterns  
+  https://www.freecodecamp.org/news/typescript-curry-ramda-types-f747e99744ab/  
+  Source: https://www.reddit.com/r/typescript/comments/dojmzd/typescript_if_statements/f5opxpe?utm_source=share&utm_medium=web2x
+
 ### 2019-10-21
 
 + [ ] Noita: a Game Based on Falling Sand Simulation  
