@@ -13,7 +13,9 @@ Random subjects, but mostly tech.
 
 - [x] How to master advanced TypeScript patterns  
   https://www.freecodecamp.org/news/typescript-curry-ramda-types-f747e99744ab/  
-  Source: https://www.reddit.com/r/typescript/comments/dojmzd/typescript_if_statements/f5opxpe?utm_source=share&utm_medium=web2x
+  Source: https://www.reddit.com/r/typescript/comments/dojmzd/typescript_if_statements/f5opxpe?utm_source=share&utm_medium=web2x  
+  See also:
+    - https://github.com/pirix-gh/ts-toolbelt
 
 ### 2019-10-21
 
