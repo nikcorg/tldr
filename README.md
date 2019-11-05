@@ -9,6 +9,13 @@ Random subjects, but mostly tech.
 - [ ] I'll read it later (haha)
 - [x] Actually read it
 
+### 2019-11-05
+
+- [ ] Role-Based Access Control (RBAC) and React Apps  
+  https://auth0.com/blog/role-based-access-control-rbac-and-react-apps/#Role-Based-Access-Control-Example-in-React-Apps
+- [ ] TypeScript + React: Extending JSX Elements  
+  https://fettblog.eu/typescript-react-extending-jsx-elements/
+
 ### 2019-10-29
 
 - [x] How to master advanced TypeScript patterns  
