@@ -9,6 +9,11 @@ Random subjects, but mostly tech.
 - [ ] I'll read it later (haha)
 - [x] Actually read it
 
+### 2019-11-07
+
+ - [x] I Accidentally Uncovered a Nationwide Scam on Airbnb  
+   https://www.vice.com/en_us/article/43k7z3/nationwide-fake-host-scam-on-airbnb
+
 ### 2019-11-05
 
 - [ ] Role-Based Access Control (RBAC) and React Apps  
