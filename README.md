@@ -9,6 +9,15 @@ Random subjects, but mostly tech.
 - [ ] I'll read it later (haha)
 - [x] Actually read it
 
+### 2019-11-11
+
+- [x] Docker ARG, ENV and .env - a Complete Guide  
+  https://vsupalov.com/docker-arg-env-variable-guide/
+- [ ] socat  
+  https://medium.com/@copyconstruct/socat-29453e9fc8a6  
+  See also:
+    - https://mobile.twitter.com/esamatti/status/1193842382279716864
+
 ### 2019-11-07
 
  - [x] I Accidentally Uncovered a Nationwide Scam on Airbnb  
