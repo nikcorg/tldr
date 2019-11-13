@@ -9,6 +9,12 @@ Random subjects, but mostly tech.
 - [ ] I'll read it later (haha)
 - [x] Actually read it
 
+### 2019-11-13
+
+- [x] Upcoming notification permission changes in Firefox 72  
+  https://hacks.mozilla.org/2019/11/upcoming-notification-permission-changes-in-firefox-72/  
+  Source: https://mobile.twitter.com/mozhacks/status/1194646534589018119
+
 ### 2019-11-11
 
 - [x] Docker ARG, ENV and .env - a Complete Guide  
