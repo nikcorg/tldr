@@ -9,6 +9,16 @@ Random subjects, but mostly tech.
 - [ ] I'll read it later (haha)
 - [x] Actually read it
 
+### 2019-11-15
+
+- [ ] Build your own React  
+  https://pomb.us/build-your-own-react/  
+  See also:
+    - https://github.com/pomber/code-surfer/blob/code-surfer-v2/readme.md
+    - https://github.com/pomber/gatsby-waves
+- [x] Inject build-time variables with Golang  
+  https://blog.alexellis.io/inject-build-time-vars-golang/
+
 ### 2019-11-13
 
 - [x] Upcoming notification permission changes in Firefox 72  
