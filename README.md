@@ -9,6 +9,13 @@ Random subjects, but mostly tech.
 - [ ] I'll read it later (haha)
 - [x] Actually read it
 
+### 2019-12-04
+
+- [x] De Bruijn Sequence  
+  https://en.wikipedia.org/wiki/De_Bruijn_sequence
+- [x] Hamiltonian path  
+  https://en.wikipedia.org/wiki/Hamiltonian_path
+
 ### 2019-11-15
 
 - [ ] Build your own React  
