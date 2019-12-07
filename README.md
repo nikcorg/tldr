@@ -9,6 +9,12 @@ Random subjects, but mostly tech.
 - [ ] I'll read it later (haha)
 - [x] Actually read it
 
+### 2019-12-07
+
+- [ ] Cropping Images to a specific Aspect Ratio with JavaScript  
+  https://pqina.nl/blog/cropping-images-to-an-aspect-ratio-with-javascript/  
+  Source: https://mobile.twitter.com/codepo8/status/1203267692301627392
+
 ### 2019-12-04
 
 - [x] De Bruijn Sequence  
