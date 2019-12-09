@@ -9,6 +9,12 @@ Random subjects, but mostly tech.
 - [ ] I'll read it later (haha)
 - [x] Actually read it
 
+### 2019-12-09
+
+- [ ] Browser Default Styles  
+  https://browserdefaultstyles.com/  
+  Source: https://mobile.twitter.com/codepo8/status/1204027603553865728
+
 ### 2019-12-07
 
 - [ ] Cropping Images to a specific Aspect Ratio with JavaScript  
