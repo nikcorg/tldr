@@ -9,6 +9,11 @@ Random subjects, but mostly tech.
 - [ ] I'll read it later (haha)
 - [x] Actually read it
 
+### 2019-12-11
+
+- [ ] Svelte custom stores: get the most for your $  
+  https://monad.fi/en/svelte-custom-stores/
+
 ### 2019-12-09
 
 - [ ] Browser Default Styles  
