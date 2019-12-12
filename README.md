@@ -9,6 +9,20 @@ Random subjects, but mostly tech.
 - [ ] I'll read it later (haha)
 - [x] Actually read it
 
+### 2019-12-12
+
+- [ ] The Complete Guide to JavaScript Classes  
+  https://dmitripavlutin.com/javascript-classes-complete-guide/  
+  Source: https://mobile.twitter.com/codepo8/status/1205123160254877696
+- [ ] Leonardo: an open source contrast-based color generator  
+  https://medium.com/@NateBaldwin/leonardo-an-open-source-contrast-based-color-generator-92d61b6521d2  
+  Source: https://mobile.twitter.com/codepo8/status/1205122681374466049
+- [ ] Z’s Still Not Dead Baby, Z’s Still Not Dead  
+  https://24ways.org/2019/zs-still-not-dead-baby-zs-still-not-dead/  
+  Source: https://mobile.twitter.com/codepo8/status/1205123076523991041
+- [ ] How to manipulate CSS colors with JavaScript  
+  https://blog.logrocket.com/how-to-manipulate-css-colors-with-javascript-fb547113a1b8/
+
 ### 2019-12-11
 
 - [ ] Svelte custom stores: get the most for your $  
