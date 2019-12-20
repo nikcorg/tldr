@@ -9,6 +9,11 @@ Random subjects, but mostly tech.
 - [ ] I'll read it later (haha)
 - [x] Actually read it
 
+### 2019-12-20
+
+- [x] Using Docker Multi-stage builds during development  
+  https://dev.to/brpaz/using-docker-multi-stage-builds-during-development-35bc
+
 ### 2019-12-12
 
 - [ ] The Complete Guide to JavaScript Classes  
