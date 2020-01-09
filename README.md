@@ -9,6 +9,12 @@ Random subjects, but mostly tech.
 - [ ] I'll read it later (haha)
 - [x] Actually read it
 
+### 2020-01-09
+
+- [ ] Min and Max Width/Height in CSS  
+  https://ishadeed.com/article/min-max-css/  
+  Source: https://mobile.twitter.com/codepo8/status/1215363725647142912
+
 ### 2019-12-20
 
 - [x] Using Docker Multi-stage builds during development  
