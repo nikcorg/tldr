@@ -9,6 +9,13 @@ Random subjects, but mostly tech.
 - [ ] I'll read it later (haha)
 - [x] Actually read it
 
+### 2020-02-04
+
+- [x] Passwords Evolved: Authentication Guidance for the Modern Era  
+  https://www.troyhunt.com/passwords-evolved-authentication-guidance-for-the-modern-era/
+- [x] Markup for Email actions  
+  https://developers.google.com/gmail/markup/reference
+
 ### 2020-01-09
 
 - [ ] Min and Max Width/Height in CSS  
