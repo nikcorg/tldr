@@ -9,6 +9,13 @@ Random subjects, but mostly tech.
 - [ ] I'll read it later (haha)
 - [x] Actually read it
 
+### 2020-02-12
+
+- [x] Design your website to work best with 1Password  
+  https://support.1password.com/compatible-website-design/
+- [x] TypeScript Constructor Assignment: public and private Keywords  
+  https://kendaleiv.com/typescript-constructor-assignment-public-and-private-keywords/
+
 ### 2020-02-04
 
 - [x] Passwords Evolved: Authentication Guidance for the Modern Era  
