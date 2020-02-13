@@ -9,6 +9,11 @@ Random subjects, but mostly tech.
 - [ ] I'll read it later (haha)
 - [x] Actually read it
 
+### 2020-02-13
+
+- [ ] A Journey With Go  
+  https://medium.com/a-journey-with-go
+
 ### 2020-02-12
 
 - [x] Design your website to work best with 1Password  
