@@ -9,6 +9,11 @@ Random subjects, but mostly tech.
 - [ ] I'll read it later (haha)
 - [x] Actually read it
 
+### 2020-02-18
+
+- [ ] Parse, don't validate  
+  https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/
+
 ### 2020-02-14
 
 - [ ] A Complete Guide to Links and Buttons  
