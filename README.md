@@ -11,8 +11,10 @@ Random subjects, but mostly tech.
 
 ### 2020-02-18
 
-- [ ] Parse, don't validate  
-  https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/
+- [x] Parse, don't validate  
+  https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/  
+  See also:
+    - https://www.parsonsmatt.org/2017/10/11/type_safety_back_and_forth.html
 
 ### 2020-02-14
 
