@@ -9,6 +9,11 @@ Random subjects, but mostly tech.
 - [ ] I'll read it later (haha)
 - [x] Actually read it
 
+### 2020-02-25
+
+- [x] Etikka on siivoojan ihmeaine!  
+  https://www.kodinkuvalehti.fi/artikkeli/lue/ilmiot/etikka-siivoojan-ihmeaine-nain-se-puhdistaa-kaakelit-ja-vie-hienhajun-katso-yli
+
 ### 2020-02-18
 
 - [x] Parse, don't validate  
