@@ -9,6 +9,11 @@ Random subjects, but mostly tech.
 - [ ] I'll read it later (haha)
 - [x] Actually read it
 
+### 2020-02-28
+
+- [x] Why the GOV.UK Design System team changed the input type for numbers  
+  https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/
+
 ### 2020-02-25
 
 - [x] Etikka on siivoojan ihmeaine!  
