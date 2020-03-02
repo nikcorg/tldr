@@ -9,6 +9,11 @@ Random subjects, but mostly tech.
 - [ ] I'll read it later (haha)
 - [x] Actually read it
 
+### 2020-03-02
+
+- [ ] Lou's Pseudo 3d Page  
+  http://www.extentofthejam.com/pseudo/
+
 ### 2020-02-28
 
 - [x] Why the GOV.UK Design System team changed the input type for numbers  
