@@ -9,6 +9,12 @@ Random subjects, but mostly tech.
 - [ ] I'll read it later (haha)
 - [x] Actually read it
 
+### 2020-03-17
+
+- [x] Purging Fastly using GCP cloud functions  
+  https://www.fastly.com/blog/purge-fastly-gcp-cloud-functions  
+  Source: https://mobile.twitter.com/triblondon/status/1239994998453567488
+
 ### 2020-03-02
 
 - [ ] Lou's Pseudo 3d Page  
