@@ -9,6 +9,11 @@ Random subjects, but mostly tech.
 - [ ] I'll read it later (haha)
 - [x] Actually read it
 
+### 2020-03-24
+
+- [x] Square Brackets are the Enemy  
+  https://hueniverse.com/square-brackets-are-the-enemy-ff5b9fd8a3e8
+
 ### 2020-03-17
 
 - [x] Purging Fastly using GCP cloud functions  
