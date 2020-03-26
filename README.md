@@ -9,6 +9,12 @@ Random subjects, but mostly tech.
 - [ ] I'll read it later (haha)
 - [x] Actually read it
 
+### 2020-03-26
+
+- [ ] Margin considered harmful  
+  https://mxstbr.com/thoughts/margin  
+  Source: https://mobile.twitter.com/codepo8/status/1243233903135150081
+
 ### 2020-03-24
 
 - [x] Square Brackets are the Enemy  
