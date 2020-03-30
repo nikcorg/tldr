@@ -9,6 +9,15 @@ Random subjects, but mostly tech.
 - [ ] I'll read it later (haha)
 - [x] Actually read it
 
+### 2020-03-30
+
+- [x] The untold origin story of the N95 mask  
+  https://www.fastcompany.com/90479846/the-untold-origin-story-of-the-n95-mask  
+  Source: https://news.ycombinator.com/item?id=22719488
+- [ ] Amsterdam vs Copenhagen (part 1)  
+  https://robertweetman.wordpress.com/2017/11/04/amsterdam-vs-copenhagen-part-1/  
+  Source: https://mobile.twitter.com/Cycling_Embassy/status/1244278347183673345
+
 ### 2020-03-26
 
 - [ ] Margin considered harmful  
