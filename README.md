@@ -9,6 +9,11 @@ Random subjects, but mostly tech.
 - [ ] I'll read it later (haha)
 - [x] Actually read it
 
+### 2020-03-31
+
+- [x] If only experienced cyclists feel safe in a bike lane, then is it a bike lane at all?  
+  https://www.fastcompany.com/90361034/if-only-experienced-cyclists-feel-safe-in-a-bike-lane-then-is-it-a-bike-lane-at-all
+
 ### 2020-03-30
 
 - [x] The untold origin story of the N95 mask  
