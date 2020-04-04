@@ -9,6 +9,12 @@ Random subjects, but mostly tech.
 - [ ] I'll read it later (haha)
 - [x] Actually read it
 
+### 2020-04-04
+
+- [x] Caching best practices & max-age gotchas  
+  https://jakearchibald.com/2016/caching-best-practices/  
+  Source: https://mobile.twitter.com/jaffathecake/status/1246437548282568705
+
 ### 2020-03-31
 
 - [x] If only experienced cyclists feel safe in a bike lane, then is it a bike lane at all?  
