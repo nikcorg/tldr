@@ -9,6 +9,15 @@ Random subjects, but mostly tech.
 - [ ] I'll read it later (haha)
 - [x] Actually read it
 
+### 2020-04-08
+
+- [ ] @databases - Database libraries for Node.js that protect you from SQL Injection  
+  https://www.atdatabases.org/  
+  Source: https://mobile.twitter.com/ForbesLindesay/status/1113904976483561472
+- [ ] Element.focus vs aria-activedescendant  
+  https://zellwk.com/blog/element-focus-vs-aria-activedescendant/  
+  Source: https://mobile.twitter.com/codepo8/status/1247827525914542081
+
 ### 2020-04-04
 
 - [x] Caching best practices & max-age gotchas  
