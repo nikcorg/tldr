@@ -9,6 +9,11 @@ Random subjects, but mostly tech.
 - [ ] I'll read it later (haha)
 - [x] Actually read it
 
+### 2020-04-09
+
+- [ ] Moving from reCAPTCHA to hCaptcha  
+  https://blog.cloudflare.com/moving-from-recaptcha-to-hcaptcha/
+
 ### 2020-04-08
 
 - [ ] @databases - Database libraries for Node.js that protect you from SQL Injection  
