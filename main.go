@@ -57,20 +57,25 @@ func mainWithError(args []string) error {
 	if err != nil {
 		return fmt.Errorf("Error getting config dir: %w", err)
 	}
-
 	sourceDir, err = getSourceDir()
 	if err != nil {
 		return fmt.Errorf("Error getting data dir: %w", err)
 	}
 
+	log.Debugf("Config dir: %s", configDir)
+	log.Debugf("Source dir: %s", sourceDir)
+	log.Debugf("Source file: %s", sourceFile)
+
 	var source []byte
-	if source, err = getSource(); err != nil {
+	if source, err = readSource(); err != nil {
 		return fmt.Errorf("Error reading data file (%s): %w", sourceFile, err)
 	}
+	log.Debugf("Read %d bytes of yaml", len(source))
 
 	if err = yaml.Unmarshal(source, &tldr); err != nil {
 		return fmt.Errorf("Error parsing data file: %w", err)
 	}
+	log.Debugf("Unmarshalled %d records", len(tldr))
 
 	firstArg := args[0]
 	if strings.HasPrefix(firstArg, "http") {
@@ -170,7 +175,37 @@ func addEntry(url string) error {
 		}
 	}
 
+	addEntryToTLDR(newEntry)
+
+	var yamlString []byte
+	yamlString, err = yaml.Marshal(tldr)
+	if err != nil {
+		return fmt.Errorf("Error serialising yaml: %w", err)
+	}
+	log.Debugf("Marshalled %d entries into %d bytes", len(tldr), len(yamlString))
+
+	err = writeSource(yamlString)
+	if err != nil {
+		log.Debugf("Error writing yaml: %s", err.Error())
+		return err
+	}
+
+	return nil
+}
+
+func addEntryToTLDR(newEntry entry) {
 	y1, m1, d1 := time.Now().Date()
+
+	if len(tldr) == 0 {
+		tldr = []record{
+			{
+				Date:    time.Date(y1, m1, d1, 0, 0, 0, 0, time.UTC),
+				Entries: []entry{newEntry},
+			},
+		}
+		return
+	}
+
 	y2, m2, d2 := tldr[0].Date.Date()
 
 	if y1 == y2 && m1 == m2 && d1 == d2 {
@@ -185,19 +220,6 @@ func addEntry(url string) error {
 			},
 		}, tldr...)
 	}
-
-	var yamlString []byte
-	yamlString, err = yaml.Marshal(tldr)
-	if err != nil {
-		return fmt.Errorf("Error serialising yaml: %w", err)
-	}
-
-	err = ioutil.WriteFile(sourceFile, yamlString, 0644)
-	if err != nil {
-		return fmt.Errorf("Error writing %s: %w", sourceFile, err)
-	}
-
-	return nil
 }
 
 func getConfigDir() (string, error) {
@@ -231,14 +253,44 @@ func getSourceDir() (string, error) {
 	return path.Join(configDir, "tldr"), nil
 }
 
-func getSource() ([]byte, error) {
+func readSource() ([]byte, error) {
 	var err error
 	var source []byte
 
-	source, err = ioutil.ReadFile(sourceFile)
+	fullSourcePath := path.Join(sourceDir, sourceFile)
+
+	_, err = os.Stat(fullSourcePath)
+	if err != nil && os.IsNotExist(err) {
+		log.Debugf("Source file does not exist: %s", fullSourcePath)
+		return []byte{}, nil
+	} else if err != nil {
+		return nil, fmt.Errorf("Error reading source: %w", err)
+	}
+
+	source, err = ioutil.ReadFile(fullSourcePath)
 	if err != nil {
-		return nil, fmt.Errorf("Error reading %s: %w", sourceFile, err)
+		return nil, fmt.Errorf("Error reading %s: %w", fullSourcePath, err)
 	}
 
 	return source, nil
+}
+
+func writeSource(b []byte) error {
+	var err error
+
+	err = os.MkdirAll(sourceDir, 0755)
+	if err != nil && !os.IsExist(err) {
+		return fmt.Errorf("Error creating data dir: %s %w", sourceDir, err)
+	}
+
+	fullSourcePath := path.Join(sourceDir, sourceFile)
+	err = ioutil.WriteFile(fullSourcePath, b, 0644)
+	if err != nil && !os.IsNotExist(err) {
+		log.Debugf("Error writing %s: %s", fullSourcePath)
+		return fmt.Errorf("Error writing %s: %w", fullSourcePath, err)
+	}
+
+	log.Debugf("Wrote %d bytes into %s", len(b), fullSourcePath)
+
+	return nil
 }
