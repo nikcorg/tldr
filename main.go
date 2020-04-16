@@ -1,296 +1,307 @@
-package main
+// package main
 
-import (
-	"bufio"
-	"flag"
-	"fmt"
-	"io/ioutil"
-	"os"
-	"path"
-	"strconv"
-	"strings"
-	"time"
+// import (
+// 	"bufio"
+// 	"flag"
+// 	"fmt"
+// 	"io/ioutil"
+// 	"os"
+// 	"path"
+// 	"strconv"
+// 	"strings"
+// 	"time"
+// 	"tldr/fetch"
+// 	"tldr/storage"
 
-	log "github.com/sirupsen/logrus"
-	yaml "gopkg.in/yaml.v2"
-)
+// 	log "github.com/sirupsen/logrus"
+// 	yaml "gopkg.in/yaml.v2"
+// )
 
-var debugLogging bool = false
-var verboseLogging bool = false
+// var debugLogging bool = false
+// var verboseLogging bool = false
 
-var configDir string = ""
-var sourceDir string = ""
-var sourceFile string = ""
-var tldr []record
+// var configDir string = ""
+// var sourceDir string = ""
+// var sourceFile string = ""
 
-func init() {
-	log.SetLevel(log.ErrorLevel)
-}
+// // var tldr []record
+// var source storage.Source
 
-func main() {
-	flag.StringVar(&configDir, "c", "", "Where to find the configuration")
-	flag.StringVar(&sourceDir, "d", "", "Where to find the links database file")
-	flag.StringVar(&sourceFile, "f", "tldr.yaml", "The links database file")
-	flag.BoolVar(&verboseLogging, "v", false, "Show verbose logging")
-	flag.BoolVar(&debugLogging, "vv", false, "Show debug logging")
-	flag.Parse()
+// func main() {
+// 	handleFlags()
+// 	setLogLevel()
 
-	if debugLogging {
-		log.SetLevel(log.DebugLevel)
-	} else if verboseLogging {
-		log.SetLevel(log.InfoLevel)
-	}
+// 	if err := mainWithError(flag.Args()); err != nil {
+// 		log.Fatalf("Error: %v", err.Error())
+// 	}
+// }
 
-	if err := mainWithError(flag.Args()); err != nil {
-		log.Fatalf("Error: %v", err.Error())
-	}
-}
+// func handleFlags() {
+// 	flag.StringVar(&configDir, "c", "", "Where to find the configuration")
+// 	flag.StringVar(&sourceDir, "d", "", "Where to find the links database file")
+// 	flag.StringVar(&sourceFile, "f", "tldr.yaml", "The links database file")
+// 	flag.BoolVar(&verboseLogging, "v", false, "Show verbose logging")
+// 	flag.BoolVar(&debugLogging, "vv", false, "Show debug logging")
+// 	flag.Parse()
+// }
 
-func mainWithError(args []string) error {
-	var err error
+// func setLogLevel() {
+// 	if debugLogging {
+// 		log.SetLevel(log.DebugLevel)
+// 	} else if verboseLogging {
+// 		log.SetLevel(log.InfoLevel)
+// 	} else {
+// 		log.SetLevel(log.ErrorLevel)
+// 	}
+// }
 
-	if len(args) == 0 {
-		return fmt.Errorf("No arguments given, nothing to do")
-	}
+// func mainWithError(args []string) error {
+// 	var err error
 
-	configDir, err = getConfigDir()
-	if err != nil {
-		return fmt.Errorf("Error getting config dir: %w", err)
-	}
-	sourceDir, err = getSourceDir()
-	if err != nil {
-		return fmt.Errorf("Error getting data dir: %w", err)
-	}
+// 	if len(args) == 0 {
+// 		return fmt.Errorf("No arguments given, nothing to do")
+// 	}
 
-	log.Debugf("Config dir: %s", configDir)
-	log.Debugf("Source dir: %s", sourceDir)
-	log.Debugf("Source file: %s", sourceFile)
+// 	configDir, err = getConfigDir()
+// 	if err != nil {
+// 		return fmt.Errorf("Error getting config dir: %w", err)
+// 	}
+// 	sourceDir, err = getSourceDir()
+// 	if err != nil {
+// 		return fmt.Errorf("Error getting data dir: %w", err)
+// 	}
 
-	var source []byte
-	if source, err = readSource(); err != nil {
-		return fmt.Errorf("Error reading data file (%s): %w", sourceFile, err)
-	}
-	log.Debugf("Read %d bytes of yaml", len(source))
+// 	log.Debugf("Config dir: %s", configDir)
+// 	log.Debugf("Source dir: %s", sourceDir)
+// 	log.Debugf("Source file: %s", sourceFile)
 
-	if err = yaml.Unmarshal(source, &tldr); err != nil {
-		return fmt.Errorf("Error parsing data file: %w", err)
-	}
-	log.Debugf("Unmarshalled %d records", len(tldr))
+// 	var source []byte
+// 	if source, err = readSource(); err != nil {
+// 		return fmt.Errorf("Error reading data file (%s): %w", sourceFile, err)
+// 	}
+// 	log.Debugf("Read %d bytes of yaml", len(source))
 
-	firstArg := args[0]
-	if strings.HasPrefix(firstArg, "http") {
-		err = addEntry(firstArg)
-	}
+// 	if err = yaml.Unmarshal(source, &tldr); err != nil {
+// 		return fmt.Errorf("Error parsing data file: %w", err)
+// 	}
+// 	log.Debugf("Unmarshalled %d records", len(tldr))
 
-	return nil
-}
+// 	firstArg := args[0]
+// 	if strings.HasPrefix(firstArg, "http") {
+// 		err = addEntry(firstArg)
+// 	}
 
-func addEntry(url string) error {
-	log.Debugf("Fetching %v", url)
-	var res *fetchResult
-	var err error
-	if res, err = fetch(url); err != nil {
-		return fmt.Errorf("Error fetching (%s): %w", url, err)
-	}
-	log.Debugf("Fetch result: %+v", res)
+// 	return nil
+// }
 
-	var newEntry = entry{
-		URL:    res.URL,
-		Title:  res.Titles[0],
-		Unread: true,
-	}
+// func addEntry(url string) error {
+// 	log.Debugf("Fetching %v", url)
+// 	var res *fetch.Details
+// 	var err error
+// 	if res, err = fetch.Preview(url); err != nil {
+// 		return fmt.Errorf("Error fetching (%s): %w", url, err)
+// 	}
+// 	log.Debugf("Fetch result: %+v", res)
 
-	reader := bufio.NewReader(os.Stdin)
+// 	var newEntry = entry{
+// 		URL:    res.URL,
+// 		Title:  res.Titles[0],
+// 		Unread: true,
+// 	}
 
-	for true {
-		fmt.Println()
-		fmt.Printf("Adding: %s\n", newEntry.URL)
-		fmt.Printf("Title: %s\n", newEntry.Title)
-		fmt.Printf("Unread: %v\n", newEntry.Unread)
-		if len(newEntry.SourceURL) > 0 {
-			fmt.Printf("Source: %s\n", newEntry.SourceURL)
-		}
-		if len(newEntry.RelatedURLs) > 0 {
-			fmt.Println("Related:")
-			for _, u := range newEntry.RelatedURLs {
-				fmt.Printf("- %s\n", u)
-			}
-		}
-		fmt.Println("---")
-		fmt.Println("Press Enter to accept entry and exit")
-		fmt.Println("Enter L to see all titles")
-		fmt.Println("Enter R to toggle unread status")
-		fmt.Println("Enter T to enter custom title")
-		fmt.Println("Enter S to enter source URL")
-		fmt.Println("Enter U to enter related URL")
-		fmt.Println("Enter Q to discard entry")
-		fmt.Print("Your selection: ")
+// 	reader := bufio.NewReader(os.Stdin)
 
-		var selection string
-		selection, err = reader.ReadString('\n')
-		selection = strings.ToUpper(strings.TrimSpace(selection))
+// 	for true {
+// 		fmt.Println("=== Adding ===")
+// 		fmt.Printf("Title: %s\n", newEntry.Title)
+// 		fmt.Printf("URL: %s\n", newEntry.URL)
+// 		fmt.Printf("Unread: %v\n", newEntry.Unread)
+// 		if len(newEntry.SourceURL) > 0 {
+// 			fmt.Printf("Source: %s\n", newEntry.SourceURL)
+// 		}
+// 		if len(newEntry.RelatedURLs) > 0 {
+// 			fmt.Println("Related:")
+// 			for _, u := range newEntry.RelatedURLs {
+// 				fmt.Printf("- %s\n", u)
+// 			}
+// 		}
+// 		fmt.Println("---")
+// 		fmt.Println("Press Enter to accept entry and exit")
+// 		fmt.Println("Enter L to see all titles")
+// 		fmt.Println("Enter R to toggle unread status")
+// 		fmt.Println("Enter T to enter custom title")
+// 		fmt.Println("Enter S to enter source URL")
+// 		fmt.Println("Enter U to enter related URL")
+// 		fmt.Println("Enter Q to discard entry")
+// 		fmt.Print("Your selection: ")
 
-		if len(selection) == 0 {
-			break
-		}
+// 		var selection string
+// 		selection, err = reader.ReadString('\n')
+// 		selection = strings.ToUpper(strings.TrimSpace(selection))
 
-		switch selection {
-		case "L":
-			for n, t := range res.Titles {
-				fmt.Printf("%d) %s\n", n, t)
-			}
-			fmt.Print("Select title or press enter to keep current title: ")
-			selection, _ = reader.ReadString('\n')
-			selection = strings.TrimSpace(selection)
-			if len(selection) > 0 {
-				n, _ := strconv.Atoi(selection)
-				newEntry.Title = res.Titles[n]
-			}
-			break
-		case "R":
-			newEntry.Unread = !newEntry.Unread
-			break
-		case "T":
-			fmt.Printf("Enter title: ")
-			selection, _ = reader.ReadString('\n')
-			newEntry.Title = strings.TrimSpace(selection)
-			break
-		case "S":
-			fmt.Printf("Enter source: ")
-			selection, _ = reader.ReadString('\n')
-			newEntry.SourceURL = strings.TrimSpace(selection)
-			break
-		case "U":
-			fmt.Printf("Enter related: ")
-			selection, _ = reader.ReadString('\n')
-			newEntry.RelatedURLs = append(newEntry.RelatedURLs, strings.TrimSpace(selection))
-			break
-		case "Q":
-			fmt.Println("Ok, quitting without saving.")
-			os.Exit(0)
-			break
-		default:
-			fmt.Printf("I'm sorry, I don't understand '%s'. Please try again.\n", selection)
-			break
-		}
-	}
+// 		if len(selection) == 0 {
+// 			break
+// 		}
 
-	addEntryToTLDR(newEntry)
+// 		switch selection {
+// 		case "L":
+// 			for n, t := range res.Titles {
+// 				fmt.Printf("%d) %s\n", n, t)
+// 			}
+// 			fmt.Print("Select title or press enter to keep current title: ")
+// 			selection, _ = reader.ReadString('\n')
+// 			selection = strings.TrimSpace(selection)
+// 			if len(selection) > 0 {
+// 				n, _ := strconv.Atoi(selection)
+// 				newEntry.Title = res.Titles[n]
+// 			}
+// 			break
+// 		case "R":
+// 			newEntry.Unread = !newEntry.Unread
+// 			break
+// 		case "T":
+// 			fmt.Printf("Enter title: ")
+// 			selection, _ = reader.ReadString('\n')
+// 			newEntry.Title = strings.TrimSpace(selection)
+// 			break
+// 		case "S":
+// 			fmt.Printf("Enter source: ")
+// 			selection, _ = reader.ReadString('\n')
+// 			newEntry.SourceURL = strings.TrimSpace(selection)
+// 			break
+// 		case "U":
+// 			fmt.Printf("Enter related: ")
+// 			selection, _ = reader.ReadString('\n')
+// 			newEntry.RelatedURLs = append(newEntry.RelatedURLs, strings.TrimSpace(selection))
+// 			break
+// 		case "Q":
+// 			fmt.Println("Ok, quitting without saving.")
+// 			os.Exit(0)
+// 			break
+// 		default:
+// 			fmt.Printf("I'm sorry, I don't understand '%s'. Please try again.\n", selection)
+// 			break
+// 		}
+// 	}
 
-	var yamlString []byte
-	yamlString, err = yaml.Marshal(tldr)
-	if err != nil {
-		return fmt.Errorf("Error serialising yaml: %w", err)
-	}
-	log.Debugf("Marshalled %d entries into %d bytes", len(tldr), len(yamlString))
+// 	addEntryToTLDR(newEntry)
 
-	err = writeSource(yamlString)
-	if err != nil {
-		log.Debugf("Error writing yaml: %s", err.Error())
-		return err
-	}
+// 	var yamlString []byte
+// 	yamlString, err = yaml.Marshal(tldr)
+// 	if err != nil {
+// 		return fmt.Errorf("Error serialising yaml: %w", err)
+// 	}
+// 	log.Debugf("Marshalled %d entries into %d bytes", len(tldr), len(yamlString))
 
-	return nil
-}
+// 	err = writeSource(yamlString)
+// 	if err != nil {
+// 		log.Debugf("Error writing yaml: %s", err.Error())
+// 		return err
+// 	}
 
-func addEntryToTLDR(newEntry entry) {
-	y1, m1, d1 := time.Now().Date()
+// 	fmt.Println("Done")
 
-	if len(tldr) == 0 {
-		tldr = []record{
-			{
-				Date:    time.Date(y1, m1, d1, 0, 0, 0, 0, time.UTC),
-				Entries: []entry{newEntry},
-			},
-		}
-		return
-	}
+// 	return nil
+// }
 
-	y2, m2, d2 := tldr[0].Date.Date()
+// func addEntryToTLDR(newEntry entry) {
+// 	y1, m1, d1 := time.Now().Date()
 
-	if y1 == y2 && m1 == m2 && d1 == d2 {
-		log.Debug("Entry for today already exists, appending")
-		tldr[0].Entries = append(tldr[0].Entries, newEntry)
-	} else {
-		log.Debug("Entry for today doesn't exist, creating")
-		tldr = append([]record{
-			{
-				Date:    time.Date(y1, m1, d1, 0, 0, 0, 0, time.UTC),
-				Entries: []entry{newEntry},
-			},
-		}, tldr...)
-	}
-}
+// 	if len(tldr) == 0 {
+// 		tldr = []record{
+// 			{
+// 				Date:    time.Date(y1, m1, d1, 0, 0, 0, 0, time.UTC),
+// 				Entries: []entry{newEntry},
+// 			},
+// 		}
+// 		return
+// 	}
 
-func getConfigDir() (string, error) {
-	var configDir string
-	var err error
+// 	y2, m2, d2 := tldr[0].Date.Date()
 
-	// If a value was passed on the command line, don't overrule it
-	if configDir != "" {
-		return configDir, nil
-	}
+// 	if y1 == y2 && m1 == m2 && d1 == d2 {
+// 		log.Debug("Entry for today already exists, appending")
+// 		tldr[0].Entries = append(tldr[0].Entries, newEntry)
+// 	} else {
+// 		log.Debug("Entry for today doesn't exist, creating")
+// 		tldr = append([]record{
+// 			{
+// 				Date:    time.Date(y1, m1, d1, 0, 0, 0, 0, time.UTC),
+// 				Entries: []entry{newEntry},
+// 			},
+// 		}, tldr...)
+// 	}
+// }
 
-	if configDir, err = os.UserConfigDir(); err != nil {
-		return "", err
-	}
+// func getConfigDir() (string, error) {
+// 	var configDir string
+// 	var err error
 
-	return path.Join(configDir, "tldr"), nil
-}
+// 	// If a value was passed on the command line, don't overrule it
+// 	if configDir != "" {
+// 		return configDir, nil
+// 	}
 
-func getSourceDir() (string, error) {
-	var configDir string
-	var err error
+// 	if configDir, err = os.UserConfigDir(); err != nil {
+// 		return "", err
+// 	}
 
-	if sourceDir != "" {
-		return sourceDir, nil
-	}
+// 	return path.Join(configDir, "tldr"), nil
+// }
 
-	if configDir, err = os.UserHomeDir(); err != nil {
-		return "", err
-	}
+// func getSourceDir() (string, error) {
+// 	var configDir string
+// 	var err error
 
-	return path.Join(configDir, "tldr"), nil
-}
+// 	if sourceDir != "" {
+// 		return sourceDir, nil
+// 	}
 
-func readSource() ([]byte, error) {
-	var err error
-	var source []byte
+// 	if configDir, err = os.UserHomeDir(); err != nil {
+// 		return "", err
+// 	}
 
-	fullSourcePath := path.Join(sourceDir, sourceFile)
+// 	return path.Join(configDir, "tldr"), nil
+// }
 
-	_, err = os.Stat(fullSourcePath)
-	if err != nil && os.IsNotExist(err) {
-		log.Debugf("Source file does not exist: %s", fullSourcePath)
-		return []byte{}, nil
-	} else if err != nil {
-		return nil, fmt.Errorf("Error reading source: %w", err)
-	}
+// func readSource() ([]byte, error) {
+// 	var err error
+// 	var source []byte
 
-	source, err = ioutil.ReadFile(fullSourcePath)
-	if err != nil {
-		return nil, fmt.Errorf("Error reading %s: %w", fullSourcePath, err)
-	}
+// 	fullSourcePath := path.Join(sourceDir, sourceFile)
 
-	return source, nil
-}
+// 	_, err = os.Stat(fullSourcePath)
+// 	if err != nil && os.IsNotExist(err) {
+// 		log.Debugf("Source file does not exist: %s", fullSourcePath)
+// 		return []byte{}, nil
+// 	} else if err != nil {
+// 		return nil, fmt.Errorf("Error reading source: %w", err)
+// 	}
 
-func writeSource(b []byte) error {
-	var err error
+// 	source, err = ioutil.ReadFile(fullSourcePath)
+// 	if err != nil {
+// 		return nil, fmt.Errorf("Error reading %s: %w", fullSourcePath, err)
+// 	}
 
-	err = os.MkdirAll(sourceDir, 0755)
-	if err != nil && !os.IsExist(err) {
-		return fmt.Errorf("Error creating data dir: %s %w", sourceDir, err)
-	}
+// 	return source, nil
+// }
 
-	fullSourcePath := path.Join(sourceDir, sourceFile)
-	err = ioutil.WriteFile(fullSourcePath, b, 0644)
-	if err != nil && !os.IsNotExist(err) {
-		log.Debugf("Error writing %s: %s", fullSourcePath)
-		return fmt.Errorf("Error writing %s: %w", fullSourcePath, err)
-	}
+// func writeSource(b []byte) error {
+// 	var err error
 
-	log.Debugf("Wrote %d bytes into %s", len(b), fullSourcePath)
+// 	err = os.MkdirAll(sourceDir, 0755)
+// 	if err != nil && !os.IsExist(err) {
+// 		return fmt.Errorf("Error creating data dir: %s %w", sourceDir, err)
+// 	}
 
-	return nil
-}
+// 	fullSourcePath := path.Join(sourceDir, sourceFile)
+// 	err = ioutil.WriteFile(fullSourcePath, b, 0644)
+// 	if err != nil && !os.IsNotExist(err) {
+// 		log.Debugf("Error writing %s: %s", fullSourcePath)
+// 		return fmt.Errorf("Error writing %s: %w", fullSourcePath, err)
+// 	}
+
+// 	log.Debugf("Wrote %d bytes into %s", len(b), fullSourcePath)
+
+// 	return nil
+// }

@@ -1,0 +1,13 @@
+TODAY=$(date +%Y-%m-%d)
+PREV=$(git log -n 1 --format=%s)
+
+if [ "$TODAY" = "$PREV" ];
+then
+  git add README.md; git commit --amend --no-edit
+  git push --force origin master
+else
+  sed -i '' -e "s/TODAY/$TODAY/" README.md
+  git add README.md; git commit -m "$TODAY"
+  git push origin master
+fi
+
