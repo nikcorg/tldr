@@ -25,6 +25,15 @@ func Create(newEntry *storage.Entry, ctx *EditContext) error {
 }
 
 func edit(newEntry *storage.Entry, ctx *EditContext, mode string) error {
+	const (
+		listTitles   = "L"
+		customTitle  = "T"
+		toggleUnread = "X"
+		sourceURL    = "S"
+		relatedURL   = "R"
+		quit         = "Q"
+	)
+
 	var err error
 
 	reader := bufio.NewReader(os.Stdin)
@@ -43,14 +52,15 @@ func edit(newEntry *storage.Entry, ctx *EditContext, mode string) error {
 				fmt.Printf("- %s\n", u)
 			}
 		}
+
 		fmt.Println("---")
 		fmt.Println("Press Enter to accept entry and exit")
-		fmt.Println("L) see all titles")
-		fmt.Println("R) toggle unread status")
-		fmt.Println("T) enter custom title")
-		fmt.Println("S) enter source URL")
-		fmt.Println("U) enter related URL")
-		fmt.Println("Q) quit without saving")
+		fmt.Printf("%s) toggle unread status\n", toggleUnread)
+		fmt.Printf("%s) list titles\n", listTitles)
+		fmt.Printf("%s) custom title\n", customTitle)
+		fmt.Printf("%s) source URL\n", sourceURL)
+		fmt.Printf("%s) related URL\n", relatedURL)
+		fmt.Printf("%s) quit without saving\n", quit)
 		fmt.Print("Your selection: ")
 
 		var selection string
@@ -66,7 +76,7 @@ func edit(newEntry *storage.Entry, ctx *EditContext, mode string) error {
 		}
 
 		switch selection {
-		case "L":
+		case listTitles:
 			for n, t := range ctx.Titles {
 				fmt.Printf("%d) %s\n", n, t)
 			}
@@ -78,25 +88,25 @@ func edit(newEntry *storage.Entry, ctx *EditContext, mode string) error {
 				newEntry.Title = ctx.Titles[n]
 			}
 
-		case "R":
+		case toggleUnread:
 			newEntry.Unread = !newEntry.Unread
 
-		case "T":
+		case customTitle:
 			fmt.Printf("Enter title: ")
 			selection, _ = reader.ReadString('\n')
 			newEntry.Title = strings.TrimSpace(selection)
 
-		case "S":
+		case sourceURL:
 			fmt.Printf("Enter source: ")
 			selection, _ = reader.ReadString('\n')
 			newEntry.SourceURL = strings.ToLower(strings.TrimSpace(selection))
 
-		case "U":
+		case relatedURL:
 			fmt.Printf("Enter related: ")
 			selection, _ = reader.ReadString('\n')
 			newEntry.RelatedURLs = append(newEntry.RelatedURLs, strings.ToLower(strings.TrimSpace(selection)))
 
-		case "Q":
+		case quit:
 			fmt.Println("Ok, quitting without saving.")
 			os.Exit(0)
 
