@@ -16,9 +16,10 @@ func any(url string) (*Details, error) {
 	var res *http.Response
 
 	if res, err = http.Get(url); err != nil {
+		log.Debugf("failed fetching %s: %v", err)
 		return nil, err
 	} else if res.StatusCode != 200 {
-		return nil, fmt.Errorf("Error %v while fetching %s", res.StatusCode, url)
+		return nil, fmt.Errorf("failed fetching %s: %v", url, res.StatusCode)
 	}
 
 	log.Debugf("Fetched URL: %s -> %s\n", url, res.Request.URL)
