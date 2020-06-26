@@ -37,7 +37,7 @@ func (c *configCmd) Execute(subcommand string, args ...string) error {
 	}
 
 	if err == nil && changed {
-		err = runtimeConfig.Save(configFile)
+		return runtimeConfig.Save(configFile)
 	}
 
 	return err
