@@ -9,15 +9,13 @@ import (
 	log "github.com/sirupsen/logrus"
 )
 
-type findCmd struct{}
+type findCmd struct {
+	filters     []findFilter
+	needle      string
+	showRelated bool
+}
 
 type findFilter func(entry *storage.Entry) bool
-type findFilters []findFilter
-
-type filterFlags struct {
-	Unread bool
-	Read   bool
-}
 
 func unreadFilter(state bool) findFilter {
 	return func(e *storage.Entry) bool {
@@ -26,27 +24,18 @@ func unreadFilter(state bool) findFilter {
 }
 
 var (
-	showRelated = false
-)
-
-var (
 	errUnreadReadConflict  = fmt.Errorf("Cannot use both --unread and --read")
 	errArgsAfterSearchTerm = fmt.Errorf("Cannot pass flags after the search term")
 	errUnknownArg          = fmt.Errorf("Unknown argument")
 	errInvalidArgument     = fmt.Errorf("Invalid argument")
 	errJunkAfterNeedle     = fmt.Errorf("Found junk after search term")
+	errMissingNeedle       = fmt.Errorf("no search term found")
 )
 
 func (c *findCmd) ParseArgs(subcommand string, args ...string) error {
-	return nil
-}
-
-func (c *findCmd) Execute(subcommand string, args ...string) error {
-	filters := []findFilter{}
-	providedFlags := &filterFlags{}
-
+	seenUnread := false
+	seenRead := false
 	needleFound := false
-	var needle string = ""
 
 	for _, arg := range args {
 		if strings.HasPrefix(arg, "-") || strings.HasPrefix(arg, "--") {
@@ -56,29 +45,29 @@ func (c *findCmd) Execute(subcommand string, args ...string) error {
 
 			switch arg {
 			case "-u", "--unread":
-				if providedFlags.Read == true {
+				if seenRead == true {
 					return errUnreadReadConflict
 				}
-				filters = append(filters, unreadFilter(true))
-				providedFlags.Unread = true
+				c.filters = append(c.filters, unreadFilter(true))
+				seenUnread = true
 
 			case "-r", "--read":
-				if providedFlags.Unread == true {
+				if seenUnread == true {
 					return errUnreadReadConflict
 				}
-				filters = append(filters, unreadFilter(false))
-				providedFlags.Read = true
+				c.filters = append(c.filters, unreadFilter(false))
+				seenUnread = true
 
 			case "-rel", "--related":
 				log.Debugf("related, Set `showRelated=true`")
-				showRelated = true
+				c.showRelated = true
 
 			default:
 				log.Debugf("Unknown argument: %s", arg)
 				return fmt.Errorf("%w: %s", errUnknownArg, arg)
 			}
 		} else if !needleFound {
-			needle = strings.ToLower(arg)
+			c.needle = strings.ToLower(arg)
 			needleFound = true
 		} else {
 			return fmt.Errorf("%w: %s", errInvalidArgument, arg)
@@ -86,10 +75,14 @@ func (c *findCmd) Execute(subcommand string, args ...string) error {
 	}
 
 	if !needleFound {
-		return fmt.Errorf("You must provide a search term")
+		return errMissingNeedle
 	}
 
-	log.Debugf("Find filters: +%v", filters)
+	return nil
+}
+
+func (c *findCmd) Execute(subcommand string, args ...string) error {
+	log.Debugf("Find filters: +%v", c.filters)
 
 	source, err := stor.Load()
 	if err != nil {
@@ -99,13 +92,13 @@ func (c *findCmd) Execute(subcommand string, args ...string) error {
 
 	switch subcommand {
 	case "one", "first":
-		findFirst(source, needle, &filters)
+		c.findFirst(source, c.needle, &c.filters)
 
 	case "all":
 		fallthrough
 
 	default:
-		findAll(source, needle, &filters)
+		c.findAll(source, c.needle, &c.filters)
 	}
 
 	return nil
@@ -162,14 +155,14 @@ func locateMatches(stor *[]storage.Record, needle string, stopAfter int, filters
 	return results
 }
 
-func noMatches(needle string) {
+func (c *findCmd) noMatches(needle string) {
 	fmt.Printf("No match found for \"%s\"\n", needle)
 }
 
-func oneMatch(sr searchResult, needle string) {
+func (c *findCmd) oneMatch(sr searchResult, needle string) {
 	entry := sr.Entry
 
-	log.Debugf("Showing entry: %+v, Related: %v", entry, showRelated)
+	log.Debugf("Showing entry: %+v, Related: %v", entry, c.showRelated)
 
 	if !entry.Unread {
 		fmt.Printf("[x] %s\n%s\n", entry.Title, entry.URL)
@@ -177,7 +170,7 @@ func oneMatch(sr searchResult, needle string) {
 		fmt.Printf("[ ] %s\n%s\n", entry.Title, entry.URL)
 	}
 
-	if showRelated && len(entry.RelatedURLs) > 0 {
+	if c.showRelated && len(entry.RelatedURLs) > 0 {
 		fmt.Print("See also:\n")
 		for _, rel := range entry.RelatedURLs {
 			fmt.Printf("- %s\n", rel)
@@ -185,10 +178,10 @@ func oneMatch(sr searchResult, needle string) {
 	}
 }
 
-func findAll(source *storage.Source, needle string, filters *[]findFilter) {
+func (c *findCmd) findAll(source *storage.Source, needle string, filters *[]findFilter) {
 	results := locateMatches(source.Records, needle, 0, filters)
 	if len(results) == 0 {
-		noMatches(needle)
+		c.noMatches(needle)
 		return
 	}
 
@@ -199,17 +192,17 @@ func findAll(source *storage.Source, needle string, filters *[]findFilter) {
 
 	fmt.Printf("Found %d %s for \"%s\"\n", len(results), matches, needle)
 	for _, rs := range results {
-		oneMatch(rs, needle)
+		c.oneMatch(rs, needle)
 	}
 }
 
-func findFirst(source *storage.Source, needle string, filters *[]findFilter) {
+func (c *findCmd) findFirst(source *storage.Source, needle string, filters *[]findFilter) {
 	results := locateMatches(source.Records, needle, 1, filters)
 	if len(results) == 0 {
-		noMatches(needle)
+		c.noMatches(needle)
 		return
 	}
 
 	fmt.Printf("Found match for \"%s\" from %s\n", needle, results[0].Record.Date)
-	oneMatch(results[0], needle)
+	c.oneMatch(results[0], needle)
 }
