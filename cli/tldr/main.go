@@ -19,7 +19,8 @@ var (
 	debugLogging   bool = false
 	verboseLogging bool = false
 
-	runtimeConfig *config.Settings
+	configWasLoadedFromDisk bool = false
+	runtimeConfig           *config.Settings
 
 	stor *storage.Storage
 
@@ -93,11 +94,13 @@ func defaultRunnable(arg string) (runnable, []string) {
 
 func mainWithErr(args ...string) error {
 	var err error
-	if err = runtimeConfig.Load(configFile); err != nil {
+	if err = runtimeConfig.Load(configFile); err != nil && err != config.ErrConfigFileNotFound {
 		return err
 	}
 
-	log.Debugf("Runtime config after Load %+v", runtimeConfig)
+	configWasLoadedFromDisk = err != config.ErrConfigFileNotFound
+
+	log.Debugf("Runtime config after Load (from disk? %v) %+v", configWasLoadedFromDisk, runtimeConfig)
 
 	var firstArg string = ""
 	var restArgs []string = []string{}
