@@ -22,4 +22,8 @@ func (c *helpCmd) Execute(subcommand string, args ...string) error {
 	return nil
 }
 
+func (c *helpCmd) ParseArgs(subcommand string, args ...string) error {
+	return nil
+}
+
 func (c *helpCmd) Help(subcommand string, args ...string) {}

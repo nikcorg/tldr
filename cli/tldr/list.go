@@ -15,6 +15,10 @@ var (
 
 type listCmd struct{}
 
+func (f *listCmd) ParseArgs(subcommand string, args ...string) error {
+	return nil
+}
+
 func (f *listCmd) Execute(subcommand string, args ...string) error {
 	log.Debugf("list:%s, args=%v", subcommand, args)
 

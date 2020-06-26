@@ -37,6 +37,10 @@ var (
 	errJunkAfterNeedle     = fmt.Errorf("Found junk after search term")
 )
 
+func (c *findCmd) ParseArgs(subcommand string, args ...string) error {
+	return nil
+}
+
 func (c *findCmd) Execute(subcommand string, args ...string) error {
 	filters := []findFilter{}
 	providedFlags := &filterFlags{}

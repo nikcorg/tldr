@@ -48,6 +48,10 @@ func (c *addCmd) Help(subcommand string, args ...string) {
 	log.Debugf("Help for %s, %v", subcommand, args)
 }
 
+func (c *addCmd) ParseArgs(subcommand string, args ...string) error {
+	return nil
+}
+
 ///
 
 func addEntry(url string, source *storage.Source) error {

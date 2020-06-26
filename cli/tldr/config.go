@@ -15,6 +15,10 @@ var (
 
 type configCmd struct{}
 
+func (c *configCmd) ParseArgs(subcommand string, args ...string) error {
+	return nil
+}
+
 func (c *configCmd) Execute(subcommand string, args ...string) error {
 	log.Debugf("config:%s, args=%v", subcommand, strings.Join(args, "|"))
 
@@ -27,6 +31,9 @@ func (c *configCmd) Execute(subcommand string, args ...string) error {
 
 	case "get":
 		err = c.get(args[0])
+
+	case "init":
+		return fmt.Errorf("Not yet implemented")
 	}
 
 	if err == nil && changed {

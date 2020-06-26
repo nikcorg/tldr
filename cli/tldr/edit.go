@@ -21,6 +21,10 @@ var (
 
 type editCmd struct{}
 
+func (e *editCmd) ParseArgs(subcommand string, args ...string) error {
+	return nil
+}
+
 func (e *editCmd) Execute(subcommand string, args ...string) error {
 	source, err := stor.Load()
 	if err != nil {
