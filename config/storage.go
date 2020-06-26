@@ -59,6 +59,13 @@ func (s *Settings) Save(configFile string) error {
 		return err
 	}
 
+	err = os.MkdirAll(configDir, 0755)
+	if err != nil && !os.IsExist(err) {
+		return fmt.Errorf("Error creating data dir: %s %w", configDir, err)
+	}
+
+	log.Debugf("writing %d bytes to %s", len(bytes), fullPath)
+
 	err = ioutil.WriteFile(fullPath, bytes, 0644)
 	if err != nil {
 		return err
