@@ -11,16 +11,25 @@ import (
 	log "github.com/sirupsen/logrus"
 )
 
-var configFile string = ""
-var sourceDir string = ""
-var sourceFile string = ""
+var (
+	configFile string = ""
+	sourceDir  string = ""
+	sourceFile string = ""
 
-var debugLogging bool = false
-var verboseLogging bool = false
+	debugLogging   bool = false
+	verboseLogging bool = false
 
-var runtimeConfig *config.Settings
+	runtimeConfig *config.Settings
 
-var stor *storage.Storage
+	stor *storage.Storage
+
+	cmdAdd    = &addCmd{}
+	cmdConfig = &configCmd{}
+	cmdEdit   = &editCmd{}
+	cmdFind   = &findCmd{}
+	cmdHelp   = &helpCmd{}
+	cmdList   = &listCmd{}
+)
 
 func main() {
 	handleFlags()
@@ -33,13 +42,6 @@ func main() {
 		log.Fatalf("Error running cmd: %s", err.Error())
 	}
 }
-
-var cmdAdd = &addCmd{}
-var cmdConfig = &configCmd{}
-var cmdEdit = &editCmd{}
-var cmdFind = &findCmd{}
-var cmdHelp = &helpCmd{}
-var cmdList = &listCmd{}
 
 func splitCommand(cmd string) (string, string) {
 	if cmd == "" {
