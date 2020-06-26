@@ -16,6 +16,11 @@ const configFileName = "config.yaml"
 
 var configDir string = ""
 
+// error outcomes
+var (
+	ErrConfigFileNotFound = fmt.Errorf("no config file found")
+)
+
 func init() {
 	userConfigDir, _ := os.UserConfigDir()
 	configDir = path.Join(userConfigDir, "tldr")
@@ -33,7 +38,9 @@ func (s *Settings) Load(configFile string) error {
 	fullPath := defaultConfigFilename(configFile, path.Join(configDir, configFileName))
 
 	bytes, err := ioutil.ReadFile(fullPath)
-	if err != nil && !os.IsNotExist(err) {
+	if os.IsNotExist(err) {
+		return ErrConfigFileNotFound
+	} else if err != nil {
 		return err
 	}
 
