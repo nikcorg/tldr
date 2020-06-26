@@ -14,9 +14,12 @@ func (c *helpCmd) Execute(subcommand string, args ...string) error {
 	flag.PrintDefaults()
 
 	if len(args) > 0 && args[0] != "" {
-		helpFocus, helpFocusSubcommand := splitCommand(args[0])
-		runnable := runnableForCommand(helpFocus)
-		runnable.Help(helpFocusSubcommand, args[1:]...)
+		firstArg := args[0]
+		runnableCommand, helpFocus, helpFocusSubcommand, restArgs := runnableForCommand(firstArg, args[1:])
+
+		log.Debugf("focused help: %s:%s", helpFocus, helpFocusSubcommand)
+
+		runnableCommand.Help(helpFocusSubcommand, restArgs...)
 	}
 
 	return nil

@@ -52,25 +52,46 @@ func splitCommand(cmd string) (string, string) {
 	return cmds[0], cmds[1]
 }
 
-func runnableForCommand(cmd string) runnable {
-	switch cmd {
-	case "add":
-		return cmdAdd
+func runnableForCommand(firstArg string, args []string) (runnable, string, string, []string) {
+	var (
+		runnableCommand runnable
+		nextArgs        []string = args
+	)
+
+	command, subcommand := splitCommand(firstArg)
+
+	switch command {
 	case "config":
-		return cmdConfig
+		runnableCommand = cmdConfig
 	case "edit":
-		return cmdEdit
+		runnableCommand = cmdEdit
 	case "find":
-		return cmdFind
+		runnableCommand = cmdFind
 	case "list", "show":
-		return cmdList
+		runnableCommand = cmdList
+	case "help":
+		runnableCommand = cmdHelp
+	case "add":
+		runnableCommand = cmdAdd
 	default:
-		return cmdHelp
+		subcommand = ""
+		runnableCommand, nextArgs = defaultRunnable(firstArg)
 	}
+
+	return runnableCommand, command, subcommand, nextArgs
+}
+
+func defaultRunnable(arg string) (runnable, []string) {
+	if strings.HasPrefix(arg, "http") {
+		return cmdAdd, []string{arg}
+	}
+
+	return cmdHelp, []string{}
 }
 
 func mainWithErr(args ...string) error {
-	if err := runtimeConfig.Load(configFile); err != nil {
+	var err error
+	if err = runtimeConfig.Load(configFile); err != nil {
 		return err
 	}
 
@@ -83,14 +104,9 @@ func mainWithErr(args ...string) error {
 		firstArg = args[0]
 	}
 
-	if len(args) > 1 {
-		restArgs = args[1:]
-	}
+	runnableCommand, command, subcommand, restArgs := runnableForCommand(firstArg, args[1:])
 
-	command, subcommand := splitCommand(firstArg)
-	runnable := runnableForCommand(command)
-
-	if err := runnable.Execute(subcommand, restArgs...); err != nil {
+	if err = runnableCommand.Execute(subcommand, restArgs...); err != nil {
 		if subcommand != "" {
 			return fmt.Errorf("Error running %s:%s: %w", command, subcommand, err)
 
