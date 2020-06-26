@@ -3,7 +3,8 @@ package main
 import (
 	"fmt"
 	"strings"
-	"tldr/config"
+
+	"github.com/nikcorg/tldr-cli/config"
 
 	log "github.com/sirupsen/logrus"
 )

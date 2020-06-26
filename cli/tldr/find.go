@@ -3,7 +3,8 @@ package main
 import (
 	"fmt"
 	"strings"
-	"tldr/storage"
+
+	"github.com/nikcorg/tldr-cli/storage"
 
 	log "github.com/sirupsen/logrus"
 )

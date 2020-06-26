@@ -5,7 +5,7 @@ import (
 	"io/ioutil"
 	"os"
 
-	"tldr/config"
+	"github.com/nikcorg/tldr-cli/config"
 
 	log "github.com/sirupsen/logrus"
 	yaml "gopkg.in/yaml.v2"

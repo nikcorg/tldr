@@ -6,7 +6,8 @@ import (
 	"os"
 	"strconv"
 	"strings"
-	"tldr/storage"
+
+	"github.com/nikcorg/tldr-cli/storage"
 )
 
 // EditContext represents additional data useful for the editing context

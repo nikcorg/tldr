@@ -1,4 +1,4 @@
-module tldr
+module github.com/nikcorg/tldr-cli
 
 go 1.14
 

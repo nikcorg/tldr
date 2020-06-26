@@ -6,7 +6,7 @@ import (
 
 	"golang.org/x/net/html"
 
-	"tldr/extract"
+	"github.com/nikcorg/tldr-cli/extract"
 
 	log "github.com/sirupsen/logrus"
 )

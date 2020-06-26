@@ -6,8 +6,9 @@ import (
 	"os"
 	"strconv"
 	"strings"
-	"tldr/input/entry"
-	"tldr/storage"
+
+	"github.com/nikcorg/tldr-cli/input/entry"
+	"github.com/nikcorg/tldr-cli/storage"
 
 	log "github.com/sirupsen/logrus"
 )

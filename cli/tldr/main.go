@@ -4,8 +4,9 @@ import (
 	"flag"
 	"fmt"
 	"strings"
-	"tldr/config"
-	"tldr/storage"
+
+	"github.com/nikcorg/tldr-cli/config"
+	"github.com/nikcorg/tldr-cli/storage"
 
 	log "github.com/sirupsen/logrus"
 )
