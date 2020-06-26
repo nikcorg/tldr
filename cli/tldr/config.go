@@ -33,11 +33,11 @@ func (c *configCmd) Execute(subcommand string, args ...string) error {
 		err = c.get(args[0])
 
 	case "init":
-		return fmt.Errorf("Not yet implemented")
+		changed = !configWasLoadedFromDisk
 	}
 
 	if err == nil && changed {
-		runtimeConfig.Save(configFile)
+		err = runtimeConfig.Save(configFile)
 	}
 
 	return err
