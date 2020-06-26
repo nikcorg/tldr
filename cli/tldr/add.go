@@ -24,16 +24,20 @@ func (c *addCmd) Execute(subcommand string, args ...string) error {
 
 	switch subcommand {
 	case "title":
-		amendTitle(source, args[0])
+		err = amendTitle(source, args[0])
 
 	case "source":
-		amendSource(source, args[0])
+		err = amendSource(source, args[0])
 
 	case "related":
-		amendRelated(source, args[0])
+		err = amendRelated(source, args[0])
 
 	default:
-		addEntry(args[0], source)
+		err = addEntry(args[0], source)
+	}
+
+	if err != nil {
+		return err
 	}
 
 	err = stor.Save(source)
