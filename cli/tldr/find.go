@@ -93,13 +93,13 @@ func (c *findCmd) Execute(subcommand string, args ...string) error {
 
 	switch subcommand {
 	case "one", "first":
-		c.findFirst(source, c.needle, &c.filters)
+		c.findFirst(source)
 
 	case "all":
 		fallthrough
 
 	default:
-		c.findAll(source, c.needle, &c.filters)
+		c.findAll(source)
 	}
 
 	return nil
@@ -179,10 +179,13 @@ func (c *findCmd) oneMatch(sr searchResult, needle string) {
 	}
 }
 
-func (c *findCmd) findAll(source *storage.Source, needle string, filters *[]findFilter) {
+func (c *findCmd) findAll(source *storage.Source) {
+	needle := c.needle
+	filters := &c.filters
+
 	results := locateMatches(source.Records, needle, 0, filters)
 	if len(results) == 0 {
-		c.noMatches(needle)
+		c.noMatches(c.needle)
 		return
 	}
 
@@ -197,7 +200,10 @@ func (c *findCmd) findAll(source *storage.Source, needle string, filters *[]find
 	}
 }
 
-func (c *findCmd) findFirst(source *storage.Source, needle string, filters *[]findFilter) {
+func (c *findCmd) findFirst(source *storage.Source) {
+	needle := c.needle
+	filters := &c.filters
+
 	results := locateMatches(source.Records, needle, 1, filters)
 	if len(results) == 0 {
 		c.noMatches(needle)
