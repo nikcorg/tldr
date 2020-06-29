@@ -82,7 +82,8 @@ func (c *findCmd) ParseArgs(subcommand string, args ...string) error {
 }
 
 func (c *findCmd) Execute(subcommand string, args ...string) error {
-	log.Debugf("Find filters: +%v", c.filters)
+	log.Debugf("Needle: %v", c.needle)
+	log.Debugf("Find filters: %+v", c.filters)
 
 	source, err := stor.Load()
 	if err != nil {
