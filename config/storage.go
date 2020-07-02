@@ -8,11 +8,15 @@ import (
 	"strings"
 	"time"
 
+	"github.com/nikcorg/tldr-cli/config/rotation"
 	log "github.com/sirupsen/logrus"
 	"gopkg.in/yaml.v2"
 )
 
-const configFileName = "config.yaml"
+const (
+	configFileName = "config.yaml"
+	tldrConfigDir  = "TLDR_CONFIG_DIR"
+)
 
 var configDir string = ""
 
@@ -22,10 +26,15 @@ var (
 )
 
 func init() {
-	userConfigDir, _ := os.UserConfigDir()
-	configDir = path.Join(userConfigDir, "tldr")
+	envConfigDir := os.Getenv(tldrConfigDir)
+	if envConfigDir != "" {
+		configDir = envConfigDir
+	} else {
+		userConfigDir, _ := os.UserConfigDir()
+		configDir = path.Join(userConfigDir, "tldr")
+	}
 
-	log.Debugf("Resolved configDir=%s (%v)\n", configDir, userConfigDir)
+	log.Debugf("Resolved configDir=%s\n", configDir)
 }
 
 // NewWithDefaults initalises a new Settings with default values set
@@ -49,7 +58,7 @@ func (s *Settings) Load(configFile string) error {
 		return nil
 	}
 
-	err = yaml.Unmarshal(bytes, s)
+	err = yaml.Unmarshal(bytes, &s.Configuration)
 	if err != nil {
 		return err
 	}
@@ -61,7 +70,7 @@ func (s *Settings) Load(configFile string) error {
 func (s *Settings) Save(configFile string) error {
 	fullPath := defaultConfigFilename(configFile, path.Join(configDir, configFileName))
 
-	bytes, err := yaml.Marshal(s)
+	bytes, err := yaml.Marshal(s.Configuration)
 	if err != nil {
 		return err
 	}
@@ -99,16 +108,16 @@ func sourceFileName(cfg *Settings) string {
 
 func currentStorageNameForRota(cfg *Settings) string {
 	switch cfg.Rotation {
-	case None:
+	case rotation.None:
 		return ""
-	case Monthly:
+	case rotation.Monthly:
 		return time.Now().Format("2006-01")
-	case Daily:
+	case rotation.Daily:
 		return time.Now().Format("2006-01-02")
-	case Weekly:
+	case rotation.Weekly:
 		year, week := time.Now().ISOWeek()
 		return fmt.Sprintf("%d-%d", year, week)
-	case Yearly:
+	case rotation.Yearly:
 		return time.Now().Format("2006")
 	}
 

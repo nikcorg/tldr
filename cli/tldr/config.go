@@ -4,8 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/nikcorg/tldr-cli/config"
-
+	"github.com/nikcorg/tldr-cli/config/rotation"
 	log "github.com/sirupsen/logrus"
 )
 
@@ -50,7 +49,7 @@ func (c *configCmd) Help(subcommand string, args ...string) {
 func (c *configCmd) set(key, value string) (bool, error) {
 	switch strings.ToLower(key) {
 	case "rotation":
-		if rot := config.RotationFromString(value); rot != runtimeConfig.Rotation {
+		if rot := rotation.NewFromString(value); rot != runtimeConfig.Rotation {
 			runtimeConfig.Rotation = rot
 			return true, nil
 		}

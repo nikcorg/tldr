@@ -3,13 +3,17 @@ package config
 import (
 	"os"
 	"path"
+
+	"github.com/nikcorg/tldr-cli/config/rotation"
 )
 
 func withDefaults(config *Settings) *Settings {
 	return &Settings{
-		Rotation:    defaultRotation(config.Rotation, None),
-		StorageName: defaultStorageName(config.StorageName),
-		StoragePath: defaultStoragePath(config.StoragePath),
+		Configuration: Configuration{
+			Rotation:    defaultRotation(config.Configuration.Rotation, rotation.None),
+			StorageName: defaultStorageName(config.Configuration.StorageName),
+			StoragePath: defaultStoragePath(config.Configuration.StoragePath),
+		},
 	}
 }
 
@@ -22,8 +26,8 @@ func defaultStoragePath(candidatePath string) string {
 	return candidatePath
 }
 
-func defaultRotation(candidate StorageGranularity, def StorageGranularity) StorageGranularity {
-	if candidate == Unset {
+func defaultRotation(candidate rotation.Period, def rotation.Period) rotation.Period {
+	if candidate == rotation.Unset {
 		return def
 	}
 
