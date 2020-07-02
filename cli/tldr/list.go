@@ -6,6 +6,7 @@ import (
 	"strings"
 	"time"
 
+	"github.com/nikcorg/tldr-cli/utils"
 	log "github.com/sirupsen/logrus"
 )
 
@@ -32,9 +33,7 @@ func (f *listCmd) ParseArgs(subcommand string, args ...string) error {
 
 		switch strings.ToLower(arg) {
 		case "-t", "--today":
-			now := time.Now()
-			limit := time.Date(now.Year(), now.Month(), now.Day(), 0, 0, 0, 0, time.Local)
-			f.newerThan = &limit
+			f.newerThan = utils.Today()
 			log.Debugf("newer than %v", f.newerThan)
 
 		case "-n", "--num":

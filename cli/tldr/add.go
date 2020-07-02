@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 	"strings"
-	"time"
 
 	"github.com/nikcorg/tldr-cli/fetch"
 	"github.com/nikcorg/tldr-cli/input/entry"
 	"github.com/nikcorg/tldr-cli/storage"
+	"github.com/nikcorg/tldr-cli/utils"
 
 	log "github.com/sirupsen/logrus"
 )
@@ -154,28 +154,28 @@ func (c *addCmd) addEntry(source *storage.Source) error {
 }
 
 func addEntryToTLDR(newEntry *storage.Entry, source *storage.Source) {
-	y1, m1, d1 := time.Now().Date()
+	today := *utils.Today()
 
 	if source.Size() == 0 {
 		source.Records = &[]storage.Record{
 			{
-				Date:    time.Date(y1, m1, d1, 0, 0, 0, 0, time.UTC),
+				Date:    today,
 				Entries: []storage.Entry{*newEntry},
 			},
 		}
 		return
 	}
 
-	y2, m2, d2 := (*source.Records)[0].Date.Date()
+	lastEntryDate := (*source.Records)[0].Date
 
-	if y1 == y2 && m1 == m2 && d1 == d2 {
+	if lastEntryDate.Equal(today) {
 		log.Debug("Entry for today already exists, appending")
 		(*source.Records)[0].Entries = append((*source.Records)[0].Entries, *newEntry)
 	} else {
 		log.Debug("Entry for today doesn't exist, creating")
 		newRecords := append([]storage.Record{
 			{
-				Date:    time.Date(y1, m1, d1, 0, 0, 0, 0, time.UTC),
+				Date:    today,
 				Entries: []storage.Entry{*newEntry},
 			},
 		}, (*source.Records)...)
