@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"strconv"
 	"strings"
+	"time"
 
 	log "github.com/sirupsen/logrus"
 )
@@ -13,20 +14,16 @@ var (
 	errExpectedNumberArg = fmt.Errorf("Expected numeric argument")
 )
 
-type listCmd struct{}
-
-func (f *listCmd) ParseArgs(subcommand string, args ...string) error {
-	return nil
+type listCmd struct {
+	num       int
+	offset    int
+	newerThan *time.Time
 }
 
-func (f *listCmd) Execute(subcommand string, args ...string) error {
-	log.Debugf("list:%s, args=%v", subcommand, args)
-
+func (f *listCmd) ParseArgs(subcommand string, args ...string) error {
 	// FIXME: default page size should be in config
-	settings := struct {
-		num    int
-		offset int
-	}{1, 0}
+	f.num = -1
+	f.offset = 0
 
 	argsCopy := args[0:]
 
@@ -34,12 +31,20 @@ func (f *listCmd) Execute(subcommand string, args ...string) error {
 		arg := argsCopy[0]
 
 		switch strings.ToLower(arg) {
+		case "-t", "--today":
+			now := time.Now()
+			limit := time.Date(now.Year(), now.Month(), now.Day(), 0, 0, 0, 0, time.Local)
+			f.newerThan = &limit
+			log.Debugf("newer than %v", f.newerThan)
+
 		case "-n", "--num":
 			num, err := strconv.Atoi(argsCopy[1])
 			if err != nil {
 				return fmt.Errorf("%w: %s", errExpectedNumberArg, argsCopy[1])
 			}
-			settings.num = num
+			f.num = num
+
+			// Shift args
 			argsCopy = argsCopy[1:]
 
 		case "-o", "--offset", "--skip":
@@ -47,7 +52,9 @@ func (f *listCmd) Execute(subcommand string, args ...string) error {
 			if err != nil {
 				return fmt.Errorf("%w: %s", errExpectedNumberArg, argsCopy[1])
 			}
-			settings.offset = offset
+			f.offset = offset
+
+			// Shift args
 			argsCopy = argsCopy[1:]
 
 		default:
@@ -58,6 +65,16 @@ func (f *listCmd) Execute(subcommand string, args ...string) error {
 		argsCopy = argsCopy[1:]
 	}
 
+	if f.newerThan == nil && f.num < 0 {
+		return fmt.Errorf("unlimited listing not yet supported")
+	}
+
+	return nil
+}
+
+func (f *listCmd) Execute(subcommand string, args ...string) error {
+	log.Debugf("list:%s, args=%v", subcommand, args)
+
 	source, err := stor.Load()
 	if err != nil {
 		return err
@@ -66,9 +83,14 @@ func (f *listCmd) Execute(subcommand string, args ...string) error {
 	displayed := 0
 	skipped := 0
 	for _, d := range *source.Records {
-		for i := 0; i < len(d.Entries) && displayed < settings.num; i++ {
+		if !d.Date.Equal(*f.newerThan) && !d.Date.After(*f.newerThan) {
+			log.Debugf("%v < %v", d.Date, f.newerThan)
+			break
+		}
+
+		for i := 0; i < len(d.Entries) && (f.num < 0 || displayed < f.num); i++ {
 			e := d.Entries[i]
-			if skipped < settings.offset {
+			if skipped < f.offset {
 				skipped++
 				continue
 			}
@@ -78,7 +100,7 @@ func (f *listCmd) Execute(subcommand string, args ...string) error {
 			displayed++
 		}
 
-		if displayed >= settings.num {
+		if f.num > -1 && displayed >= f.num {
 			break
 		}
 	}
