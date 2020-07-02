@@ -17,6 +17,7 @@ var (
 )
 
 type addCmd struct {
+	interactive bool
 	url         string
 	sourceURL   string
 	relatedURLs []string
@@ -68,6 +69,9 @@ func (c *addCmd) ParseArgs(subcommand string, args ...string) error {
 
 		if strings.HasPrefix(arg, "-") || strings.HasPrefix(arg, "--") {
 			switch arg {
+			case "-i", "--interactive":
+				c.interactive = true
+
 			case "-r", "-rel", "--related":
 				nextArg++
 				url := args[nextArg]
@@ -127,7 +131,22 @@ func (c *addCmd) addEntry(source *storage.Source) error {
 		SourceURL:   c.sourceURL,
 	}
 
-	entry.Create(newEntry, &entry.EditContext{Titles: res.Titles})
+	if c.interactive {
+		entry.Create(newEntry, &entry.EditContext{Titles: res.Titles})
+	} else {
+		fmt.Printf("Title: %s\n", newEntry.Title)
+		fmt.Printf("URL: %s\n", newEntry.URL)
+		fmt.Printf("Unread: %v\n", newEntry.Unread)
+		if newEntry.SourceURL != "" {
+			fmt.Printf("Source: %s\n", newEntry.SourceURL)
+		}
+		if len(newEntry.RelatedURLs) > 0 {
+			fmt.Println("Related:")
+			for _, u := range newEntry.RelatedURLs {
+				fmt.Printf("- %s\n", u)
+			}
+		}
+	}
 
 	addEntryToTLDR(newEntry, source)
 
