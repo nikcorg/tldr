@@ -68,6 +68,7 @@ func (c *findCmd) ParseArgs(subcommand string, args ...string) error {
 			}
 		} else if !needleFound {
 			c.needle = strings.ToLower(arg)
+			log.Debugf("found needle %s, %s", arg, c.needle)
 			needleFound = true
 		} else {
 			return fmt.Errorf("%w: %s", errInvalidArgument, arg)
