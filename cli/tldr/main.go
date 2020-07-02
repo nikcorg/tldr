@@ -112,7 +112,7 @@ func mainWithErr(args ...string) error {
 	runnableCommand, command, subcommand, restArgs := runnableForCommand(firstArg, args[1:])
 
 	if err = runnableCommand.ParseArgs(subcommand, restArgs...); err != nil {
-		return errInvalidArg
+		return fmt.Errorf("%w: %s", errInvalidArg, err)
 	}
 
 	if err = runnableCommand.Execute(subcommand, restArgs...); err != nil {
