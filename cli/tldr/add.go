@@ -12,7 +12,15 @@ import (
 	log "github.com/sirupsen/logrus"
 )
 
-type addCmd struct{}
+var (
+	errURLNotFound error = fmt.Errorf("no URL argument found")
+)
+
+type addCmd struct {
+	url         string
+	sourceURL   string
+	relatedURLs []string
+}
 
 func (c *addCmd) Execute(subcommand string, args ...string) error {
 	log.Debugf("add:%s, args=%v", subcommand, args)
@@ -24,16 +32,16 @@ func (c *addCmd) Execute(subcommand string, args ...string) error {
 
 	switch subcommand {
 	case "title":
-		err = amendTitle(source, args[0])
+		err = amendTitle(source, c.url)
 
 	case "source":
-		err = amendSource(source, args[0])
+		err = amendSource(source, c.url)
 
 	case "related":
-		err = amendRelated(source, args[0])
+		err = amendRelated(source, c.url)
 
 	default:
-		err = addEntry(args[0], source)
+		err = c.addEntry(source)
 	}
 
 	if err != nil {
@@ -53,17 +61,55 @@ func (c *addCmd) Help(subcommand string, args ...string) {
 }
 
 func (c *addCmd) ParseArgs(subcommand string, args ...string) error {
+	urlFound := false
+	nextArg := 0
+	for nextArg < len(args) {
+		arg := args[nextArg]
+
+		if strings.HasPrefix(arg, "-") || strings.HasPrefix(arg, "--") {
+			switch arg {
+			case "-r", "-rel", "--related":
+				nextArg++
+				url := args[nextArg]
+				log.Debugf("found -r: %s", url)
+				if !strings.HasPrefix(url, "http") {
+					log.Debugf("invalid url: %s", url)
+					return fmt.Errorf("%w: %s", errInvalidArg, url)
+				}
+				c.relatedURLs = append(c.relatedURLs, url)
+
+			case "-s", "--source":
+				nextArg++
+				url := args[nextArg]
+				log.Debugf("found -s: %s", url)
+				if !strings.HasPrefix(url, "http") {
+					return fmt.Errorf("%w: %s", errInvalidArg, url)
+				}
+				c.sourceURL = url
+			}
+		} else if strings.HasPrefix(arg, "http") {
+			urlFound = true
+			c.url = arg
+		}
+
+		nextArg++
+	}
+
+	if !urlFound && subcommand == "" {
+		return errURLNotFound
+	}
+
 	return nil
 }
 
 ///
 
-func addEntry(url string, source *storage.Source) error {
-	log.Debugf("Fetching %v", url)
+func (c *addCmd) addEntry(source *storage.Source) error {
+	log.Debugf("Fetching %v", c.url)
 	var res *fetch.Details
 	var err error
-	if res, err = fetch.Preview(url); err != nil {
-		return fmt.Errorf("Error fetching (%s): %w", url, err)
+	if res, err = fetch.Preview(c.url); err != nil {
+		return fmt.Errorf("Error fetching (%s): %w", c.url, err)
 	}
 	log.Debugf("Fetch result: %+v", res)
 
@@ -74,9 +120,11 @@ func addEntry(url string, source *storage.Source) error {
 	}
 
 	var newEntry = &storage.Entry{
-		URL:    strings.ToLower(res.URL),
-		Title:  title,
-		Unread: true,
+		URL:         strings.ToLower(res.URL),
+		Title:       title,
+		Unread:      true,
+		RelatedURLs: c.relatedURLs,
+		SourceURL:   c.sourceURL,
 	}
 
 	entry.Create(newEntry, &entry.EditContext{Titles: res.Titles})
