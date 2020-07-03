@@ -64,18 +64,21 @@ func runnableForCommand(firstArg string, args []string) (runnable, string, strin
 	command, subcommand := splitCommand(firstArg)
 
 	switch command {
+	case "add":
+		runnableCommand = cmdAdd
+	case "amend":
+		runnableCommand = cmdAdd
+		subcommand = "amend"
 	case "config":
 		runnableCommand = cmdConfig
 	case "edit":
 		runnableCommand = cmdEdit
 	case "find":
 		runnableCommand = cmdFind
-	case "list", "show":
-		runnableCommand = cmdList
 	case "help":
 		runnableCommand = cmdHelp
-	case "add":
-		runnableCommand = cmdAdd
+	case "list", "show":
+		runnableCommand = cmdList
 	default:
 		subcommand = ""
 		runnableCommand, nextArgs = defaultRunnable(firstArg)
