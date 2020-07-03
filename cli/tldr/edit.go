@@ -50,6 +50,9 @@ func (e *editCmd) Help(subcommand string, args ...string) {
 }
 
 func edit(source *storage.Source, needle string) error {
+	var err error
+	var matchedEntry *storage.Entry
+
 	results := locateMatches(source.Records, needle, 0, &[]findFilter{})
 	switch len(results) {
 	case 0:
@@ -62,11 +65,11 @@ func edit(source *storage.Source, needle string) error {
 	default:
 		fmt.Printf("Multiple matches found for '%s', using interactive mode\n", needle)
 
-		if matchedEntry, err := selectEntry(results); err != nil {
+		if matchedEntry, err = selectEntry(results); err != nil {
 			return err
-		} else {
-			entry.Edit(matchedEntry, &entry.EditContext{Titles: []string{matchedEntry.Title}})
 		}
+
+		entry.Edit(matchedEntry, &entry.EditContext{Titles: []string{matchedEntry.Title}})
 	}
 
 	return nil
