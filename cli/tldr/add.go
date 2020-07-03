@@ -64,6 +64,7 @@ func (c *addCmd) Execute(subcommand string, args ...string) error {
 }
 
 func (c *addCmd) Init() {
+	c.interactive = touchable.NewBool(false)
 	c.title = touchable.NewString("")
 	c.sourceURL = touchable.NewString("")
 	c.relatedURLs = []string{}
