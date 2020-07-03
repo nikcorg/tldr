@@ -77,7 +77,6 @@ func (c *addCmd) ParseArgs(subcommand string, args ...string) error {
 				url := args[nextArg]
 				log.Debugf("found -r: %s", url)
 				if !strings.HasPrefix(url, "http") {
-					log.Debugf("invalid url: %s", url)
 					return fmt.Errorf("%w: %s", errInvalidArg, url)
 				}
 				c.relatedURLs = append(c.relatedURLs, url)
