@@ -89,7 +89,7 @@ func (f *listCmd) Execute(subcommand string, args ...string) error {
 			break
 		}
 
-		for i := 0; i < len(d.Entries) && (f.num < 0 || displayed < f.num); i++ {
+		for i := len(d.Entries) - 1; i >= 0 && (f.num < 0 || displayed < f.num); i-- {
 			e := d.Entries[i]
 			if skipped < f.offset {
 				skipped++
