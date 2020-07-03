@@ -139,7 +139,8 @@ func (c *addCmd) ParseArgs(subcommand string, args ...string) error {
 ///
 
 func (c *addCmd) addEntry(source *storage.Source) error {
-	log.Debugf("Fetching %v", c.url)
+	log.Debugf("Fetching %v", c.url.Val())
+
 	var res *fetch.Details
 	var err error
 	if res, err = fetch.Preview(c.url.Val()); err != nil {
