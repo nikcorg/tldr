@@ -11,15 +11,15 @@ type Bool struct {
 }
 
 // NewBool creates a new Bool and sets the initial value
-func NewBool(init bool) Bool {
-	return Bool{
+func NewBool(init bool) *Bool {
+	return &Bool{
 		touched: false,
 		value:   init,
 	}
 }
 
 // Set updates the value and sets the touched flag
-func (b Bool) Set(v bool) bool {
+func (b *Bool) Set(v bool) bool {
 	b.touched = true
 	b.value = v
 
@@ -28,13 +28,22 @@ func (b Bool) Set(v bool) bool {
 	return b.value
 }
 
+// SetUnlessTouched updates the value unless it has been touched
+func (b *Bool) SetUnlessTouched(v bool) bool {
+	if !b.touched {
+		return b.Set(v)
+	}
+
+	return v
+}
+
 // Val returns the set value
-func (b Bool) Val() bool {
+func (b *Bool) Val() bool {
 	return b.value
 }
 
 // ValOrDefault returns the set value or the default if untouched
-func (b Bool) ValOrDefault(def bool) bool {
+func (b *Bool) ValOrDefault(def bool) bool {
 	if !b.touched {
 		return def
 	}

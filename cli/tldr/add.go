@@ -18,12 +18,12 @@ var (
 )
 
 type addCmd struct {
-	interactive touchable.Bool
-	url         touchable.String
+	interactive *touchable.Bool
+	url         *touchable.String
 	relatedURLs []string
-	sourceURL   touchable.String
-	title       touchable.String
-	unread      touchable.Bool
+	sourceURL   *touchable.String
+	title       *touchable.String
+	unread      *touchable.Bool
 }
 
 func (c *addCmd) Execute(subcommand string, args ...string) error {
