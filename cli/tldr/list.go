@@ -84,7 +84,7 @@ func (f *listCmd) Execute(subcommand string, args ...string) error {
 	displayed := 0
 	skipped := 0
 	for _, d := range *source.Records {
-		if !d.Date.Equal(*f.newerThan) && !d.Date.After(*f.newerThan) {
+		if f.newerThan != nil && !d.Date.Equal(*f.newerThan) && !d.Date.After(*f.newerThan) {
 			log.Debugf("%v < %v", d.Date, f.newerThan)
 			break
 		}
