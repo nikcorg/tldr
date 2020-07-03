@@ -1,9 +1,5 @@
 package touchable
 
-import (
-	log "github.com/sirupsen/logrus"
-)
-
 // String is a string container that tracks its untouched state
 type String struct {
 	touched bool
@@ -22,8 +18,6 @@ func NewString(init string) *String {
 func (s *String) Set(v string) string {
 	s.touched = true
 	s.value = v
-
-	log.Debugf("value set, %v, %+v", v, s)
 
 	return v
 }

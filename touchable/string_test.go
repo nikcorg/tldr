@@ -3,13 +3,8 @@ package touchable
 import (
 	"testing"
 
-	log "github.com/sirupsen/logrus"
 	"github.com/stretchr/testify/assert"
 )
-
-func init() {
-	log.SetLevel(log.DebugLevel)
-}
 
 func TestString(t *testing.T) {
 	assert := assert.New(t)
