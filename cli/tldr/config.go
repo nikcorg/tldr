@@ -14,6 +14,8 @@ var (
 
 type configCmd struct{}
 
+func (c *configCmd) Init() {}
+
 func (c *configCmd) ParseArgs(subcommand string, args ...string) error {
 	return nil
 }

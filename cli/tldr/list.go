@@ -21,11 +21,13 @@ type listCmd struct {
 	newerThan *time.Time
 }
 
-func (f *listCmd) ParseArgs(subcommand string, args ...string) error {
+func (f *listCmd) Init() {
 	// FIXME: default page size should be in config
 	f.num = -1
 	f.offset = 0
+}
 
+func (f *listCmd) ParseArgs(subcommand string, args ...string) error {
 	argsCopy := args[0:]
 
 	for len(argsCopy) > 0 {

@@ -32,6 +32,12 @@ var (
 	errMissingNeedle       = fmt.Errorf("no search term found")
 )
 
+func (c *findCmd) Init() {
+	c.filters = []findFilter{}
+	c.needle = ""
+	c.showRelated = false
+}
+
 func (c *findCmd) ParseArgs(subcommand string, args ...string) error {
 	seenUnread := false
 	seenRead := false

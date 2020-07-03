@@ -9,6 +9,8 @@ import (
 
 type helpCmd struct{}
 
+func (c *helpCmd) Init() {}
+
 func (c *helpCmd) Execute(subcommand string, args ...string) error {
 	log.Debugf("help:%s, args=%v", subcommand, strings.Join(args, "|"))
 	flag.PrintDefaults()

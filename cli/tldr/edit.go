@@ -21,6 +21,8 @@ var (
 
 type editCmd struct{}
 
+func (e *editCmd) Init() {}
+
 func (e *editCmd) ParseArgs(subcommand string, args ...string) error {
 	return nil
 }
