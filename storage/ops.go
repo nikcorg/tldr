@@ -80,9 +80,9 @@ func (s *Storage) readSource(fullSourcePath string) ([]byte, error) {
 func (s *Storage) writeSource(fullSourcePath string, b []byte) error {
 	var err error
 
-	err = os.MkdirAll(s.config.StoragePath, 0755)
+	err = os.MkdirAll(s.config.Storage.Path, 0755)
 	if err != nil && !os.IsExist(err) {
-		return fmt.Errorf("Error creating data dir: %s %w", s.config.StoragePath, err)
+		return fmt.Errorf("Error creating data dir: %s %w", s.config.Storage.Path, err)
 	}
 
 	err = ioutil.WriteFile(fullSourcePath, b, 0644)

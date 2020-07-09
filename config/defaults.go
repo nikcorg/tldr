@@ -10,9 +10,11 @@ import (
 func withDefaults(config *Settings) *Settings {
 	return &Settings{
 		Configuration: Configuration{
-			Rotation:    defaultRotation(config.Configuration.Rotation, rotation.None),
-			StorageName: defaultStorageName(config.Configuration.StorageName),
-			StoragePath: defaultStoragePath(config.Configuration.StoragePath),
+			Rotation: defaultRotation(config.Configuration.Rotation, rotation.None),
+			Storage: StorageConfig{
+				Name: defaultStorageName(config.Configuration.Storage.Name),
+				Path: defaultStoragePath(config.Configuration.Storage.Path),
+			},
 		},
 	}
 }

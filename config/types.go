@@ -12,7 +12,12 @@ type Settings struct {
 
 // Configuration represents persistently configurable settings
 type Configuration struct {
-	Rotation    rotation.Period `yaml:"rotation"`
-	StorageName string          `yaml:"storage.name"`
-	StoragePath string          `yaml:"storage.path"`
+	Rotation rotation.Period `yaml:"rotation"`
+	Storage  StorageConfig   `yaml:"storage"`
+}
+
+// StorageConfig represents storage settings
+type StorageConfig struct {
+	Name string `yaml:"name"`
+	Path string `yaml:"path"`
 }

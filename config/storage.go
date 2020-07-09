@@ -92,17 +92,17 @@ func (s *Settings) Save(configFile string) error {
 
 // StorageFilePath returns the fully qualified path to the actual storage file
 func (s *Settings) StorageFilePath() string {
-	return path.Join(s.StoragePath, sourceFileName(s))
+	return path.Join(s.Storage.Path, sourceFileName(s))
 }
 
 func sourceFileName(cfg *Settings) string {
 	rotationSuffix := currentStorageNameForRota(cfg)
 
 	if len(rotationSuffix) == 0 {
-		return cfg.StorageName
+		return cfg.Storage.Name
 	}
 
-	baseName := strings.TrimSuffix(cfg.StorageName, ".yaml")
+	baseName := strings.TrimSuffix(cfg.Storage.Name, ".yaml")
 	return fmt.Sprintf("%s.%s.yaml", baseName, rotationSuffix)
 }
 

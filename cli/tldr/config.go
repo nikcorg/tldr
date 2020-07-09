@@ -57,14 +57,14 @@ func (c *configCmd) set(key, value string) (bool, error) {
 		}
 
 	case "storage.path":
-		if runtimeConfig.StoragePath != value {
-			runtimeConfig.StoragePath = value
+		if runtimeConfig.Storage.Path != value {
+			runtimeConfig.Storage.Path = value
 			return true, nil
 		}
 
 	case "storage.name":
-		if runtimeConfig.StorageName != value {
-			runtimeConfig.StorageName = value
+		if runtimeConfig.Storage.Name != value {
+			runtimeConfig.Storage.Name = value
 			return true, nil
 		}
 
@@ -81,10 +81,10 @@ func (c *configCmd) get(key string) error {
 		fmt.Printf("rotation=%s\n", runtimeConfig.Rotation.String())
 
 	case "storage.path":
-		fmt.Printf("storage.path=%s\n", runtimeConfig.StoragePath)
+		fmt.Printf("storage.path=%s\n", runtimeConfig.Storage.Path)
 
 	case "storage.name":
-		fmt.Printf("storage.name=%s\n", runtimeConfig.StorageName)
+		fmt.Printf("storage.name=%s\n", runtimeConfig.Storage.Name)
 
 	default:
 		log.Debugf("Unknown setting: %s", key)
