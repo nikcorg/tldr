@@ -81,18 +81,18 @@ func runnableForCommand(firstArg string, args []string) (runnable, string, strin
 		runnableCommand = cmdList
 	default:
 		subcommand = ""
-		runnableCommand, nextArgs = defaultRunnable(firstArg)
+		runnableCommand, nextArgs = defaultRunnable(firstArg, args)
 	}
 
 	return runnableCommand, command, subcommand, nextArgs
 }
 
-func defaultRunnable(arg string) (runnable, []string) {
-	if strings.HasPrefix(arg, "http") {
-		return cmdAdd, []string{arg}
+func defaultRunnable(firstArg string, args []string) (runnable, []string) {
+	if strings.HasPrefix(firstArg, "http") {
+		return cmdAdd, append([]string{firstArg}, args...)
 	}
 
-	return cmdHelp, []string{}
+	return cmdHelp, append([]string{firstArg}, args...)
 }
 
 func mainWithErr(args ...string) error {
