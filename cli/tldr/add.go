@@ -120,6 +120,9 @@ func (c *addCmd) ParseArgs(subcommand string, args ...string) error {
 			case "-x", "--read":
 				log.Debug("setting unread=false")
 				c.unread.Set(false)
+
+			default:
+				return fmt.Errorf("%w: %s", errUnknownArg, arg)
 			}
 		} else if strings.HasPrefix(arg, "http") {
 			urlFound = true
