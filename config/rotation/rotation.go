@@ -3,8 +3,6 @@ package rotation
 import (
 	"fmt"
 	"strconv"
-
-	log "github.com/sirupsen/logrus"
 )
 
 // Period defines the time between file rotation
@@ -76,8 +74,6 @@ func (p Period) String() string {
 
 // MarshalYAML implements the YAML Marshaler interface
 func (p Period) MarshalYAML() (interface{}, error) {
-	log.Debugf("marshalYAML: %v", p)
-
 	return p.String(), nil
 }
 
