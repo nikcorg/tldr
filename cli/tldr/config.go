@@ -12,11 +12,28 @@ var (
 	errUnknownSetting = fmt.Errorf("unknown setting")
 )
 
-type configCmd struct{}
+type configCmd struct {
+	forced bool
+}
 
-func (c *configCmd) Init() {}
+func (c *configCmd) Init() {
+	c.forced = false
+}
 
 func (c *configCmd) ParseArgs(subcommand string, args ...string) error {
+	for _, arg := range args {
+		switch arg {
+		case "-f", "--force":
+			if subcommand != "init" {
+				return fmt.Errorf("%w: %s can only be used with `init`", errInvalidArg, arg)
+			}
+			c.forced = true
+
+		default:
+			return fmt.Errorf("%w: %s", errUnknownArg, arg)
+		}
+	}
+
 	return nil
 }
 
@@ -34,7 +51,7 @@ func (c *configCmd) Execute(subcommand string, args ...string) error {
 		err = c.get(args[0])
 
 	case "init":
-		changed = !configWasLoadedFromDisk
+		changed = c.forced || !configWasLoadedFromDisk
 	}
 
 	if err == nil && changed {
