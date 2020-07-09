@@ -2,22 +2,7 @@ package storage
 
 import (
 	"strings"
-	"time"
 )
-
-type Source struct {
-	SourceFile string
-	Records    *[]Record
-}
-
-func (s *Source) Size() int {
-	return len(*s.Records)
-}
-
-type Record struct {
-	Date    time.Time
-	Entries []Entry
-}
 
 type Entry struct {
 	RelatedURLs []string `yaml:"related_urls"`
