@@ -55,6 +55,8 @@ func (c *addCmd) Execute(subcommand string, args ...string) error {
 		return err
 	}
 
+	log.Debugf("before save: %+v", source)
+
 	err = stor.Save(source)
 	if err != nil {
 		return err
@@ -189,7 +191,7 @@ func addEntryToTLDR(newEntry *storage.Entry, source *storage.Source) {
 	today := *utils.Today()
 
 	if source.Size() == 0 {
-		source.Records = &[]storage.Record{
+		source.Records = []*storage.Record{
 			{
 				Date:    today,
 				Entries: []storage.Entry{*newEntry},
@@ -198,25 +200,25 @@ func addEntryToTLDR(newEntry *storage.Entry, source *storage.Source) {
 		return
 	}
 
-	lastEntryDate := (*source.Records)[0].Date
+	lastEntryDate := source.Records[0].Date
 
 	if lastEntryDate.Equal(today) {
 		log.Debug("Entry for today already exists, appending")
-		(*source.Records)[0].Entries = append((*source.Records)[0].Entries, *newEntry)
+		source.Records[0].Entries = append(source.Records[0].Entries, *newEntry)
 	} else {
 		log.Debug("Entry for today doesn't exist, creating")
-		newRecords := append([]storage.Record{
+		newRecords := append([]*storage.Record{
 			{
 				Date:    today,
 				Entries: []storage.Entry{*newEntry},
 			},
-		}, (*source.Records)...)
-		source.Records = &newRecords
+		}, source.Records...)
+		source.Records = newRecords
 	}
 }
 
 func (c *addCmd) amendPrevious(source *storage.Source) error {
-	r := (*source.Records)[0]
+	r := source.Records[0]
 	e := &r.Entries[len(r.Entries)-1]
 
 	log.Debugf("c= %+v", c)
@@ -237,7 +239,7 @@ func (c *addCmd) amendPrevious(source *storage.Source) error {
 ///
 
 func amendRelated(source *storage.Source, url string) error {
-	r := (*source.Records)[0]
+	r := source.Records[0]
 	e := &r.Entries[len(r.Entries)-1]
 
 	e.RelatedURLs = append(e.RelatedURLs, url)
@@ -248,7 +250,7 @@ func amendRelated(source *storage.Source, url string) error {
 ///
 
 func amendSource(source *storage.Source, url string) error {
-	r := (*source.Records)[0]
+	r := source.Records[0]
 	e := &r.Entries[len(r.Entries)-1]
 
 	e.SourceURL = url
@@ -257,7 +259,7 @@ func amendSource(source *storage.Source, url string) error {
 }
 
 func amendTitle(source *storage.Source, title string) error {
-	r := (*source.Records)[0]
+	r := source.Records[0]
 	e := &r.Entries[len(r.Entries)-1]
 
 	e.Title = title

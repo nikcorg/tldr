@@ -27,7 +27,7 @@ func (s *Storage) Load() (*Source, error) {
 		return nil, err
 	}
 
-	records := new([]Record)
+	records := new([]*Record)
 	if err := yaml.Unmarshal(source, records); err != nil {
 		return nil, err
 	}
@@ -36,7 +36,7 @@ func (s *Storage) Load() (*Source, error) {
 
 	return &Source{
 		SourceFile: storageName,
-		Records:    records,
+		Records:    *records,
 	}, nil
 }
 

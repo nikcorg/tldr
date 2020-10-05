@@ -5,6 +5,7 @@ import (
 	"strings"
 
 	"github.com/nikcorg/tldr-cli/config/rotation"
+	"github.com/nikcorg/tldr-cli/config/sync"
 	log "github.com/sirupsen/logrus"
 )
 
@@ -22,14 +23,18 @@ func (c *configCmd) Init() {
 
 func (c *configCmd) ParseArgs(subcommand string, args ...string) error {
 	for _, arg := range args {
-		switch arg {
-		case "-f", "--force":
-			if subcommand != "init" {
-				return fmt.Errorf("%w: %s can only be used with `init`", errInvalidArg, arg)
-			}
-			c.forced = true
+		if strings.HasPrefix(arg, "-") {
+			switch arg {
+			case "-f", "--force":
+				if subcommand != "init" {
+					return fmt.Errorf("%w: %s can only be used with `init`", errInvalidArg, arg)
+				}
+				c.forced = true
 
-		default:
+			default:
+				return fmt.Errorf("%w: %s", errUnknownArg, arg)
+			}
+		} else if subcommand != "get" && subcommand != "set" {
 			return fmt.Errorf("%w: %s", errUnknownArg, arg)
 		}
 	}
@@ -85,6 +90,12 @@ func (c *configCmd) set(key, value string) (bool, error) {
 			return true, nil
 		}
 
+	case "sync.command":
+		if runtimeConfig.Sync.Exec != value {
+			runtimeConfig.Sync.Exec = value
+			return true, nil
+		}
+
 	default:
 		return false, fmt.Errorf("%w: %s", errUnknownSetting, key)
 	}
@@ -102,6 +113,20 @@ func (c *configCmd) get(key string) error {
 
 	case "storage.name":
 		fmt.Printf("storage.name=%s\n", runtimeConfig.Storage.Name)
+
+	case "sync.command":
+		if runtimeConfig.Sync.Exec != "" {
+			fmt.Printf("sync.command=%s\n", runtimeConfig.Sync.Exec)
+		} else {
+			fmt.Println("sync.command is unset")
+		}
+
+	case "sync.mode":
+		if runtimeConfig.Sync.Mode == sync.Unset {
+			fmt.Println("sync.mode is unset")
+		} else {
+			fmt.Printf("sync.mode=%s\n", runtimeConfig.Sync.Mode)
+		}
 
 	default:
 		log.Debugf("Unknown setting: %s", key)

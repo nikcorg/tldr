@@ -15,6 +15,7 @@ import (
 
 var (
 	errMultipleMatches        = fmt.Errorf("multiple matches found")
+	errNoEntryFound           = fmt.Errorf("no matching entry could be found")
 	errNothingSelected        = fmt.Errorf("nothing selected")
 	errSelectionOutsideBounds = fmt.Errorf("selection outside bounds")
 )
@@ -28,15 +29,29 @@ func (e *editCmd) ParseArgs(subcommand string, args ...string) error {
 }
 
 func (e *editCmd) Execute(subcommand string, args ...string) error {
+	var err error
+	var matchedEntry *storage.Entry
 	source, err := stor.Load()
 	if err != nil {
 		return err
 	}
 
-	needle := args[0]
-	if err := edit(source, needle); err != nil {
+	if len(args) == 0 {
+		matchedEntry = source.FirstRecord().MostRecentEntry()
+	} else {
+		needle := args[0]
+		matchedEntry, err = matchEntry(source, needle)
+	}
+
+	if err != nil {
+		return err
+	} else if matchedEntry == nil {
+		return errNoEntryFound
+	} else if err = edit(matchedEntry); err != nil {
 		return err
 	}
+
+	log.Debugf("before save, %+v", source.FirstRecord())
 
 	if err := stor.Save(source); err != nil {
 		return err
@@ -49,27 +64,38 @@ func (e *editCmd) Help(subcommand string, args ...string) {
 	log.Debugf("Help for %s, %v", subcommand, args)
 }
 
-func edit(source *storage.Source, needle string) error {
+func matchEntry(source *storage.Source, needle string) (*storage.Entry, error) {
 	var err error
 	var matchedEntry *storage.Entry
 
 	results := locateMatches(source.Records, needle, 0, &[]findFilter{})
 	switch len(results) {
 	case 0:
-		fmt.Printf("No matching entries were found for '%s'\n", needle)
+		fmt.Printf("no matching entries were found for '%s'\n", needle)
+		return nil, errNoEntryFound
 
 	case 1:
 		matchedEntry := results[0].Entry
-		entry.Edit(matchedEntry, &entry.EditContext{Titles: []string{matchedEntry.Title}})
+		return matchedEntry, nil
 
 	default:
 		fmt.Printf("Multiple matches found for '%s', using interactive mode\n", needle)
 
 		if matchedEntry, err = selectEntry(results); err != nil {
-			return err
+			return nil, err
 		}
 
-		entry.Edit(matchedEntry, &entry.EditContext{Titles: []string{matchedEntry.Title}})
+		return matchedEntry, nil
+	}
+}
+
+func edit(matchedEntry *storage.Entry) error {
+	if matchedEntry == nil {
+		return errNoEntryFound
+	}
+
+	if err := entry.Edit(matchedEntry, &entry.EditContext{Titles: []string{matchedEntry.Title}}); err != nil {
+		return err
 	}
 
 	return nil
