@@ -4,6 +4,7 @@ import (
 	"time"
 )
 
+// Record bunddles entries for a specific day
 type Record struct {
 	Date    time.Time
 	Entries []Entry

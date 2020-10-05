@@ -11,14 +11,17 @@ import (
 	yaml "gopkg.in/yaml.v2"
 )
 
+// Storage represents the current file
 type Storage struct {
 	config *config.Settings
 }
 
+// New constructs a Storage
 func New(cfg *config.Settings) *Storage {
 	return &Storage{cfg}
 }
 
+// Load retrieves a storage from disk
 func (s *Storage) Load() (*Source, error) {
 	storageName := s.sourceFileName()
 
@@ -40,6 +43,7 @@ func (s *Storage) Load() (*Source, error) {
 	}, nil
 }
 
+// Save serialises a storage to disk
 func (s *Storage) Save(source *Source) error {
 	yamlString, err := yaml.Marshal(source.Records)
 	if err != nil {

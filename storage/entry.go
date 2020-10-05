@@ -4,6 +4,7 @@ import (
 	"strings"
 )
 
+// Entry represents a single resource
 type Entry struct {
 	RelatedURLs []string `yaml:"related_urls"`
 	SourceURL   string   `yaml:"source_url"`
