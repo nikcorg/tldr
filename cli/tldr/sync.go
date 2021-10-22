@@ -14,6 +14,8 @@ func (s *syncCmd) ParseArgs(subcommand string, args ...string) error {
 	return nil
 }
 
+func (s *syncCmd) Init() {}
+
 func (s *syncCmd) Help(subcommand string, args ...string) {}
 
 func (s *syncCmd) Execute(subcommand string, args ...string) error {

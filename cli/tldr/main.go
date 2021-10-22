@@ -30,6 +30,7 @@ var (
 	cmdFind   = &findCmd{}
 	cmdHelp   = &helpCmd{}
 	cmdList   = &listCmd{}
+	cmdSync   = &syncCmd{}
 )
 
 func main() {
@@ -79,6 +80,8 @@ func runnableForCommand(firstArg string, args []string) (runnable, string, strin
 		runnableCommand = cmdHelp
 	case "list", "show":
 		runnableCommand = cmdList
+	case "sync":
+		runnableCommand = cmdSync
 	default:
 		subcommand = ""
 		runnableCommand, nextArgs = defaultRunnable(firstArg, args)
