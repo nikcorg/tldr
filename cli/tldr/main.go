@@ -105,14 +105,19 @@ func mainWithErr(args ...string) error {
 
 	log.Debugf("Runtime config after Load (from disk? %v) %+v", configWasLoadedFromDisk, runtimeConfig)
 
-	var firstArg string = ""
-	var restArgs []string = []string{}
+	var (
+		runnableCommand     runnable
+		command, subcommand string
+		restArgs            []string
+	)
 
-	if len(args) > 0 {
-		firstArg = args[0]
+	if len(args) == 0 {
+		runnableCommand, command, subcommand, restArgs = runnableForCommand("", []string{})
+	} else if len(args) == 1 {
+		runnableCommand, command, subcommand, restArgs = runnableForCommand(args[0], []string{})
+	} else {
+		runnableCommand, command, subcommand, restArgs = runnableForCommand(args[0], args[1:])
 	}
-
-	runnableCommand, command, subcommand, restArgs := runnableForCommand(firstArg, args[1:])
 
 	runnableCommand.Init()
 
