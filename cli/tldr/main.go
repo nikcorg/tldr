@@ -127,10 +127,10 @@ func mainWithErr(args ...string) error {
 
 	if err = runnableCommand.Execute(subcommand, restArgs...); err != nil {
 		if subcommand != "" {
-			return fmt.Errorf("Error running %s:%s: %w", command, subcommand, err)
+			return fmt.Errorf("error running %s:%s: %w", command, subcommand, err)
 
 		}
-		return fmt.Errorf("Error running %s: %w", command, err)
+		return fmt.Errorf("error running %s: %w", command, err)
 	}
 
 	return nil
