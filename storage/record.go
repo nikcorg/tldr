@@ -7,7 +7,7 @@ import (
 // Record bunddles entries for a specific day
 type Record struct {
 	Date    time.Time
-	Entries []Entry
+	Entries []*Entry
 }
 
 // MostRecentEntry returns a pointer to the most recent entry
@@ -18,5 +18,5 @@ func (r *Record) MostRecentEntry() *Entry {
 
 	lastIndex := len(r.Entries) - 1
 
-	return &r.Entries[lastIndex]
+	return r.Entries[lastIndex]
 }

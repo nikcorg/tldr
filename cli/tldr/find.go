@@ -141,11 +141,11 @@ func locateMatches(stor []*storage.Record, needle string, stopAfter int, filters
 	for _, record := range stor {
 		for _, entry := range record.Entries {
 			searched++
-			if entry.Contains(needle) && filtersMatch(&entry, filters) {
+			if entry.Contains(needle) && filtersMatch(entry, filters) {
 				log.Debugf("Found needle (%s) in %+v added on %v", needle, entry, record.Date)
 				e := entry
 				r := record
-				results = append(results, searchResult{&e, r})
+				results = append(results, searchResult{e, r})
 
 				if stopAfter > 0 && len(results) >= stopAfter {
 					return results
