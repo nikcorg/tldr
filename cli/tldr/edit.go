@@ -106,7 +106,7 @@ func selectEntry(results []searchResult) (*storage.Entry, error) {
 
 	reader := bufio.NewReader(os.Stdin)
 
-	for true {
+	for {
 		for n, r := range results {
 			e := r.Entry
 			fmt.Printf("%d) %s (%v)\n", n, e.Title, r.Record.Date)
@@ -142,6 +142,4 @@ func selectEntry(results []searchResult) (*storage.Entry, error) {
 			}
 		}
 	}
-
-	return nil, nil
 }

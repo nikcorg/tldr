@@ -18,7 +18,7 @@ func (s *syncCmd) Help(subcommand string, args ...string) {}
 
 func (s *syncCmd) Execute(subcommand string, args ...string) error {
 	if runtimeConfig.Sync.Exec == "" && runtimeConfig.Sync.Remote != "" {
-		return fmt.Errorf("Git sync not implemented")
+		return fmt.Errorf("git sync not yet implemented")
 	}
 
 	if runtimeConfig.Rotation == rotation.None {

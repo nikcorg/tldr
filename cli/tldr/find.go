@@ -24,11 +24,11 @@ func unreadFilter(state bool) findFilter {
 }
 
 var (
-	errUnreadReadConflict  = fmt.Errorf("Cannot use both --unread and --read")
-	errArgsAfterSearchTerm = fmt.Errorf("Cannot pass flags after the search term")
-	errUnknownArg          = fmt.Errorf("Unknown argument")
-	errInvalidArgument     = fmt.Errorf("Invalid argument")
-	errJunkAfterNeedle     = fmt.Errorf("Found junk after search term")
+	errUnreadReadConflict  = fmt.Errorf("cannot use both --unread and --read")
+	errArgsAfterSearchTerm = fmt.Errorf("cannot pass flags after the search term")
+	errUnknownArg          = fmt.Errorf("unknown argument")
+	errInvalidArgument     = fmt.Errorf("invalid argument")
+	errJunkAfterNeedle     = fmt.Errorf("junk after search term")
 	errMissingNeedle       = fmt.Errorf("no search term found")
 )
 
@@ -51,14 +51,14 @@ func (c *findCmd) ParseArgs(subcommand string, args ...string) error {
 
 			switch arg {
 			case "-u", "--unread":
-				if seenRead == true {
+				if seenRead {
 					return errUnreadReadConflict
 				}
 				c.filters = append(c.filters, unreadFilter(true))
 				seenUnread = true
 
 			case "-r", "--read":
-				if seenUnread == true {
+				if seenUnread {
 					return errUnreadReadConflict
 				}
 				c.filters = append(c.filters, unreadFilter(false))

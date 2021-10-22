@@ -11,8 +11,8 @@ import (
 )
 
 var (
-	errInvalidArg        = fmt.Errorf("Invalid argument")
-	errExpectedNumberArg = fmt.Errorf("Expected numeric argument")
+	errInvalidArg        = fmt.Errorf("invalid argument")
+	errExpectedNumberArg = fmt.Errorf("expected numeric argument")
 )
 
 type listCmd struct {
